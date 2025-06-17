@@ -1,0 +1,234 @@
+<div class="container-xl py-3">
+    <div class="d-lg-flex">
+        <div id="card-search-filters" class="card h-100 mb-2 mb-lg-0">
+            <div class="d-flex flex-column p-3">
+                <div class="d-flex mb-2" style="min-height:38px;">
+                    <div class="d-lg-none pe-2 flex-shrink-0">
+                        <button id="search-filters-btn" class="btn btn-secondary collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#card-search-filters-panel" aria-expanded="false"><i class="fa-solid fa-filter"></i><span id="active-filters-count"></span></button>
+                    </div>
+                    <div class="flex-fill">
+                        <input id="search-filter-search-text" type="search" class="form-control search-filter-text h-100" placeholder="Filter by name" autocomplete="off" onchange="searchSetFilterText('search', 'text', false)">
+                    </div>
+                    <button id="reset-filters" class="btn btn-dark tooltip-button ms-2" disabled onclick="searchResetFilter()"><i class="fa-solid fa-filter-circle-xmark"></i></button>
+                </div>
+                <div class="d-flex mb-lg-3" style="min-height:38px;">
+                    <div class="me-1">
+                        <button type="button" class="btn btn-secondary px-2" data-bs-toggle="dropdown" aria-expanded="false"><span id="search-filter-per-page" class="px-1"></span><i class="fas fa-caret-down ms-2"></i></button>
+                        <ul id="search-per-page-filter" class="dropdown-menu dropdown-menu-dark">
+                            <li><a id="search-per-page-filter-10" href="javascript:;" class="dropdown-item active" onclick="searchChangePerPage(10)">10</a></li>
+                            <li><a id="search-per-page-filter-50" href="javascript:;" class="dropdown-item" onclick="searchChangePerPage(50)">50</a></li>
+                            <li><a id="search-per-page-filter-100" href="javascript:;" class="dropdown-item" onclick="searchChangePerPage(100)">100</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-secondary px-2" onclick="searchChangeSortDir()"><i id="search-sort-filter-sort-dir" class="fa-solid fa-sort-amount-down"></i></button>
+                        <button type="button" class="btn btn-secondary btn-group-last" data-bs-toggle="dropdown" aria-expanded="false"><span id="search-active-sort-filter" class="px-1"></span><i class="fas fa-caret-down ms-2"></i></button>
+                        <ul id="search-sort-filter" class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                            <li><a id="search-sort-filter-name" href="javascript:;" class="dropdown-item active" onclick="searchSetOrder('Name')"><span data-translate-string="ui,Name"></span></a></li>
+                            <li><a id="search-sort-filter-level" href="javascript:;" class="dropdown-item" onclick="searchSetOrder('Level')"><span data-translate-string="ui,Level"></span></a></li>
+                            <li><a id="search-sort-filter-atk" href="javascript:;" class="dropdown-item" onclick="searchSetOrder('ATK')"><span data-translate-string="ui,ATK"></span></a></li>
+                            <li><a id="search-sort-filter-def" href="javascript:;" class="dropdown-item" onclick="searchSetOrder('DEF')"><span data-translate-string="ui,DEF"></span></a></li>
+                            <li><a id="search-sort-filter-maximumatk" href="javascript:;" class="dropdown-item" onclick="searchSetOrder('MaximumAtk')"><span data-translate-string="ui,MaximumAtk"></span></a></li>
+                            <li><a id="search-sort-filter-releasedate" href="javascript:;" class="dropdown-item" onclick="searchSetOrder('ReleaseDate')"><span data-translate-string="ui,ReleaseDate"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="card-search-filters-panel" class="collapse d-lg-block">
+                    <div class="search-filters-groups">
+                        <div>
+                            <h5 data-translate-string="ui,CardType"></h5>
+                            <div class="search-filter-group">
+                                <button id="search-filter-cardtype-monster" class="btn btn-outline-secondary" onclick="searchSetFilterButton('cardType', 'Monster')"><span data-translate-string="cardTypeShort,Monster"></span></button>
+                                <button id="search-filter-cardtype-spell" class="btn btn-outline-secondary" onclick="searchSetFilterButton('cardType', 'Spell')"><span data-translate-string="cardTypeShort,Spell"></span></button>
+                                <button id="search-filter-cardtype-trap" class="btn btn-outline-secondary" onclick="searchSetFilterButton('cardType', 'Trap')"><span data-translate-string="cardTypeShort,Trap"></span></button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div>
+                            <h5 data-translate-string="ui,Attributes"></h5>
+                            <div id="search-attributes-list" class="search-filter-group">
+                                <button id="search-filter-attribute-dark" class="btn btn-outline-secondary" onclick="searchSetFilterButton('attribute', 'DARK')"><span data-translate-string="attribute,DARK"></span></button>
+                                <button id="search-filter-attribute-earth" class="btn btn-outline-secondary" onclick="searchSetFilterButton('attribute', 'EARTH')"><span data-translate-string="attribute,EARTH"></span></button>
+                                <button id="search-filter-attribute-fire" class="btn btn-outline-secondary" onclick="searchSetFilterButton('attribute', 'FIRE')"><span data-translate-string="attribute,FIRE"></span></button>
+                                <button id="search-filter-attribute-light" class="btn btn-outline-secondary" onclick="searchSetFilterButton('attribute', 'LIGHT')"><span data-translate-string="attribute,LIGHT"></span></button>
+                                <button id="search-filter-attribute-water" class="btn btn-outline-secondary" onclick="searchSetFilterButton('attribute', 'WATER')"><span data-translate-string="attribute,WATER"></span></button>
+                                <button id="search-filter-attribute-wind" class="btn btn-outline-secondary" onclick="searchSetFilterButton('attribute', 'WIND')"><span data-translate-string="attribute,WIND"></span></button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div>
+                            <div class="d-flex justify-content-between pe-2">
+                                <h5 data-translate-string="ui,Type"></h5>
+                                <div class="search-filter-group align-items-center">
+                                    <div>
+                                        <label class="badge rounded-pill text-bg-dark">
+                                            <input type="radio" class="form-check-input mt-0 ms-0" name="typeRadio" value="all" />
+                                            <span data-translate-string="ui,All"></span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <label class="badge rounded-pill text-bg-dark">
+                                            <input type="radio" class="form-check-input mt-0 ms-0" name="typeRadio" value="any" checked />
+                                            <span data-translate-string="ui,Any"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-filter-group">
+                                <button id="search-filter-type-normal" class="btn btn-outline-secondary" onclick="searchSetFilterButton('type', 'Normal', true)"><span data-translate-string="type,Normal"></span></button>
+                                <button id="search-filter-type-effect" class="btn btn-outline-secondary" onclick="searchSetFilterButton('type', 'Effect', true)"><span data-translate-string="type,Effect"></span></button>
+                                <button id="search-filter-type-maximum" class="btn btn-outline-secondary" onclick="searchSetFilterButton('type', 'Maximum', true)"><span data-translate-string="type,Maximum"></span></button>
+                                <button id="search-filter-type-fusion" class="btn btn-outline-secondary" onclick="searchSetFilterButton('type', 'Fusion', true)"><span data-translate-string="type,Fusion"></span></button>
+                                <button id="search-filter-type-ritual" class="btn btn-outline-secondary" onclick="searchSetFilterButton('type', 'Ritual', true)"><span data-translate-string="type,Ritual"></span></button>
+                                <button id="search-filter-type-field" class="btn btn-outline-secondary" onclick="searchSetFilterButton('type', 'Field', true)"><span data-translate-string="type,Field"></span></button>
+                                <button id="search-filter-type-equip" class="btn btn-outline-secondary" onclick="searchSetFilterButton('type', 'Equip', true)"><span data-translate-string="type,Equip"></span></button>
+                                <button id="search-filter-type-legend" class="btn btn-outline-secondary" onclick="searchSetFilterButton('type', 'Legend', true)"><span data-translate-string="type,Legend"></span></button>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="d-flex flex-wrap gap-1">
+                            <div>
+                                <button id="search-filter-select-race" type="button" class="btn btn-outline-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"><span class="px-2" data-translate-string="ui,Race"></span><i class="fas fa-caret-down ms-2"></i></button>
+                                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                                    <li><a id="search-filter-race-spellcaster" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Spellcaster')"><span data-translate-string="race,Spellcaster"></span></a></li>
+                                    <li><a id="search-filter-race-dragon" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Dragon')"><span data-translate-string="race,Dragon"></span></a></li>
+                                    <li><a id="search-filter-race-warrior" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Warrior')"><span data-translate-string="race,Warrior"></span></a></li>
+                                    <li><a id="search-filter-race-fiend" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Fiend')"><span data-translate-string="race,Fiend"></span></a></li>
+                                    <li><a id="search-filter-race-psychic" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Psychic')"><span data-translate-string="race,Psychic"></span></a></li>
+                                    <li><a id="search-filter-race-reptile" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Reptile')"><span data-translate-string="race,Reptile"></span></a></li>
+                                    <li><a id="search-filter-race-pyro" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Pyro')"><span data-translate-string="race,Pyro"></span></a></li>
+                                    <li><a id="search-filter-race-fish" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Fish')"><span data-translate-string="race,Fish"></span></a></li>
+                                    <li><a id="search-filter-race-insect" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Insect')"><span data-translate-string="race,Insect"></span></a></li>
+                                    <li><a id="search-filter-race-machine" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Machine')"><span data-translate-string="race,Machine"></span></a></li>
+                                    <li><a id="search-filter-race-thunder" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Thunder')"><span data-translate-string="race,Thunder"></span></a></li>
+                                    <li><a id="search-filter-race-wingedbeast" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'WingedBeast')"><span data-translate-string="race,WingedBeast"></span></a></li>
+                                    <li><a id="search-filter-race-aqua" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Aqua')"><span data-translate-string="race,Aqua"></span></a></li>
+                                    <li><a id="search-filter-race-beast" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Beast')"><span data-translate-string="race,Beast"></span></a></li>
+                                    <li><a id="search-filter-race-dinosaur" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Dinosaur')"><span data-translate-string="race,Dinosaur"></span></a></li>
+                                    <li><a id="search-filter-race-fairy" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Fairy')"><span data-translate-string="race,Fairy"></span></a></li>
+                                    <li><a id="search-filter-race-zombie" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Zombie')"><span data-translate-string="race,Zombie"></span></a></li>
+                                    <li><a id="search-filter-race-beastwarrior" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'BeastWarrior')"><span data-translate-string="race,BeastWarrior"></span></a></li>
+                                    <li><a id="search-filter-race-rock" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Rock')"><span data-translate-string="race,Rock"></span></a></li>
+                                    <li><a id="search-filter-race-seaserpent" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'SeaSerpent')"><span data-translate-string="race,SeaSerpent"></span></a></li>
+                                    <li><a id="search-filter-race-plant" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Plant')"><span data-translate-string="race,Plant"></span></a></li>
+                                    <li><a id="search-filter-race-cyberse" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Cyberse')"><span data-translate-string="race,Cyberse"></span></a></li>
+                                    <li><a id="search-filter-race-wyrm" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Wyrm')"><span data-translate-string="race,Wyrm"></span></a></li>
+                                    <li><a id="search-filter-race-galaxy" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Galaxy')"><span data-translate-string="race,Galaxy"></span></a></li>
+                                    <li><a id="search-filter-race-cyborg" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Cyborg')"><span data-translate-string="race,Cyborg"></span></a></li>
+                                    <li><a id="search-filter-race-magicalknight" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'MagicalKnight')"><span data-translate-string="race,MagicalKnight"></span></a></li>
+                                    <li><a id="search-filter-race-highdragon" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'HighDragon')"><span data-translate-string="race,HighDragon"></span></a></li>
+                                    <li><a id="search-filter-race-omegapsychic" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'OmegaPsychic')"><span data-translate-string="race,OmegaPsychic"></span></a></li>
+                                    <li><a id="search-filter-race-celestialwarrior" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'CelestialWarrior')"><span data-translate-string="race,CelestialWarrior"></span></a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <button id="search-filter-select-level" type="button" class="btn btn-outline-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"><span class="px-2" data-translate-string="ui,Level"></span><i class="fas fa-caret-down ms-2"></i></button>
+                                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                                    <li><a id="search-filter-level-1" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('level', 1)"><span>1</span></a></li>
+                                    <li><a id="search-filter-level-2" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('level', 2)"><span>2</span></a></li>
+                                    <li><a id="search-filter-level-3" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('level', 3)"><span>3</span></a></li>
+                                    <li><a id="search-filter-level-4" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('level', 4)"><span>4</span></a></li>
+                                    <li><a id="search-filter-level-5" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('level', 5)"><span>5</span></a></li>
+                                    <li><a id="search-filter-level-6" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('level', 6)"><span>6</span></a></li>
+                                    <li><a id="search-filter-level-7" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('level', 7)"><span>7</span></a></li>
+                                    <li><a id="search-filter-level-8" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('level', 8)"><span>8</span></a></li>
+                                    <li><a id="search-filter-level-9" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('level', 9)"><span>9</span></a></li>
+                                    <li><a id="search-filter-level-10" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('level', 10)"><span>10</span></a></li>
+                                    <li><a id="search-filter-level-11" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('level', 11)"><span>11</span></a></li>
+                                    <li><a id="search-filter-level-12" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('level', 12)"><span>12</span></a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <button id="search-filter-select-series" type="button" class="btn btn-outline-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"><span class="px-2" data-translate-string="ui,Series"></span><i class="fas fa-caret-down ms-2"></i></button>
+                                <ul id="search-filter-select-series-list" class="dropdown-menu dropdown-menu-dark dropdown-menu-end dropdown-menu-scroll"></ul>
+                            </div>
+                            <div>
+                                <button id="search-filter-select-properties" type="button" class="btn btn-outline-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"><span class="px-2" data-translate-string="ui,Properties"></span><i class="fas fa-caret-down ms-2"></i></button>
+                                <ul id="search-filter-select-properties-list" class="dropdown-menu dropdown-menu-dark dropdown-menu-end dropdown-menu-scroll"></ul>
+                            </div>
+                            <div>
+                                <button id="search-filter-select-rarities" type="button" class="btn btn-outline-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"><span class="px-2" data-translate-string="ui,Rarities"></span><i class="fas fa-caret-down ms-2"></i></button>
+                                <ul id="search-filter-select-rarities-list" class="dropdown-menu dropdown-menu-dark dropdown-menu-start dropdown-menu-scroll"></ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <div>
+                            <h5 data-translate-string="ui,MaximumAtk"></h5>
+                            <div class="d-flex">
+                                <div class="input-group pe-2">
+                                    <span class="input-group-text" title="Minimum"><i class="fas fa-square-arrow-up-right ps-1"></i></span>
+                                    <input id="search-filter-maximumatk-min" type="number" class="form-control search-filter-text" min="0" max="5000" step="100" onchange="searchSetFilterText('MaximumAtk', 'min')">
+                                </div>
+                                <div class="input-group pe-2">
+                                    <span class="input-group-text" title="Maximum"><i class="fas fa-square-arrow-up-right fa-flip-both pe-1"></i></span>
+                                    <input id="search-filter-maximumatk-max" type="number" class="form-control search-filter-text" min="0" max="5000" step="100" onchange="searchSetFilterText('MaximumAtk', 'max')">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h5 data-translate-string="ui,ATK"></h5>
+                            <div class="d-flex">
+                                <div class="input-group pe-2">
+                                    <span class="input-group-text" title="Minimum"><i class="fas fa-square-arrow-up-right ps-1"></i></span>
+                                    <input id="search-filter-atk-min" type="number" class="form-control search-filter-text" min="0" max="5000" step="100" onchange="searchSetFilterText('ATK', 'min')">
+                                </div>
+                                <div class="input-group pe-2">
+                                    <span class="input-group-text" title="Maximum"><i class="fas fa-square-arrow-up-right fa-flip-both pe-1"></i></span>
+                                    <input id="search-filter-atk-max" type="number" class="form-control search-filter-text" min="0" max="5000" step="100" onchange="searchSetFilterText('ATK', 'max')">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h5 data-translate-string="ui,DEF"></h5>
+                            <div class="d-flex">
+                                <div class="input-group pe-2">
+                                    <span class="input-group-text" title="Minimum"><i class="fas fa-square-arrow-up-right ps-1"></i></span>
+                                    <input id="search-filter-def-min" type="number" class="form-control search-filter-text" min="0" max="5000" step="100" onchange="searchSetFilterText('DEF', 'min')">
+                                </div>
+                                <div class="input-group pe-2">
+                                    <span class="input-group-text" title="Maximum"><i class="fas fa-square-arrow-up-right fa-flip-both pe-1"></i></span>
+                                    <input id="search-filter-def-max" type="number" class="form-control search-filter-text" min="0" max="5000" step="100" onchange="searchSetFilterText('DEF', 'max')">
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div>
+                            <h5 data-translate-string="ui,StartDate"></h5>
+                            <div class="d-flex gap-2 pe-2">
+                                <div class="form-group w-100">
+                                    <select id="search-filter-startdate-day" class="form-select search-filter-date card-select-day" onchange="searchSetFilterText('startDate', 'day')"></select>
+                                </div>
+                                <div class="form-group w-100">
+                                    <select id="search-filter-startdate-month" class="form-select search-filter-date card-select-month" onchange="searchSetFilterText('startDate', 'month')"></select>
+                                </div>
+                                <div class="form-group w-100">
+                                    <select id="search-filter-startdate-year" class="form-select search-filter-date card-select-year" onchange="searchSetFilterText('startDate', 'year')"></select>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h5 data-translate-string="ui,EndDate"></h5>
+                            <div class="d-flex gap-2 pe-2">
+                                <div class="form-group w-100">
+                                    <select id="search-filter-enddate-day" class="form-select search-filter-date card-select-day" onchange="searchSetFilterText('endDate', 'day')"></select>
+                                </div>
+                                <div class="form-group w-100">
+                                    <select id="search-filter-enddate-month" class="form-select search-filter-date card-select-month" onchange="searchSetFilterText('endDate', 'month')"></select>
+                                </div>
+                                <div class="form-group w-100">
+                                    <select id="search-filter-enddate-year" class="form-select search-filter-date card-select-year" onchange="searchSetFilterText('endDate', 'year')"></select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="card-search-results" class="flex-fill">
+            <div class="card"></div>
+            <nav id="search-pagination" class="p-2" aria-label="Page navigation" style="display: none;">
+                <ul class="pagination justify-content-center"></ul>
+            </nav>
+        </div>
+    </div>
+</div>

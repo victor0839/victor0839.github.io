@@ -1,0 +1,925 @@
+[
+    {
+        "prefix": "ST01",
+        "name": "Starter Deck Yuga - Cut Through! Sevens Road!!",
+        "type": "PreconstructedDeck",
+        "subtype": "StarterDeck",
+        "releaseDate": {
+            "jp": "2020-04-04",
+            "kr": "2020-12-02"
+        },
+        "cardList": {
+            "jp": [
+                {
+                    "id": 15150,
+                    "setNumber": "RD/ST01-JP001",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "P+SR"
+                    ]
+                },
+                {
+                    "id": 15151,
+                    "setNumber": "RD/ST01-JP002",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                }
+            ],
+            "kr": [
+                {
+                    "id": 15150,
+                    "setNumber": "RD/ST01-KR001",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "P+SR"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "prefix": "VS01",
+        "name": "Starter Deck Set - Yuga vs. Luke - Promotional Card",
+        "type": "PromotionalCards",
+        "subtype": "Other",
+        "releaseDate": {
+            "jp": "2020-04-04"
+        },
+        "cardList": {
+            "jp": [
+                {
+                    "id": 15178,
+                    "setNumber": "RD/VS01-JP001",
+                    "artwork": 0,
+                    "rarities": [
+                        "P+SR"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "prefix": "KP01",
+        "name": "Deck Mod Pack: Hyperspeed Rush Road!!",
+        "type": "BoosterPack",
+        "subtype": "DeckModPack",
+        "releaseDate": {
+            "jp": "2020-04-11",
+            "kr": "2020-12-08"
+        },
+        "cardList": {
+            "jp": [
+                {
+                    "id": 15184,
+                    "setNumber": "RD/KP01-JP000",
+                    "artwork": 0,
+                    "rarities": [
+                        "RR"
+                    ]
+                },
+                {
+                    "id": 15150,
+                    "setNumber": "RD/KP01-JP001",
+                    "artwork": 0,
+                    "rarities": [
+                        "RR"
+                    ]
+                },
+                {
+                    "id": 15178,
+                    "setNumber": "RD/KP01-JP021",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR"
+                    ]
+                }
+            ],
+            "kr": [
+                {
+                    "id": 15184,
+                    "setNumber": "RD/KP01-KR000",
+                    "artwork": 0,
+                    "rarities": [
+                        "RR"
+                    ]
+                },
+                {
+                    "id": 15150,
+                    "setNumber": "RD/KP01-KR001",
+                    "artwork": 0,
+                    "rarities": [
+                        "RR"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "prefix": "D001",
+        "name": "Yu-Gi-Oh! SEVENS Complete Challenge 1",
+        "type": "PromotionalCards",
+        "subtype": "CompleteChallenge",
+        "releaseDate": {
+            "jp": "2020-10-23"
+        },
+        "cardList": {
+            "jp": [
+                {
+                    "id": 15150,
+                    "setNumber": "RD/D001-JP001",
+                    "artwork": 0,
+                    "rarities": [
+                        "RR+R"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "prefix": "MAX1",
+        "id": "RD/MAX1-JP",
+        "name": "Maximum Ultra Enhancement Pack",
+        "type": "BoosterPack",
+        "subtype": "Special Pack",
+        "releaseDate": {
+            "jp": "2020-12-12",
+            "kr": "2021-03-11"
+        },
+        "cardList": {
+            "jp": [
+                {
+                    "id": 15905,
+                    "setNumber": "RD/MAX1-JP011",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR",
+                        "RR"
+                    ]
+                }
+            ],
+            "kr": [
+                {
+                    "id": 15905,
+                    "setNumber": "RD/MAX1-KR011",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR",
+                        "RR"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "prefix": "P000",
+        "name": "\"Blue-Eyes White Dragon Rush Rare Special Red Version\" GET Campaign",
+        "type": "PromotionalCards",
+        "subtype": "ColorfulRareCampaign",
+        "releaseDate": {
+            "jp": "2021-04-24",
+            "kr": "2021-08-13"
+        },
+        "cardList": {
+            "jp": [
+                {
+                    "id": 15184,
+                    "setNumber": "RD/P000-JP001",
+                    "artwork": 0,
+                    "rarities": [
+                        "RR+R"
+                    ]
+                }
+            ],
+            "kr": [
+                {
+                    "id": 15184,
+                    "setNumber": "RD/P000-KR001",
+                    "artwork": 0,
+                    "rarities": [
+                        "RR+R"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "prefix": "EXT1",
+        "name": "Extra Transcend Enhancement Pack",
+        "type": "BoosterPack",
+        "subtype": "Special Pack",
+        "releaseDate": {
+            "jp": "2021-09-18",
+            "kr": "2022-01-21"
+        },
+        "cardList": {
+            "jp": [
+                {
+                    "id": 16886,
+                    "setNumber": "RD/EXT1-JP001",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR",
+                        "RR"
+                    ]
+                },
+                {
+                    "id": 16891,
+                    "setNumber": "RD/EXT1-JP006",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 16894,
+                    "setNumber": "RD/EXT1-JP009",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 16924,
+                    "setNumber": "RD/EXT1-JP040",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 16925,
+                    "setNumber": "RD/EXT1-JP041",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR",
+                        "RR"
+                    ]
+                },
+                {
+                    "id": 16926,
+                    "setNumber": "RD/EXT1-JP042",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                }
+            ],
+            "kr": [
+                {
+                    "id": 16886,
+                    "setNumber": "RD/EXT1-KR001",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR",
+                        "RR"
+                    ]
+                },
+                {
+                    "id": 16891,
+                    "setNumber": "RD/EXT1-KR006",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 16894,
+                    "setNumber": "RD/EXT1-KR009",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 16924,
+                    "setNumber": "RD/EXT1-KR040",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 16925,
+                    "setNumber": "RD/EXT1-KR041",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR",
+                        "RR"
+                    ]
+                },
+                {
+                    "id": 16926,
+                    "setNumber": "RD/EXT1-KR042",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "prefix": "GRP1",
+        "name": "Gold Rush Pack",
+        "type": "BoosterPack",
+        "subtype": "SpecialPack",
+        "releaseDate": {
+            "jp": "2021-12-11",
+            "kr": "2022-05-26"
+        },
+        "cardList": {
+            "jp": [
+                {
+                    "id": 15150,
+                    "setNumber": "RD/GRP1-JP001",
+                    "artwork": 0,
+                    "rarities": [
+                        "GRR"
+                    ]
+                },
+                {
+                    "id": 15164,
+                    "setNumber": "RD/GRP1-JP002",
+                    "artwork": 0,
+                    "rarities": [
+                        "GRR"
+                    ]
+                },
+                {
+                    "id": 15905,
+                    "setNumber": "RD/GRP1-JP006",
+                    "artwork": 0,
+                    "rarities": [
+                        "GRR"
+                    ]
+                },
+                {
+                    "id": 15410 ,
+                    "setNumber": "RD/GRP1-JP015",
+                    "artwork": 1,
+                    "rarities": [
+                        "SE"
+                    ]
+                },
+                {
+                    "id": 15351 ,
+                    "setNumber": "RD/GRP1-JP016",
+                    "artwork": 1,
+                    "rarities": [
+                        "SE"
+                    ]
+                }
+            ],
+            "kr": [
+                {
+                    "id": 15150,
+                    "setNumber": "RD/GRP1-KR001",
+                    "artwork": 0,
+                    "rarities": [
+                        "SE"
+                    ]
+                },
+                {
+                    "id": 15164,
+                    "setNumber": "RD/GRP1-KR002",
+                    "artwork": 0,
+                    "rarities": [
+                        "SE"
+                    ]
+                },
+                {
+                    "id": 15905,
+                    "setNumber": "RD/GRP1-KR006",
+                    "artwork": 0,
+                    "rarities": [
+                        "SE"
+                    ]
+                },
+                {
+                    "id": 15410 ,
+                    "setNumber": "RD/GRP1-KR015",
+                    "artwork": 1,
+                    "rarities": [
+                        "SE"
+                    ]
+                },
+                {
+                    "id": 15351 ,
+                    "setNumber": "RD/GRP1-KR016",
+                    "artwork": 1,
+                    "rarities": [
+                        "SE"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "prefix": "SST1",
+        "name": "Saikyo Starter Deck",
+        "type": "PreconstructedDeck",
+        "subtype": "StarterDeck",
+        "releaseDate": {
+            "jp": "2022-04-04"
+        },
+        "cardList": {
+            "jp": [
+                {
+                    "id": 15150,
+                    "setNumber": "RD/SST1-JP002",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 15164,
+                    "setNumber": "RD/SST1-JP003",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 16926,
+                    "setNumber": "RD/SST1-JP018",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "prefix": "MRP1",
+        "name": "Megaroad Pack",
+        "type": "BoosterPack",
+        "subtype": "SpecialPack",
+        "releaseDate": {
+            "jp": "2022-06-04",
+            "kr": "2022-09-15"
+        },
+        "cardList": {
+            "jp": [
+                {
+                    "id": 15150,
+                    "setNumber": "RD/MRP1-JP009",
+                    "artwork": 3,
+                    "rarities": [
+                        "R",
+                        "SE"
+                    ]
+                },
+                {
+                    "id": 15178,
+                    "setNumber": "RD/MRP1-JP010",
+                    "artwork": 3,
+                    "rarities": [
+                        "R",
+                        "SE"
+                    ]
+                }
+            ],
+            "kr": [
+                {
+                    "id": 15150,
+                    "setNumber": "RD/MRP1-KR009",
+                    "artwork": 3,
+                    "rarities": [
+                        "R",
+                        "SE"
+                    ]
+                },
+                {
+                    "id": 15178,
+                    "setNumber": "RD/MRP1-KR010",
+                    "artwork": 3,
+                    "rarities": [
+                        "R",
+                        "SE"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "prefix": "ORP1",
+        "name": "Over Rush Pack",
+        "type": "BoosterPack",
+        "subtype": "SpecialPack",
+        "releaseDate": {
+            "jp": "2022-11-26",
+            "kr": "2023-02-22"
+        },
+        "cardList": {
+            "jp": [
+                {
+                    "id": 15184,
+                    "setNumber": "RD/ORP1-JP001",
+                    "artwork": 2,
+                    "rarities": [
+                        "ORR"
+                    ]
+                },
+                {
+                    "id": 17488,
+                    "setNumber": "RD/ORP1-JP002",
+                    "artwork": 0,
+                    "rarities": [
+                        "ORR"
+                    ]
+                },
+                {
+                    "id": 15150,
+                    "setNumber": "RD/ORP1-JP003",
+                    "artwork": 4,
+                    "rarities": [
+                        "ORR"
+                    ]
+                }
+            ],
+            "kr": [
+                {
+                    "id": 15184,
+                    "setNumber": "RD/ORP1-KR001",
+                    "artwork": 2,
+                    "rarities": [
+                        "ORR"
+                    ]
+                },
+                {
+                    "id": 17488,
+                    "setNumber": "RD/ORP1-KR002",
+                    "artwork": 0,
+                    "rarities": [
+                        "ORR"
+                    ]
+                },
+                {
+                    "id": 15150,
+                    "setNumber": "RD/ORP1-KR003",
+                    "artwork": 4,
+                    "rarities": [
+                        "ORR"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "prefix": "KP13",
+        "name": "Oblivion of the Flash",
+        "type": "BoosterPack",
+        "subtype": "DeckModPack",
+        "releaseDate": {
+            "jp": "2023-05-13",
+            "kr": "2023-08-18"
+        },
+        "cardList": {
+            "jp": [
+                {
+                    "id": 18995,
+                    "setNumber": "RD/KP13-JP066",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR",
+                        "SE"
+                    ]
+                },
+                {
+                    "id": 18995,
+                    "setNumber": "RD/KP13-JP066",
+                    "artwork": 1,
+                    "rarities": [
+                        "SE"
+                    ]
+                }
+            ],
+            "kr": [
+                {
+                    "id": 18995,
+                    "setNumber": "RD/KP13-KR066",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR",
+                        "SE"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "prefix": "P004",
+        "name": "\"Blue-Eyes White Dragon Rush Rare Special Blue Version\" GET Campaign",
+        "type": "PromotionalCards",
+        "subtype": "ColorfulRareCampaign",
+        "releaseDate": {
+            "jp": "2023-05-13"
+        },
+        "cardList": {
+            "jp": [
+                {
+                    "id": 15184,
+                    "setNumber": "RD/P004-JP001",
+                    "artwork": 0,
+                    "rarities": [
+                        "SE+Bl"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "prefix": "5TH1",
+        "name": "5th Anniversary Pack",
+        "type": "BoosterPack",
+        "subtype": "SpecialPack",
+        "releaseDate": {
+            "jp": "2025-04-12"
+        },
+        "cardList": {
+            "jp": [
+                {
+                    "id": 21495,
+                    "setNumber": "RD/5TH1-JP001",
+                    "artwork": 0,
+                    "rarities": [
+                        "P+UR"
+                    ]
+                },
+                {
+                    "id": 21495,
+                    "setNumber": "RD/5TH1-JP001",
+                    "artwork": 1,
+                    "rarities": [
+                        "ORR+B"
+                    ]
+                },
+                {
+                    "id": 20355,
+                    "setNumber": "RD/5TH1-JP009",
+                    "artwork": 1,
+                    "rarities": [
+                        "P+UR"
+                    ]
+                },
+                {
+                    "id": 20355,
+                    "setNumber": "RD/5TH1-JP009",
+                    "artwork": 1,
+                    "rarities": [
+                        "ORR"
+                    ]
+                },
+                {
+                    "id": 15150,
+                    "setNumber": "RD/5TH1-JP012",
+                    "artwork": 4,
+                    "rarities": [
+                        "P+UR"
+                    ]
+                },
+                {
+                    "id": 15178,
+                    "setNumber": "RD/5TH1-JP013",
+                    "artwork": 4,
+                    "rarities": [
+                        "P+UR"
+                    ]
+                },
+                {
+                    "id": 15164,
+                    "setNumber": "RD/5TH1-JP013",
+                    "artwork": 2,
+                    "rarities": [
+                        "P+UR"
+                    ]
+                },
+                {
+                    "id": 17488,
+                    "setNumber": "RD/5TH1-JP067",
+                    "artwork": 0,
+                    "rarities": [
+                        "P+SR"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "prefix": "SD0E",
+        "name": "Structure Deck: Black Magic Ritual",
+        "type": "PreconstructedDeck",
+        "subtype": "StructureDeck",
+        "releaseDate": {
+            "jp": "2025-04-26"
+        },
+        "cardList": {
+            "jp": [
+                {
+                    "id": 21588,
+                    "setNumber": "RD/SD0E-JP001",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "UR"
+                    ]
+                },
+                {
+                    "id": 21590,
+                    "setNumber": "RD/SD0E-JP003",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 15410,
+                    "setNumber": "RD/SD0E-JP004",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "UR"
+                    ]
+                },
+                {
+                    "id": 15150,
+                    "setNumber": "RD/SD0E-JP023",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 15178,
+                    "setNumber": "RD/SD0E-JP024",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 21597,
+                    "setNumber": "RD/SD0E-JP030",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "prefix": "SD0E-S",
+        "name": "Structure Deck: Black Magic Ritual - Promotional Card",
+        "type": "PromotionalCards",
+        "subtype": "Other",
+        "releaseDate": {
+            "jp": "2025-04-26"
+        },
+        "cardList": {
+            "jp": [
+                {
+                    "id": 21588,
+                    "setNumber": "RD/SD0E-JPS01",
+                    "artwork": 0,
+                    "rarities": [
+                        "ORR"
+                    ]
+                },
+                {
+                    "id": 21590,
+                    "setNumber": "RD/SD0E-JPS03",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "prefix": "DLMA01",
+        "name": "Sevens New Road",
+        "type": "BoosterPack",
+        "subtype": "MainBox",
+        "releaseDate": {
+            "dl": "2023-09-28"
+        },
+        "cardList": {
+            "dl": [
+                {
+                    "id": 15150,
+                    "setNumber": "",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "UR+DL"
+                    ]
+                },
+                {
+                    "id": 15164,
+                    "setNumber": "",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "UR+DL"
+                    ]
+                },
+                {
+                    "id": 15194,
+                    "setNumber": "",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "UR+DL"
+                    ]
+                },
+                {
+                    "id": 15193,
+                    "setNumber": "",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "UR+DL"
+                    ]
+                },
+                {
+                    "id": 15437,
+                    "setNumber": "",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "UR+DL"
+                    ]
+                },
+                {
+                    "id": 15189,
+                    "setNumber": "",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "UR+DL"
+                    ]
+                },
+                {
+                    "id": 15190,
+                    "setNumber": "",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "UR+DL"
+                    ]
+                },
+                {
+                    "id": 16371,
+                    "setNumber": "",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "UR+DL"
+                    ]
+                },
+                {
+                    "id": 17744,
+                    "setNumber": "",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "UR+DL"
+                    ]
+                },
+                {
+                    "id": 15204,
+                    "setNumber": "",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "UR+DL"
+                    ]
+                },
+                {
+                    "id": 15178,
+                    "setNumber": "",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "SR+DL"
+                    ]
+                }
+            ]
+        }
+    }
+]

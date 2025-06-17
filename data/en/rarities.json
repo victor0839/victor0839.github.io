@@ -1,0 +1,122 @@
+[
+    {
+        "order": 1,
+        "name": "Common",
+        "abbreviation": "C",
+        "color": "#9c9c9c"
+    },
+    {
+        "order": 2,
+        "name": "Rare",
+        "abbreviation": "R",
+        "color": "#81c67f"
+    },
+    {
+        "order": 3,
+        "name": "Super Rare",
+        "abbreviation": "SR",
+        "color": "#6aa1cf"
+    },
+    {
+        "order": 4,
+        "name": "Ultra Rare",
+        "abbreviation": "UR",
+        "color": "#cfa15e"
+    },
+    {
+        "order": 4.1,
+        "name": "Ultra Rare (Special Red Version)",
+        "abbreviation": "UR+R",
+        "color": "#ff5757"
+    },
+    {
+        "order": 5,
+        "name": "Parallel Rare",
+        "abbreviation": "P",
+        "color": "#957fd5"
+    },
+    {
+        "order": 5.1,
+        "name": "Super Parallel Rare",
+        "abbreviation": "P+SR",
+        "color": "#957fd5"
+    },
+    {
+        "order": 5.2,
+        "name": "Ultra Parallel Rare",
+        "abbreviation": "P+UR",
+        "color": "#957fd5"
+    },
+    {
+        "order": 6,
+        "name": "Rush Rare",
+        "abbreviation": "RR",
+        "color": "#ff5757"
+    },
+    {
+        "order": 6.1,
+        "name": "Rush Rare (Special Red Version)",
+        "abbreviation": "RR+R",
+        "color": "#ff5757"
+    },
+    {
+        "order": 7,
+        "name": "Secret Rare",
+        "abbreviation": "SE",
+        "color": "#e86d6d"
+    },
+    {
+        "order": 7.1,
+        "name": "Secret Rare (Special Blue Version)",
+        "abbreviation": "SE+Bl",
+        "color": "#e86d6d"
+    },
+    {
+        "order": 7.2,
+        "name": "Secret Rare (Special Red Version)",
+        "abbreviation": "SE+R",
+        "color": "#e86d6d"
+    },
+    {
+        "order": 8,
+        "name": "Gold Rush Rare",
+        "abbreviation": "GRR",
+        "color": "#adae29"
+    },
+    {
+        "order": 9,
+        "name": "Over-Rush Rare",
+        "abbreviation": "ORR",
+        "color": "#81d1d2"
+    },
+    {
+        "order": 9.1,
+        "name": "Over-Rush Rare (Premium Black Version)",
+        "abbreviation": "ORR+B",
+        "color": "#81d1d2"
+    },
+    {
+        "order": 10,
+        "name": "Normal (Duel Links)",
+        "abbreviation": "N+DL",
+        "color": "#b4c8cb"
+    },
+    {
+        "order": 11,
+        "name": "Rare (Duel Links)",
+        "abbreviation": "R+DL",
+        "color": "#2855ed"
+    },
+    {
+        "order": 12,
+        "name": "Super Rare (Duel Links)",
+        "abbreviation": "SR+DL",
+        "color": "#f8cd00"
+    },
+    {
+        "order": 13,
+        "name": "Ultra Rare (Duel Links)",
+        "abbreviation": "UR+DL",
+        "color": "linear-gradient(140deg, #df3bfe, #7d67fd, #2dbcfb, #22dff6, #22dff6, #00ecd6, #04e483, #02c44c)"
+    }
+]

@@ -1,0 +1,98 @@
+<div class="container-xl py-3">
+    <div class="row">
+        <div class="col-5 col-md-2 mb-2">
+            <div class="d-grid">
+                <button type="button" id="cards-list-btn" class="btn btn-sm btn-dark" onclick="loadModule('cardsList')" data-translate-string="ui,CardList"></button>
+            </div>
+        </div>
+        <div class="col-7 col-md-10 mb-2">
+            <div id="locale-selector" class="d-flex justify-content-end">
+                <div id="locale-en" class="locale-selector-button" onclick="changeCardLanguage('En')">
+                    <img src="images/flags/locale_en.webp" />
+                </div>
+                <div id="locale-es" class="locale-selector-button" onclick="changeCardLanguage('Es')">
+                    <img src="images/flags/locale_es.webp" />
+                </div>
+                <!--
+                <div id="locale-jp" class="locale-selector-button" onclick="changeCardLanguage('Jp')">
+                    <img src="images/flags/locale_jp.webp" />
+                </div>
+                <div id="locale-kr" class="locale-selector-button" onclick="changeCardLanguage('Kr')">
+                    <img src="images/flags/locale_kr.webp" />
+                </div>
+                -->
+            </div>
+        </div>
+        <div id="missing-card" class="col-12" style="display: none;">
+            <div class="card border-secondary">
+                <div class="card-body" style="height: 50vh;">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12 text-center">
+                            <h5 id="missing-card-text" class="card-title" data-translate-string="ui,CardNotFound"></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="card-data" class="col-12" style="display: none;">
+            <div class="card border-secondary">
+                <div class="card-header">
+                    <div class="text-center">
+                        <h5 id="card-name" class="card-title"></h5>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3 col-lg-2 mb-2 mb-md-0">
+                            <div class="mb-2 w-100">
+                                <img id="card-artwork-main" src="">
+                            </div>
+                            <div id="card-artworks-thumbnails"></div>
+                        </div>
+                        <div class="col-md-9 col-lg-10">
+                            <div id="card-legend-status-badge" class="text-end mb-2" style="display: none;"></div>
+                            <div class="table-responsive">
+                                <table id="card-info-table" class="table table-bordered">
+                                    <tbody></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="card-categories" class="col-12 mt-2" style="display: none;">
+            <div class="card border-secondary">
+                <div class="card-body">
+                    <div id="card-related" class="pb-2" style="display: none;">
+                        <h5 class="card-title"></h5>
+                        <div id="card-related-list"></div>
+                    </div>
+                    <div id="card-search-categories" style="display: none;">
+                        <h5 class="card-title"></h5>
+                        <div id="card-search-categories-list"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="card-sets-list" class="col-12 mt-2" style="display: none;">
+            <div class="card border-secondary">
+                <div class="card-body">
+                    <h5 id="card-set-title" class="card-title" data-translate-string="ui,Sets"></h5>
+                    <div id="card-sets"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="card-image-modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="text-center">
+                    <img id="image-modal" class="img-fluid" src="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
