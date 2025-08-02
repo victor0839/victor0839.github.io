@@ -1113,7 +1113,7 @@ function getFilterTextList(options) {
     return textFilterList;
 }
 
-function checkFilters(card, filterList, textFilterList, selectFilterList, typeFilter) {
+function checkFilters(card, filterList, textFilterList, selectFilterList, typeFilter, typeFilterCount) {
     if (textFilterList.startDate) {
         var startDate = new Date(`${textFilterList.startDate}`).getTime();
 
@@ -1185,14 +1185,9 @@ function checkFilters(card, filterList, textFilterList, selectFilterList, typeFi
     for (let i = 0; i < filterList.length; i++) {
         if (filterList[i] == 'type') {
             if (typeFilter == 'all') {
-                var filterCount = 0;
                 var matched = 0;
 
                 $.each(searchOptions['filter'].type, function (type, value) {
-                    if (value == 1 || value == 2) {
-                        filterCount++;
-                    }
-
                     if (type == 'Legend') {
                         if (value == 1 && ('properties' in card && card.properties.includes('LegendCard'))) {
                             matched++;
@@ -1214,7 +1209,7 @@ function checkFilters(card, filterList, textFilterList, selectFilterList, typeFi
                     }
                 });
 
-                if (filterCount != matched) {
+                if (typeFilterCount != matched) {
                     return false;
                 }
             } else {
@@ -1306,8 +1301,17 @@ function loadCardSearchList(updateSortFilter = false) {
     const filterList = getFilterList(searchOptions['filter']);
     const textFilterList = getFilterTextList(searchOptions['filterText']);
     const selectFilterList = [];
+    var typeFilterCount = 0;
     currentPage = 1;
     searchedCards.length = 0;
+
+    if (typeRadio == 'all') {
+        $.each(searchOptions['filter'].type, function (type, value) {
+            if (value == 1 || value == 2) {
+                typeFilterCount++;
+            }
+        });
+    }
 
     for (option in searchOptions['filterSelect']) {
         if (searchOptions['filterSelect'][option].length) {
@@ -1322,7 +1326,7 @@ function loadCardSearchList(updateSortFilter = false) {
         }
 
         //if correct add to array
-        if (checkFilters(card, filterList, textFilterList, selectFilterList, typeRadio)) {
+        if (checkFilters(card, filterList, textFilterList, selectFilterList, typeRadio, typeFilterCount)) {
             searchedCards.push(card);
         }
     });
