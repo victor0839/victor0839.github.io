@@ -1291,7 +1291,13 @@ function checkFilters(card, filterList, textFilterList, selectFilterList, typeFi
         }
     }
 
-    return (textFilterList.search == "" || card.name.toLowerCase().includes(textFilterList.search.toLowerCase()));
+    var matchedText = false;
+
+    if (textFilterList.search == "" || card.name.toLowerCase().includes(textFilterList.search.toLowerCase()) || card.cardText.toLowerCase().includes(textFilterList.search.toLowerCase())) {
+        matchedText = true;
+    }
+
+    return matchedText;
 }
 
 var searchedCards = [];
