@@ -1772,11 +1772,8 @@ function resetCardRelatedInfo() {
     }
 
     $.each(cardCategories, function (key, sections) {
-        var sectionTotal = 0;
-        
         $.each(sections, function(k, category) {
-            var property = toCamelCase(category.name);
-            $(`#card-search-${category.short} > span:not(:first-child)`).empty('');
+            $(`#card-search-${category.short} > span:not(:first-child)`).remove();
         });
     });
 }
@@ -1973,17 +1970,21 @@ function renderCardRelatedInfo() {
         $.each(sections, function(k, category) {
             var property = toCamelCase(category.name);
 
-            $(`#card-search-${category.short} > span:not(:first-child)`).remove();
-
             if (property in currentCard && currentCard[property].length) {
                 renderSearchCategory(`#card-search-${category.short}`, category, property);
+            }
+        });
+    });
+    
+    var totalActions = 0;
 
-                if ($(`#card-search-${category.short} > span:not(:first-child)`).length) {
-                    sectionTotal++;
-                    $(`#card-search-${category.short}`).show();
-                } else {
-                    $(`#card-search-${category.short}`).hide();
-                }
+    $.each(cardCategories, function (key, sections) {
+        var sectionTotal = 0;
+        
+        $.each(sections, function(k, category) {
+            if ($(`#card-search-${category.short} > span:not(:first-child)`).length) {
+                sectionTotal++;
+                $(`#card-search-${category.short}`).show();
             } else {
                 $(`#card-search-${category.short}`).hide();
             }
