@@ -20,11 +20,15 @@
             "kr": 3,
             "dl": 3
         },
-        "requeriments": [
-            "Sends from the top of Deck to the Graveyard"
-        ],
-        "effects": [
-            "This card gains ATK"
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "ThisCardGainsATK"
+            }
         ],
         "series": [
             "SevensRoad"
@@ -130,11 +134,15 @@
             "kr": 3,
             "dl": "l3"
         },
-        "requeriments": [
-            "Sends from the top of Deck to the Graveyard"
-        ],
-        "effects": [
-            "This card can make multiple attacks"
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "MultipleAttacker"
+            }
         ],
         "series": [
             "StrikeDragon"
@@ -218,12 +226,19 @@
             "kr": 3,
             "dl": 3
         },
-        "requeriments": [
-            "Sends from hand to Graveyard"
-        ],
-        "effects": [
-            "Special Summons from your hand",
-            "This card gains ATK"
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromHandToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "SpecialSummonsFromHand"
+            },
+            {
+                "type": "effects",
+                "name": "ThisCardGainsATK"
+            }
         ],
         "supports": [
             {
@@ -403,10 +418,15 @@
             "jp": 3,
             "kr": 3
         },
-        "requeriments": [],
-        "effects": [
-            "All monsters gain ATK",
-            "All monsters gain DEF"
+        "actions": [
+            {
+                "type": "effects",
+                "name": "AllMonstersGainATK"
+            },
+            {
+                "type": "effects",
+                "name": "AllMonstersGainDEF"
+            }
         ],
         "supports": [
             {
@@ -628,12 +648,15 @@
             "kr": 3,
             "dl": 3
         },
-        "requeriments": [
-            "Requires Maximum Mode",
-            "Sends from the top of Deck to the Graveyard"
-        ],
-        "effects": [
-            "Destroys your opponent's face-up Monster Cards"
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentMonsters"
+            }
         ],
         "series": [
             "Tron"
@@ -692,11 +715,11 @@
             "kr": 3,
             "dl": "l3"
         },
-        "requeriments": [
-            "Requires Maximum Mode"
-        ],
-        "effects": [
-            "This card cannot be destroyed by Trap Card effects"
+        "actions": [
+            {
+                "type": "effects",
+                "name": "ThisCardCannotBeDestroyedByTrapCardEffects"
+            }
         ],
         "series": [
             "Tron"
@@ -760,13 +783,19 @@
             "kr": 3,
             "dl": 3
         },
-        "requeriments": [
-            "Requires Maximum Mode",
-            "Sends from the top of Deck to the Graveyard"
-        ],
-        "effects": [
-            "Changes battle positions",
-            "Flips your opponent's monsters face-up"
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "ChangesOpponentBattlePositions"
+            },
+            {
+                "type": "effects",
+                "name": "ChangesOpponentMonstersToAttackPosition"
+            }
         ],
         "series": [
             "Tron"
@@ -824,14 +853,23 @@
             "kr": 3,
             "dl": 3
         },
-        "requeriments": [
-            "Requires Maximum Mode",
-            "Sends from the top of Deck to the Graveyard"
-        ],
-        "effects": [
-            "Your opponent's monsters lose ATK",
-            "Destroys your opponent's Spell Cards",
-            "Inflicts damage to your opponent"
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "OpponentMonstersLoseATK"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentSpells"
+            },
+            {
+                "type": "effects",
+                "name": "InflictsDamageOpponent"
+            }
         ],
         "antiSupports": [
             {
@@ -887,11 +925,11 @@
             "kr": 3,
             "dl": "l3"
         },
-        "requeriments": [
-            "Requires Maximum Mode"
-        ],
-        "effects": [
-            "This card cannot be destroyed by Trap Card effects"
+        "actions": [
+            {
+                "type": "effects",
+                "name": "ThisCardCannotBeDestroyedByTrapCardEffects"
+            }
         ],
         "mentions": [
             16321,
@@ -944,13 +982,19 @@
             "kr": 3,
             "dl": 3
         },
-        "requeriments": [
-            "Requires Maximum Mode",
-            "Sends from the top of Deck to the Graveyard"
-        ],
-        "effects": [
-            "Your opponent's monsters lose ATK",
-            "Inflicts damage to your opponent"
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "OpponentMonstersLoseATK"
+            },
+            {
+                "type": "effects",
+                "name": "InflictsDamageOpponent"
+            }
         ],
         "mentionedBy": [
             16322
@@ -991,9 +1035,15 @@
             "jp": 3,
             "kr": 3
         },
-        "requeriments": [],
-        "effects": [
-            "Special Summons from the Graveyard"
+        "actions": [
+            {
+                "type": "effects",
+                "name": "SpecialSummonsFromGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "SpecialSummonsFromOpponentGraveyardToField"
+            }
         ],
         "rarities": {
             "jp": [
@@ -1046,14 +1096,19 @@
             "kr": 3,
             "dl": 3
         },
-        "requeriments": [
-            "Sends from the top of Deck to the Graveyard"
-        ],
-        "effects": [
-            "Destroys your opponent's face-down Monster Cards",
-            "Destroys your opponent's face-down Spell Cards",
-            "Destroys your opponent's face-down Trap Cards",
-            "A monster gains ATK"
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentCards"
+            },
+            {
+                "type": "effects",
+                "name": "PlayerMonstersGainATK"
+            }
         ],
         "supports": [
             {
@@ -1301,11 +1356,15 @@
             "jp": 3,
             "kr": 3
         },
-        "requeriments": [
-            "Send a monster from your field to the Graveyard"
-        ],
-        "effects": [
-            "Inflicts damage to your opponent"
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendMonsterFromFieldToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "InflictsDamageOpponent"
+            }
         ],
         "fusionMaterialFor": [
             16924
@@ -1394,11 +1453,15 @@
             "jp": 3,
             "kr": 3
         },
-        "requeriments": [
-            "Activates upon attack declaration"
-        ],
-        "effects": [
-            "Destroys your opponent's Attack Position Monster Cards"
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "OpponentAttackDeclaration"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentMonsters"
+            }
         ],
         "rarities": {
             "jp": [
@@ -1524,12 +1587,19 @@
             "kr": 3,
             "dl": 3
         },
-        "requeriments": [
-            "Returns from Graveyard to Deck"
-        ],
-        "effects": [
-            "Destroys your opponent's face-up Monster Cards",
-            "Prevents your monsters from attacking"
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "ShuffleMonsterFromGraveyardToDeck"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentMonsters"
+            },
+            {
+                "type": "effects",
+                "name": "PreventsPlayerMonsterFromAttacking"
+            }
         ],
         "antiSupports": [
             {
@@ -1580,13 +1650,15 @@
             "jp": 3,
             "kr": 3
         },
-        "requeriments": [
-            "Can only control one",
-            "Equips only to a specific target"
-        ],
-        "effects": [
-            "A monster gains ATK",
-            "A monster cannot be destroyed by Trap Card effects"
+        "actions": [
+            {
+                "type": "effects",
+                "name": "PlayerMonstersGainATK"
+            },
+            {
+                "type": "effects",
+                "name": "PlayerMonstersCannotBeDestroyedByTrapCardEffects"
+            }
         ],
         "equipsTo": [
             {
@@ -1739,12 +1811,23 @@
             "kr": 3,
             "dl": "l1"
         },
-        "requeriments": [
-            "Your opponent Special Summons a monster"
-        ],
-        "effects": [
-            "Changes battle positions",
-            "Changes monsters to face-down Defense Position"
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "OpponentSpecialSummonedFromHand"
+            },
+            {
+                "type": "requeriments",
+                "name": "OpponentSpecialSummonedFromGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "ChangesOpponentBattlePositions"
+            },
+            {
+                "type": "effects",
+                "name": "ChangesOpponentMonstersToDefensePosition"
+            }
         ],
         "rarities": {
             "jp": [
@@ -1791,12 +1874,19 @@
             "jp": 3,
             "kr": 3
         },
-        "requeriments": [
-            "Sends from the top of Deck to the Graveyard"
-        ],
-        "effects": [
-            "This card gains ATK",
-            "This card inflicts piercing battle damage"
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "ThisCardGainsATK"
+            },
+            {
+                "type": "effects",
+                "name": "InflictsPiercingDamage"
+            }
         ],
         "series": [
             "RedEyes"
@@ -1851,13 +1941,15 @@
             "jp": 3,
             "kr": 3
         },
-        "requeriments": [
-            "Equips only to a specific monster attribute",
-            "Equips only to a specific monster type"
-        ],
-        "effects": [
-            "A monster gains ATK",
-            "A monster cannot be destroyed by card effects"
+        "actions": [
+            {
+                "type": "effects",
+                "name": "PlayerMonstersGainATK"
+            },
+            {
+                "type": "effects",
+                "name": "PlayerMonstersCannotBeDestroyedByCardEffects"
+            }
         ],
         "equipsTo": [
             {
@@ -1921,14 +2013,19 @@
             "jp": 1,
             "kr": 1
         },
-        "requeriments": [
-            "Sends from hand to Graveyard"
-        ],
-        "effects": [
-            "Destroys your opponent's Monster Cards",
-            "Destroys your opponent's Spell Cards",
-            "Destroys your opponent's Trap Cards",
-            "You draw cards"
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromHandToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentCards"
+            },
+            {
+                "type": "effects",
+                "name": "PlayerDrawCards"
+            }
         ],
         "rarities": {
             "jp": [
@@ -1975,15 +2072,19 @@
         "status": {
             "jp": 3
         },
-        "requeriments": [
-            "During the turn that you Normal Summoned this card",
-            "During the turn that you Special Summoned this card",
-            "Pay Life Points"
-        ],
-        "effects": [
-            "Destroys your opponent's Monster Cards",
-            "Destroys your opponent's Spell Cards",
-            "Destroys your opponent's Trap Cards"
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "PaysLifePoints"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentCards"
+            },
+            {
+                "type": "effects",
+                "name": "OncePerTurn"
+            }
         ],
         "rarities": {
             "jp": [
@@ -2010,6 +2111,7 @@
         "name": "Magician of Black Chaos",
         "cardType": "Monster",
         "type": "Ritual",
+        "subtype": "Effect",
         "cardText": "This card's name becomes \"Dark Magician\" while in the Graveyard.\n<b>[REQUIREMENT]</b> None\n<b>[EFFECT]</b> None",
         "attribute": "DARK",
         "level": 8,
@@ -2022,6 +2124,12 @@
         "status": {
             "jp": 3
         },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "ChangesOwnNameInGraveyard"
+            }
+        ],
         "series": [
             "DarkMagician"
         ],
@@ -2046,9 +2154,6 @@
                 "normal": true,
                 "ORR": true
             }
-        ],
-        "properties": [
-            "NonEffect"
         ]
     },
     {
@@ -2069,12 +2174,19 @@
         "status": {
             "jp": 3
         },
-        "requeriments": [
-            "Sends from the top of Deck to the Graveyard"
-        ],
-        "effects": [
-            "This card gains ATK",
-            "All monsters on your field gain ATK"
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "ThisCardGainsATK"
+            },
+            {
+                "type": "effects",
+                "name": "PlayerMonstersGainATK"
+            }
         ],
         "supports": [
             {
@@ -2122,9 +2234,27 @@
         "status": {
             "jp": 3
         },
-        "effects": [
-            "Ritual Summons using monsters from your hand",
-            "Ritual Summons using monsters from your field"
+        "actions": [
+            {
+                "type": "effects",
+                "name": "PerformsRitualSummon"
+            },
+            {
+                "type": "effects",
+                "name": "SendMonsterFromHandToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "SendMonsterFromFieldToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "CardsInHandAsRitualMaterials"
+            },
+            {
+                "type": "effects",
+                "name": "CardsOnFieldAsRitualMaterials"
+            }
         ],
         "series": [
             "DarkMagician"

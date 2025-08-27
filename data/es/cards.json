@@ -20,11 +20,15 @@
             "kr": 3,
             "dl": 3
         },
-        "requeriments": [
-            "Manda al Cementerio la carta de la parte superior del Deck"
-        ],
-        "effects": [
-            "Esta carta gana ATK"
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "ThisCardGainsATK"
+            }
         ],
         "series": [
             "SevensRoad"
@@ -130,11 +134,15 @@
             "kr": 3,
             "dl": "l3"
         },
-        "requeriments": [
-            "Manda al Cementerio la carta de la parte superior del Deck"
-        ],
-        "effects": [
-            "Esta carta puede hacer múltiples ataques"
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "MultipleAttacker"
+            }
         ],
         "series": [
             "StrikeDragon"
@@ -218,12 +226,19 @@
             "kr": 3,
             "dl": 3
         },
-        "requeriments": [
-            "Manda desde la mano al Cementerio"
-        ],
-        "effects": [
-            "Invoca de Modo Especial desde tu mano",
-            "Esta carta gana ATK"
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromHandToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "SpecialSummonsFromHand"
+            },
+            {
+                "type": "effects",
+                "name": "ThisCardGainsATK"
+            }
         ],
         "supports": [
             {
@@ -403,10 +418,15 @@
             "jp": 3,
             "kr": 3
         },
-        "requeriments": [],
-        "effects": [
-            "Todos los monstruos ganan ATK",
-            "Todos los monstruos ganan DEF"
+        "actions": [
+            {
+                "type": "effects",
+                "name": "AllMonstersGainATK"
+            },
+            {
+                "type": "effects",
+                "name": "AllMonstersGainDEF"
+            }
         ],
         "supports": [
             {
@@ -628,12 +648,15 @@
             "kr": 3,
             "dl": 3
         },
-        "requeriments": [
-            "Requiere Modo Máximo",
-            "Manda al Cementerio la carta de la parte superior del Deck"
-        ],
-        "effects": [
-            "Destruye las Cartas de Monstruo boca arriba del adversario"
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentMonsters"
+            }
         ],
         "series": [
             "Tron"
@@ -692,11 +715,11 @@
             "kr": 3,
             "dl": "l3"
         },
-        "requeriments": [
-            "Requiere Modo Máximo"
-        ],
-        "effects": [
-            "Esta carta no puede ser destruida por los efectos de las Cartas de Trampa"
+        "actions": [
+            {
+                "type": "effects",
+                "name": "ThisCardCannotBeDestroyedByTrapCardEffects"
+            }
         ],
         "series": [
             "Tron"
@@ -760,13 +783,19 @@
             "kr": 3,
             "dl": 3
         },
-        "requeriments": [
-            "Requiere Modo Máximo",
-            "Manda al Cementerio la carta de la parte superior del Deck"
-        ],
-        "effects": [
-            "Cambia posiciones de batalla",
-            "Voltea boca arriba los monstruos del adversario"
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "ChangesOpponentBattlePositions"
+            },
+            {
+                "type": "effects",
+                "name": "ChangesOpponentMonstersToAttackPosition"
+            }
         ],
         "series": [
             "Tron"
@@ -824,14 +853,23 @@
             "kr": 3,
             "dl": 3
         },
-        "requeriments": [
-            "Requiere Modo Máximo",
-            "Manda al Cementerio la carta de la parte superior del Deck"
-        ],
-        "effects": [
-            "Los monstruos del adversario pierden ATK",
-            "Destruye las Cartas Mágicas del adversario",
-            "Inflige daño a tu adversario"
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "OpponentMonstersLoseATK"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentSpells"
+            },
+            {
+                "type": "effects",
+                "name": "InflictsDamageOpponent"
+            }
         ],
         "antiSupports": [
             {
@@ -887,11 +925,11 @@
             "kr": 3,
             "dl": "l3"
         },
-        "requeriments": [
-            "Requiere Modo Máximo"
-        ],
-        "effects": [
-            "Esta carta no puede ser destruida por los efectos de las Cartas de Trampa"
+        "actions": [
+            {
+                "type": "effects",
+                "name": "ThisCardCannotBeDestroyedByTrapCardEffects"
+            }
         ],
         "mentions": [
             16321,
@@ -944,13 +982,19 @@
             "kr": 3,
             "dl": 3
         },
-        "requeriments": [
-            "Requiere Modo Máximo",
-            "Manda al Cementerio la carta de la parte superior del Deck"
-        ],
-        "effects": [
-            "Los monstruos del adversario pierden ATK",
-            "Inflige daño a tu adversario"
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "OpponentMonstersLoseATK"
+            },
+            {
+                "type": "effects",
+                "name": "InflictsDamageOpponent"
+            }
         ],
         "mentionedBy": [
             16322
@@ -991,9 +1035,15 @@
             "jp": 3,
             "kr": 3
         },
-        "requeriments": [],
-        "effects": [
-            "Invoca de Modo Especial desde el Cementerio"
+        "actions": [
+            {
+                "type": "effects",
+                "name": "SpecialSummonsFromGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "SpecialSummonsFromOpponentGraveyardToField"
+            }
         ],
         "rarities": {
             "jp": [
@@ -1046,14 +1096,19 @@
             "kr": 3,
             "dl": 3
         },
-        "requeriments": [
-            "Manda al Cementerio la carta de la parte superior del Deck"
-        ],
-        "effects": [
-            "Destruye las Cartas de Monstruo boca abajo del adversario",
-            "Destruye las Cartas de Mágicas boca abajo del adversario",
-            "Destruye las Cartas de Trampa boca abajo del adversario",
-            "Un monstruo gana ATK"
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentCards"
+            },
+            {
+                "type": "effects",
+                "name": "PlayerMonstersGainATK"
+            }
         ],
         "supports": [
             {
@@ -1301,11 +1356,15 @@
             "jp": 3,
             "kr": 3
         },
-        "requeriments": [
-            "Manda al Cementerio un monstruo en tu Campo"
-        ],
-        "effects": [
-            "Inflige daño a tu adversario"
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendMonsterFromFieldToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "InflictsDamageOpponent"
+            }
         ],
         "fusionMaterialFor": [
             16924
@@ -1394,11 +1453,15 @@
             "jp": 3,
             "kr": 3
         },
-        "requeriments": [
-            "Se activa cuando se declara un ataque"
-        ],
-        "effects": [
-            "Destruye los monstruos en Posición de Ataque del adversario"
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "OpponentAttackDeclaration"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentMonsters"
+            }
         ],
         "rarities": {
             "jp": [
@@ -1524,12 +1587,15 @@
             "kr": 3,
             "dl": 3
         },
-        "requeriments": [
-            "Devuelve del Cementerio al Deck"
-        ],
-        "effects": [
-            "Destruye las Cartas de Monstruo boca arriba del adversario",
-            "Evita que tus monstruos ataquen"
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "ShuffleMonsterFromGraveyardToDeck"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentMonsters"
+            }
         ],
         "antiSupports": [
             {
@@ -1580,13 +1646,15 @@
             "jp": 3,
             "kr": 3
         },
-        "requeriments": [
-            "Solo puedes controlar una",
-            "Se equipa a un objetivo especifico"
-        ],
-        "effects": [
-            "Un monstruo gana ATK",
-            "Un monstruo no puede ser destruido por los efectos de las Cartas de Trampa"
+        "actions": [
+            {
+                "type": "effects",
+                "name": "PlayerMonstersGainATK"
+            },
+            {
+                "type": "effects",
+                "name": "PlayerMonstersCannotBeDestroyedByTrapCardEffects"
+            }
         ],
         "equipsTo": [
             {
@@ -1739,12 +1807,23 @@
             "kr": 3,
             "dl": "l1"
         },
-        "requeriments": [
-            "Tu adversario Invoca de Modo Especial un monstruo"
-        ],
-        "effects": [
-            "Cambia posiciones de batalla",
-            "Cambia monstruos a Posición de Defensa boca abajo"
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "OpponentSpecialSummonedFromHand"
+            },
+            {
+                "type": "requeriments",
+                "name": "OpponentSpecialSummonedFromGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "ChangesOpponentBattlePositions"
+            },
+            {
+                "type": "effects",
+                "name": "ChangesOpponentMonstersToDefensePosition"
+            }
         ],
         "rarities": {
             "jp": [
@@ -1791,12 +1870,19 @@
             "jp": 3,
             "kr": 3
         },
-        "requeriments": [
-            "Manda al Cementerio la carta de la parte superior del Deck"
-        ],
-        "effects": [
-            "Esta carta gana ATK",
-            "Esta carta inflige daño de batalla de penetración"
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "ThisCardGainsATK"
+            },
+            {
+                "type": "effects",
+                "name": "InflictsPiercingDamage"
+            }
         ],
         "series": [
             "RedEyes"
@@ -1851,13 +1937,15 @@
             "jp": 3,
             "kr": 3
         },
-        "requeriments": [
-            "Se equipa a un atributo de monstruo especifico",
-            "Se equipa a un tipo de monstruo especifico"
-        ],
-        "effects": [
-            "Un monstruo gana ATK",
-            "Un monstruo no puede ser destruido por efectos de cartas"
+        "actions": [
+            {
+                "type": "effects",
+                "name": "PlayerMonstersGainATK"
+            },
+            {
+                "type": "effects",
+                "name": "PlayerMonstersCannotBeDestroyedByCardEffects"
+            }
         ],
         "equipsTo": [
             {
@@ -1921,14 +2009,19 @@
             "jp": 1,
             "kr": 1
         },
-        "requeriments": [
-            "Manda desde la mano al Cementerio"
-        ],
-        "effects": [
-            "Destruye las Cartas de Monstruo del adversario",
-            "Destruye las Cartas Mágicas del adversario",
-            "Destruye las Cartas de Trampa del adversario",
-            "Robas cartas"
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromHandToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentCards"
+            },
+            {
+                "type": "effects",
+                "name": "PlayerDrawCards"
+            }
         ],
         "rarities": {
             "jp": [
@@ -1975,15 +2068,19 @@
         "status": {
             "jp": 3
         },
-        "requeriments": [
-            "Durante el turno en el que Invocaste de Modo Normal esta carta",
-            "Durante el turno en el que Invocaste de Modo Especial esta carta",
-            "Pagas Life Points"
-        ],
-        "effects": [
-            "Destruye las Cartas de Monstruo del adversario",
-            "Destruye las Cartas Mágicas del adversario",
-            "Destruye las Cartas de Trampa del adversario"
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "PaysLifePoints"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentCards"
+            },
+            {
+                "type": "effects",
+                "name": "OncePerTurn"
+            }
         ],
         "rarities": {
             "jp": [
@@ -2010,6 +2107,7 @@
         "name": "Mago del Caos Negro",
         "cardType": "Monster",
         "type": "Ritual",
+        "subtype": "Effect",
         "cardText": "El nombre de esta carta se convierte en \"Mago Oscuro\" mientras esté en el Cementerio.\n<b>[REQUISITO]</b> Ninguno\n<b>[EFECTO]</b> Ninguno",
         "attribute": "DARK",
         "level": 8,
@@ -2022,6 +2120,12 @@
         "status": {
             "jp": 3
         },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "ChangesOwnNameInGraveyard"
+            }
+        ],
         "series": [
             "DarkMagician"
         ],
@@ -2046,9 +2150,6 @@
                 "normal": true,
                 "ORR": true
             }
-        ],
-        "properties": [
-            "NonEffect"
         ]
     },
     {
@@ -2069,12 +2170,19 @@
         "status": {
             "jp": 3
         },
-        "requeriments": [
-            "Manda al Cementerio la carta de la parte superior del Deck"
-        ],
-        "effects": [
-            "Esta carta gana ATK",
-            "Todos los monstruos en tu Campo ganan ATK"
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "ThisCardGainsATK"
+            },
+            {
+                "type": "effects",
+                "name": "PlayerMonstersGainATK"
+            }
         ],
         "supports": [
             {
@@ -2122,9 +2230,27 @@
         "status": {
             "jp": 3
         },
-        "effects": [
-            "Invoca por Ritual usando monstruos en tu mano",
-            "Invoca por Ritual usando monstruos en tu Campo"
+        "actions": [
+            {
+                "type": "effects",
+                "name": "PerformsRitualSummon"
+            },
+            {
+                "type": "effects",
+                "name": "SendMonsterFromHandToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "SendMonsterFromFieldToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "CardsInHandAsRitualMaterials"
+            },
+            {
+                "type": "effects",
+                "name": "CardsOnFieldAsRitualMaterials"
+            }
         ],
         "series": [
             "DarkMagician"

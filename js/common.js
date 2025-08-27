@@ -73,6 +73,7 @@ const cardCategories = [relatedCategories, searchCategories];
 const perPageValues = [10, 50, 100];
 let currentPage = 1;
 let typeRadio = 'all';
+let effectRadio = 'any';
 let searchOptions = {
     'sortby': 'Name',
     'sortDir': false,
@@ -152,6 +153,16 @@ let searchOptions = {
         'series': [],
         'properties': [],
     },
+    'filterEffectSelect': {
+        'activation': [],
+        'actions': [],
+        'stats': [],
+        'cards': [],
+        'summoning': [],
+        'attack': [],
+        'lp': [],
+        'miscellaneous': [],
+    },
     'filterText': {
         'search': {
             'text': '',
@@ -228,6 +239,7 @@ function getLanguageJSONList(lang) {
     return {
         cardsMain: getCacheResource(`./data/${lang}/cards.min.json`),
         localization: getCacheResource(`./data/${lang}/localization.min.json`),
+        effects: getCacheResource(`./data/${lang}/effects.min.json`),
         rarities: getCacheResource(`./data/${lang}/rarities.min.json`),
         sets: getCacheResource(`./data/${lang}/sets.min.json`)
     }
@@ -278,6 +290,17 @@ function getLocalizedCardString(group, index) {
     } else {
         console.log(`Card string not found for "${group}, ${index}"`);
         return `${group}_${index}`;
+    }
+}
+
+function getLocalizedCardEffect(name) {
+    var action = data.effects.find((c) => c.abbreviation == name);
+
+    if (action !== undefined) {
+        return action.name;
+    } else {
+        console.log(`Card effect "${name}" not found`);
+        return name;
     }
 }
 
@@ -366,16 +389,26 @@ function generateSortedMainCardsList() {
 var raritiesList = [];
 var seriesList = [];
 var propertiesList = [];
+var actionsList = [];
 
 function generateCardSearchFilters(resetFilters = true) {
     raritiesList.length = 0;
     seriesList.length = 0;
     propertiesList.length = 0;
+    actionsList.length = 0;
 
     if (resetFilters) {
         searchOptions.filterSelect.rarities.length = 0;
         searchOptions.filterSelect.series.length = 0;
         searchOptions.filterSelect.properties.length = 0;
+        searchOptions.filterEffectSelect.activation.length = 0;
+        searchOptions.filterEffectSelect.actions.length = 0;
+        searchOptions.filterEffectSelect.stats.length = 0;
+        searchOptions.filterEffectSelect.cards.length = 0;
+        searchOptions.filterEffectSelect.summoning.length = 0;
+        searchOptions.filterEffectSelect.attack.length = 0;
+        searchOptions.filterEffectSelect.lp.length = 0;
+        searchOptions.filterEffectSelect.miscellaneous.length = 0;
     }
 
     cardList.forEach(card => {
@@ -395,6 +428,14 @@ function generateCardSearchFilters(resetFilters = true) {
             for (property of card.properties) {
                 if (!propertiesList.includes(property)) {
                     propertiesList.push(property);
+                }
+            }
+        }
+
+        if ('actions' in card) {
+            for (action of card.actions) {                
+                if (!actionsList.includes(action.name)) {
+                    actionsList.push(action.name);
                 }
             }
         }
@@ -449,6 +490,11 @@ function generateCardSearchFilters(resetFilters = true) {
     propertiesList.sort(function(a, b) {
         var textA = getLocalizedString('properties', a).toUpperCase();
         var textB = getLocalizedString('properties', b).toUpperCase();
+        return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+    });
+    actionsList.sort(function(a, b) {
+        var textA = getLocalizedCardEffect(a).toUpperCase();
+        var textB = getLocalizedCardEffect(b).toUpperCase();
         return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
     });
 }
@@ -535,6 +581,18 @@ function loadModule(moduleName, id = null) {
                 $('#search-filter-select-properties-list').append(listItem);
             });
 
+            actionsList.forEach(property => {
+                var action = data.effects.find((c) => c.abbreviation == property);
+
+                if (action === undefined) {
+                    return;
+                }
+
+                var listItem = `<li><button class="dropdown-item" data-filter-effect-option="${action.type}" data-filter-effect-value="${action.abbreviation}"><span>${action.name}</span></button></li>`;
+
+                $(`#search-filter-effect-${action.type}-list`).append(listItem);
+            });
+
             //initial load
             loadCardSearchList(true);
 
@@ -545,6 +603,7 @@ function loadModule(moduleName, id = null) {
             $('#search-active-sort-filter').text(getLocalizedString('ui', searchOptions['sortby']));
 
             $(`input[type="radio"][name="typeRadio"][value="${typeRadio}"]`).prop('checked', true);
+            $(`input[type="radio"][name="effectRadio"][value="${effectRadio}"]`).prop('checked', true);
 
             Object.entries(searchOptions['filter']).forEach(i => {
                 Object.entries(i[1]).forEach(j => {
@@ -589,14 +648,33 @@ function loadModule(moduleName, id = null) {
                 $(`#search-filter-select-${option[0]}`).toggleClass('active', searchOptions['filterSelect'][option[0]].length > 0);
             });
 
+            Object.entries(searchOptions['filterEffectSelect']).forEach(option => {
+                option[1].forEach(value => {
+                    $(`button[data-filter-effect-option="${option[0]}"][data-filter-effect-value="${value}"]`).addClass('active');
+                });
+
+                $(`#search-filter-effect-${option[0]}`).toggleClass('active', searchOptions['filterEffectSelect'][option[0]].length > 0);
+            });
+
             $('button[data-filter-select-option]').on('click', function(e) {
                 const option = $(this).data('filter-select-option');
                 const value = $(this).data('filter-select-value');
                 searchSetFilterSelect(option, value);
             });
 
+            $('button[data-filter-effect-option]').on('click', function(e) {
+                const option = $(this).data('filter-effect-option');
+                const value = $(this).data('filter-effect-value');
+                searchSetFilterSelectEffect(option, value);
+            });
+
             $('input[type=radio][name=typeRadio]').change(function() {
                 typeRadio = $('input[type=radio][name="typeRadio"]:checked').val();
+                loadCardSearchList();
+            });
+
+            $('input[type=radio][name=effectRadio]').change(function() {
+                effectRadio = $('input[type=radio][name="effectRadio"]:checked').val();
                 loadCardSearchList();
             });
 
@@ -885,6 +963,12 @@ function searchResetFilter(search = true) {
         $(`button[data-filter-select-option="${option}"][data-filter-select-value]`).removeClass('active');
     }
 
+    for (option in searchOptions['filterEffectSelect']) {
+        searchOptions['filterEffectSelect'][option].length = 0;
+        $(`#search-filter-effect-${option}`).removeClass('active');
+        $(`button[data-filter-effect-option="${option}"][data-filter-effect-value]`).removeClass('active');
+    }
+
     if (search) {
         loadCardSearchList();
     }
@@ -1037,6 +1121,24 @@ function searchSetFilterSelect(option, value, search = true) {
     }
 }
 
+function searchSetFilterSelectEffect(option, value, search = true) {
+    const index = searchOptions['filterEffectSelect'][option].indexOf(value);
+
+    if (index == -1) {
+        searchOptions['filterEffectSelect'][option].push(value);
+        $(`button[data-filter-effect-option="${option}"][data-filter-effect-value="${value}"]`).toggleClass('active', true);
+    } else {
+        searchOptions['filterEffectSelect'][option].splice(index, 1);
+        $(`button[data-filter-effect-option="${option}"][data-filter-effect-value="${value}"]`).toggleClass('active', false);
+    }
+
+    $(`#search-filter-effect-${option.toLowerCase()}`).toggleClass('active', searchOptions['filterEffectSelect'][option].length > 0);
+
+    if (search) {
+        loadCardSearchList();
+    }
+}
+
 function getFilterList(options) {
     var filterList = [];
 
@@ -1113,7 +1215,7 @@ function getFilterTextList(options) {
     return textFilterList;
 }
 
-function checkFilters(card, filterList, textFilterList, selectFilterList, typeFilter, typeFilterCount) {
+function checkFilters(card, filterList, textFilterList, selectFilterList, effectFilterList, typeFilter, effectFilter, typeFilterCount = 0, effectFilterCount = 0) {
     if (textFilterList.startDate) {
         var startDate = new Date(`${textFilterList.startDate}`).getTime();
 
@@ -1286,6 +1388,47 @@ function checkFilters(card, filterList, textFilterList, selectFilterList, typeFi
         }
     }
 
+    if (effectFilter == 'all') {
+        if (effectFilterCount > 0 && !('actions' in card)) {
+            return false;
+        }
+        
+        var effectCount = 0;
+        var matchedEffects = 0;
+
+        $.each(searchOptions['filterEffectSelect'], function (type, category) {
+            $.each(category, function (type, action) {
+                if (card.actions.findIndex((a) => a.name == action) >= 0) {
+                    matchedEffects++;
+                }
+            });
+        });
+
+        if (effectFilterCount != matchedEffects) {
+            return false;
+        }
+    } else if (effectFilterList.length) {
+        if (!('actions' in card)) {
+            return false;
+        }
+
+        var cardHasEffect = false;
+
+        for (let i = 0; i < effectFilterList.length; i++) {
+            const filterValues = searchOptions['filterEffectSelect'][effectFilterList[i]];
+            const option = effectFilterList[i];
+                
+            if (card.actions.findIndex((a) => searchOptions['filterEffectSelect'][option].includes(a.name)) >= 0) {
+                cardHasEffect = true;
+                break;
+            }
+        }
+
+        if (!cardHasEffect) {
+            return false;
+        }
+    }
+
     var matchedText = false;
 
     if (textFilterList.search == "" || card.name.toLowerCase().includes(textFilterList.search.toLowerCase()) || card.cardText.toLowerCase().includes(textFilterList.search.toLowerCase())) {
@@ -1301,7 +1444,9 @@ function loadCardSearchList(updateSortFilter = false) {
     const filterList = getFilterList(searchOptions['filter']);
     const textFilterList = getFilterTextList(searchOptions['filterText']);
     const selectFilterList = [];
+    const effectFilterList = [];
     var typeFilterCount = 0;
+    var effectFilterCount = 0;
     currentPage = 1;
     searchedCards.length = 0;
 
@@ -1319,6 +1464,20 @@ function loadCardSearchList(updateSortFilter = false) {
         }
     }
 
+    if (effectRadio == 'all') {
+        $.each(searchOptions['filterEffectSelect'], function (type, category) {
+            $.each(category, function (type, action) {
+                effectFilterCount++;
+            });
+        });
+    } else {
+        for (option in searchOptions['filterEffectSelect']) {
+            if (searchOptions['filterEffectSelect'][option].length) {
+                effectFilterList.push(option);
+            }
+        }
+    }
+
     //get all aproppiate cards
     $.each(cardList, function (key, card) {
         if (regionName != 'all' && (!card.releaseDate.hasOwnProperty(regionName) || !card.releaseDate[regionName])) {
@@ -1326,7 +1485,7 @@ function loadCardSearchList(updateSortFilter = false) {
         }
 
         //if correct add to array
-        if (checkFilters(card, filterList, textFilterList, selectFilterList, typeRadio, typeFilterCount)) {
+        if (checkFilters(card, filterList, textFilterList, selectFilterList, effectFilterList, typeRadio, effectRadio, typeFilterCount, effectFilterCount)) {
             searchedCards.push(card);
         }
     });
@@ -1922,7 +2081,7 @@ function renderCardData() {
         }
     }
 
-    updatePageHistory(`${cardTranslation.name} | ${getLocalizedString('module', 'Cards')}`, 'card', cardTranslation.id);
+    updatePageHistory(`${cardTranslation.name}`, 'card', cardTranslation.id);
 }
 
 function renderCardRelatedInfo() {
@@ -1964,10 +2123,12 @@ function renderCardRelatedInfo() {
     $('.rarity-tooltip').tooltip('dispose').tooltip({title: getTooltipTitle, html: true, placement: 'top'});
 
     //generate related cards
-    $.each(cardCategories, function (key, sections) {
-        var sectionTotal = 0;
-        
+    $.each(cardCategories, function (key, sections) {        
         $.each(sections, function(k, category) {
+            if (category.type == 2) {
+                return;
+            }
+
             var property = toCamelCase(category.name);
 
             if (property in currentCard && currentCard[property].length) {
@@ -1975,7 +2136,15 @@ function renderCardRelatedInfo() {
             }
         });
     });
-    
+
+    if ('actions' in currentCard && currentCard.actions.length) {
+        $.each(currentCard.actions, function(key, action) {
+            if ($(`#card-search-${action.type}`).length) {
+                $(`#card-search-${action.type}`).append(`<span class="search-category link-primary" onclick="loadCardFilterAction(${key})">${getLocalizedCardEffect(action.name)}</span>`);
+            }
+        });
+    }
+
     var totalActions = 0;
 
     $.each(cardCategories, function (key, sections) {
@@ -2119,7 +2288,6 @@ function renderSearchCategory(container, category, property) {
     $.each(currentCard[property], function(key, value) {
         var name = value;
         var action = '';
-        var showLink = true;
 
         switch(category.type) {
             case 1:
@@ -2130,10 +2298,6 @@ function renderSearchCategory(container, category, property) {
                 }
 
                 action = `loadCardFilter('${property}', ${key})`;
-                break;
-
-            case 2:
-                showLink = false;
                 break;
 
             case 3:
@@ -2155,7 +2319,6 @@ function renderSearchCategory(container, category, property) {
         categories.push({
             action: action,
             name: name,
-            showLink: showLink,
         })
     });
 
@@ -2168,13 +2331,7 @@ function renderSearchCategory(container, category, property) {
     }
 
     $.each(categories, function(key, category) {
-        var linkData = '';
-
-        if (category.showLink) {
-            linkData = ` link-primary" onclick="${category.action}`;
-        }
-
-        $(container).append(`<span class="search-category${linkData}">${category.name}</span>`);
+        $(container).append(`<span class="search-category link-primary" onclick="${category.action}">${category.name}</span>`);
     });
 }
 
@@ -2561,6 +2718,24 @@ function loadCardFilter(property, index) {
                 break;
         }
     }
+
+    loadModule('cardsList');
+}
+
+function loadCardFilterAction(index) {
+    var filter = currentCard.actions[index];
+
+    if (!filter) {
+        return;
+    }
+
+    var effect = data.effects.find((c) => c.abbreviation == filter.name);
+
+    if (!effect) {
+        return;
+    }
+
+    searchOptions['filterEffectSelect'][effect.type].push(filter.name);
 
     loadModule('cardsList');
 }
