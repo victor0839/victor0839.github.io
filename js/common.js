@@ -594,7 +594,7 @@ function loadModule(moduleName, id = null) {
             });
 
             //initial load
-            loadCardSearchList(true);
+            loadCardSearchList(true, false);
 
             $(`#search-per-page-filter-${searchOptions['perPage']}`).addClass('active');
             $('#search-filter-per-page').text(`${getLocalizedString('ui', 'Show')} ${searchOptions['perPage']}`);
@@ -1440,15 +1440,18 @@ function checkFilters(card, filterList, textFilterList, selectFilterList, effect
 
 var searchedCards = [];
 
-function loadCardSearchList(updateSortFilter = false) {
+function loadCardSearchList(updateSortFilter = false, resetPaginator = true) {
     const filterList = getFilterList(searchOptions['filter']);
     const textFilterList = getFilterTextList(searchOptions['filterText']);
     const selectFilterList = [];
     const effectFilterList = [];
     var typeFilterCount = 0;
     var effectFilterCount = 0;
-    currentPage = 1;
     searchedCards.length = 0;
+
+    if (resetPaginator) {
+        currentPage = 1;
+    }
 
     if (typeRadio == 'all') {
         $.each(searchOptions['filter'].type, function (type, value) {
