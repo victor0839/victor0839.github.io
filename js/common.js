@@ -129,14 +129,17 @@ let searchOptions = {
         'MaximumAtk': {
             'min': '',
             'max': '',
+            'exclude': '',
         },
         'ATK': {
             'min': '',
             'max': '',
+            'exclude': '',
         },
         'DEF': {
             'min': '',
             'max': '',
+            'exclude': '',
         },
         'startDate': {
             'day': 2,
@@ -890,9 +893,9 @@ function generateCardImage(card, rarities = [], showRarityBadge = true) {
                 raritiesHtml += `<div class="card-image-rarities text-center">${getRarityBadge(rarity)}</div>`;
             });
 
-            cardImage = `<div class="card-image" style="background-image: url('images/cards/${cardImage}')" onclick="loadCard(${card.id})"><div class="d-flex flex-column flex-wrap justify-content-end align-items-end">${raritiesHtml}</div></div>`
+            cardImage = `<div class="card-image" title="${card.name}" style="background-image: url('images/cards/${cardImage}')" onclick="loadCard(${card.id})"><div class="d-flex flex-column flex-wrap justify-content-end align-items-end">${raritiesHtml}</div></div>`
         } else if (cardImage) {
-            cardImage = `<img class="card-image" src="images/cards/${cardImage}" onclick="loadCard(${card.id})">`
+            cardImage = `<img class="card-image" title="${card.name}" src="images/cards/${cardImage}" onclick="loadCard(${card.id})">`
         }
     }
 
@@ -1182,10 +1185,13 @@ function getFilterTextList(options) {
     var endDateString = '';
     var minAtk = '';
     var maxAtk = '';
+    var excludeAtk = '';
     var minDef = '';
     var maxDef = '';
+    var excludeDef = '';
     var minMaximumAtk = '';
     var maxMaximumAtk = '';
+    var excludeMaximumAtk = '';
 
     if (options.startDate.month && options.startDate.day && options.startDate.year) {
         startDateString = `${options.startDate.month}/${options.startDate.day}/${options.startDate.year}`;
@@ -1203,12 +1209,20 @@ function getFilterTextList(options) {
         maxAtk = parseInt(options.ATK.max);
     }
 
+    if (options.ATK.exclude !== '' && options.ATK.exclude >= 0) {
+        excludeAtk = parseInt(options.ATK.exclude);
+    }
+
     if (options.DEF.min !== '' && options.DEF.min >= 0) {
         minDef = parseInt(options.DEF.min);
     }
 
     if (options.DEF.max !== '' && options.DEF.max >= 0) {
         maxDef = parseInt(options.DEF.max);
+    }
+
+    if (options.DEF.exclude !== '' && options.DEF.exclude >= 0) {
+        excludeDef = parseInt(options.DEF.exclude);
     }
 
     if (options.MaximumAtk.min !== '' && options.MaximumAtk.min >= 0) {
@@ -1218,16 +1232,23 @@ function getFilterTextList(options) {
     if (options.MaximumAtk.max !== '' && options.MaximumAtk.max >= 0) {
         maxMaximumAtk = parseInt(options.MaximumAtk.max);
     }
+
+    if (options.MaximumAtk.exclude !== '' && options.MaximumAtk.exclude >= 0) {
+        excludeMaximumAtk = parseInt(options.MaximumAtk.exclude);
+    }
     
     var textFilterList = {
         'startDate': startDateString,
         'endDate': endDateString,
         'minAtk': minAtk,
         'maxAtk': maxAtk,
+        'excludeAtk': excludeAtk,
         'minDef': minDef,
         'maxDef': maxDef,
+        'excludeDef': excludeDef,
         'minMaximumAtk': minMaximumAtk,
         'maxMaximumAtk': maxMaximumAtk,
+        'excludeMaximumAtk': excludeMaximumAtk,
         'search': options.search.text,
     };
 
@@ -1279,6 +1300,12 @@ function checkFilters(card, filterList, buttonFilterList, textFilterList, select
         }
     }
 
+    if (textFilterList.excludeAtk !== '') {
+        if (!('atk' in card) || card.atk == textFilterList.excludeAtk) {
+            return false;
+        }
+    }
+
     if (textFilterList.minDef !== '') {
         if (!('def' in card) || card.def < textFilterList.minDef) {
             return false;
@@ -1291,6 +1318,12 @@ function checkFilters(card, filterList, buttonFilterList, textFilterList, select
         }
     }
 
+    if (textFilterList.excludeDef !== '') {
+        if (!('def' in card) || card.def == textFilterList.excludeDef) {
+            return false;
+        }
+    }
+
     if (textFilterList.minMaximumAtk !== '') {
         if (!('maximumAtk' in card) || card.maximumAtk < textFilterList.minMaximumAtk) {
             return false;
@@ -1299,6 +1332,12 @@ function checkFilters(card, filterList, buttonFilterList, textFilterList, select
 
     if (textFilterList.maxMaximumAtk !== '') {
         if (!('maximumAtk' in card) || card.maximumAtk > textFilterList.maxMaximumAtk) {
+            return false;
+        }
+    }
+
+    if (textFilterList.excludeMaximumAtk !== '') {
+        if (!('maximumAtk' in card) || card.maximumAtk == textFilterList.excludeMaximumAtk) {
             return false;
         }
     }
@@ -2400,11 +2439,15 @@ function createStringFromFilter(filter) {
                     break;
 
                 case '||':
-                    keywords[0] += ` or ${filter.levels[2]}`;
+                    keywords[0] += ` ${getLocalizedString('effectConjuction', 'or')} ${filter.levels[2]}`;
                     break;
 
                 case '-':
                     keywords[0] += `-${filter.levels[2]}`;
+                    break;
+
+                case '!=':
+                    keywords[0] = `${getLocalizedString('effectConjuction', 'non')}${keywords[0]}`;
                     break;
 
                 default:
@@ -2434,6 +2477,40 @@ function createStringFromFilter(filter) {
                     });
                 } else {
                     $.each(filter.attributes, function(key, attribute) {
+                        if (key == (totalAttributes - 1)) {
+                            keywords[1] += ' or ';
+                            keywords[1] += getFormatString('attribute', attribute);
+                        } else {
+                            if (keywords[1] != '') {
+                                keywords[1] += ', ';
+                            }
+                            keywords[1] += getLocalizedString('attribute', attribute);
+                        }
+                    });
+                }
+            }
+        } else if ('exclude' in filter && 'attributes' in filter.exclude) {
+            keywords[1] = `${getLocalizedString('effectConjuction', 'non')}`;
+
+            if (filter.exclude.attributes.length == 1) {
+                keywords[1] += getFormatString('attribute', filter.exclude.attributes[0]);
+            } else {
+                var totalAttributes = filter.exclude.attributes.length;
+
+                if (userLang == 'Es') {
+                    $.each(filter.exclude.attributes, function(key, attribute) {
+                        if (key == 0) {
+                            keywords[1] += getFormatString('attribute', attribute);
+                        } else if (key < (totalAttributes - 1)) {
+                            keywords[1] += ', ';
+                            keywords[1] += getLocalizedString('attribute', attribute);
+                        } else {
+                            keywords[1] += ' o ';
+                            keywords[1] += getLocalizedString('attribute', attribute);
+                        }
+                    });
+                } else {
+                    $.each(filter.exclude.attributes, function(key, attribute) {
                         if (key == (totalAttributes - 1)) {
                             keywords[1] += ' or ';
                             keywords[1] += getFormatString('attribute', attribute);
@@ -2510,19 +2587,24 @@ function createStringFromFilter(filter) {
         }
 
         if ('atk' in filter && !isNaN(filter.atk)) {
-            keywords[5] = `with ${filter.atk[0]}`;
+            keywords[5] = `${getLocalizedString('effectConjuction', 'with')} ${filter.atk[0]}`;
 
             if (filter.atk[2]) {
-                keywords[5] += ' original';
+                keywords[5] += ` ${getLocalizedString('effectString', 'original')}`;
             }
 
             switch(filter.atk[1]) {
                 case '>=':
-                    keywords[5] += ' ATK or more';
+                    keywords[5] += ` ATK ${getLocalizedString('effectConjuction', 'orMore')}`;
                     break;
 
                 case '<=':
-                    keywords[5] += ' ATK or less';
+                    keywords[5] += ` ATK ${getLocalizedString('effectConjuction', 'orLess')}`;
+                    break;
+
+                case '!=':
+                    keywords.splice(5, 1);
+                    keywords[7] = `${getLocalizedString('effectConjuction', 'exceptMonsters')} ${filter.atk[0]} ATK`;
                     break;
 
                 default:
@@ -2533,22 +2615,35 @@ function createStringFromFilter(filter) {
 
         if ('def' in filter && !isNaN(filter.def)) {
             if (keywords[5]) {
-                keywords[6] = `and ${filter.def[0]}`;
+                keywords[6] = `${getLocalizedString('effectConjuction', 'and')} ${filter.def[0]}`;
             } else {
-                keywords[6] = `with ${filter.def[0]}`;
+                keywords[6] = `${getLocalizedString('effectConjuction', 'with')} ${filter.def[0]}`;
             }
 
             if (filter.atk[2]) {
-                keywords[6] += ' original';
+                keywords[6] += ` ${getLocalizedString('effectString', 'original')}`;
             }
 
             switch(filter.def[1]) {
                 case '>=':
-                    keywords[6] += ' DEF or more';
+                    keywords[6] += ` DEF ${getLocalizedString('effectConjuction', 'orMore')}`;
                     break;
 
                 case '<=':
-                    keywords[6] += ' DEF or less';
+                    keywords[6] += ` DEF ${getLocalizedString('effectConjuction', 'orLess')}`;
+                    break;
+
+                case '!=':
+                    keywords.splice(6, 1);
+                    keywords[8] = '';
+
+                    if (keywords[7]) {
+                        keywords[8] += `${getLocalizedString('effectConjuction', 'exceptMonsters')}`;
+                    } else {
+                        keywords[8] += `${getLocalizedString('effectConjuction', 'and')}`;
+                    }
+
+                    keywords[8] = ` ${filter.def[0]}`;
                     break;
 
                 default:
@@ -2699,22 +2794,30 @@ function loadCardFilter(property, index) {
         }
     }
 
-    if ('excludeTypes' in  filter && filter.excludeTypes) {
-        if (filter.excludeTypes.includes('Extra Deck')) {
-            var index = filter.excludeTypes.indexOf('Extra Deck');
-            filter.excludeTypes.splice(index, 1);
-
-            extraDeckCards.forEach(type => {
-                filter.excludeTypes.push(type);
+    if ('exclude' in filter && filter.exclude) {
+        if ('attributes' in filter.exclude) {
+            filter.exclude.attributes.forEach(attribute => {
+                searchOptions['filterButton']['attribute'][attribute] = 2;
             });
         }
 
-        filter.excludeTypes.forEach(type => {
-            searchOptions['filterButton']['type'][type] = 2;
-        });
+        if ('types' in filter.exclude) {
+            if (filter.exclude.types.includes('ExtraDeck')) {
+                var index = filter.exclude.types.indexOf('ExtraDeck');
+                filter.exclude.types.splice(index, 1);
+
+                extraDeckCards.forEach(type => {
+                    filter.exclude.types.push(type);
+                });
+            }
+
+            filter.exclude.types.forEach(type => {
+                searchOptions['filterButton']['type'][type] = 2;
+            });
+        }
     }
 
-    if (('type' in filter && filter.type) || ('subtype' in filter && filter.subtype) || ('excludeTypes' in  filter && filter.excludeTypes)) {
+    if (('type' in filter && filter.type) || ('subtype' in filter && filter.subtype) || ('exclude' in  filter && filter.exclude)) {
         typeRadio = 'all';
     }
 
@@ -2888,6 +2991,16 @@ function loadLanguage(lang) {
         let [key, value] = $(el).data('translate-string').split(',');
 
         $(el).html(getLocalizedString(key, value));
+    });
+
+    $('*[data-translate-title]').each(function (i,el) {
+        if (!$(el).data('translate-title')) {
+            return;
+        }
+
+        let [key, value] = $(el).data('translate-title').split(',');
+
+        $(el).attr('title', getLocalizedString(key, value));
     });
 
     //update text

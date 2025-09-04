@@ -253,9 +253,11 @@
                 "races": [
                     "Spellcaster"
                 ],
-                "excludeTypes": [
-                    "Extra Deck"
-                ]
+                "exclude": {
+                    "types": [
+                        "ExtraDeck"
+                    ]
+                }
             }
         ],
         "series": [
@@ -656,6 +658,15 @@
             {
                 "type": "effects",
                 "name": "DestroysOpponentMonsters"
+            }
+        ],
+        "antiSupports": [
+            {
+                "cardType": "Monster",
+                "levels": [
+                    8,
+                    "<="
+                ]
             }
         ],
         "series": [
@@ -1131,12 +1142,10 @@
         ],
         "fusionMaterials": [
             {
-                "id": 16891,
-                "quantity": 1
+                "id": 16891
             },
             {
-                "id": 16894,
-                "quantity": 1
+                "id": 16894
             }
         ],
         "rarities": {
@@ -1308,12 +1317,10 @@
         },
         "fusionMaterials": [
             {
-                "id": 16926,
-                "quantity": 1
+                "id": 16926
             },
             {
-                "id": 16925,
-                "quantity": 1
+                "id": 16925
             }
         ],
         "rarities": {
@@ -1595,10 +1602,6 @@
             {
                 "type": "effects",
                 "name": "DestroysOpponentMonsters"
-            },
-            {
-                "type": "effects",
-                "name": "PreventsPlayerMonsterFromAttacking"
             }
         ],
         "antiSupports": [
