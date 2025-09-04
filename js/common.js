@@ -84,13 +84,15 @@ let searchOptions = {
             'Spell': false,
             'Trap': false,
         },
+    },
+    'filterButton': {
         'attribute': {
-            'DARK': false,
-            'EARTH': false,
-            'FIRE': false,
-            'LIGHT': false,
-            'WATER': false,
-            'WIND': false,
+            'DARK': 0,
+            'EARTH': 0,
+            'FIRE': 0,
+            'LIGHT': 0,
+            'WATER': 0,
+            'WIND': 0,
         },
         'type': {
             'Effect': 0,
@@ -102,51 +104,8 @@ let searchOptions = {
             'Ritual': 0,
             'Legend': 0,
         },
-        'race': {
-            'Aqua': false,
-            'Beast': false,
-            'BeastWarrior': false,
-            'CelestialWarrior': false,
-            'Cyberse': false,
-            'Cyborg': false,
-            'Dinosaur': false,
-            'Dragon': false,
-            'Fairy': false,
-            'Fiend': false,
-            'Fish': false,
-            'Galaxy': false,
-            'HighDragon': false,
-            'Insect': false,
-            'Machine': false,
-            'MagicalKnight': false,
-            'OmegaPsychic': false,
-            'Plant': false,
-            'Psychic': false,
-            'Pyro': false,
-            'Reptile': false,
-            'Rock': false,
-            'SeaSerpent': false,
-            'Spellcaster': false,
-            'Thunder': false,
-            'Warrior': false,
-            'WingedBeast': false,
-            'Wyrm': false,
-            'Zombie': false,
-        },
-        'level': {
-            1: false,
-            2: false,
-            3: false,
-            4: false,
-            5: false,
-            6: false,
-            7: false,
-            8: false,
-            9: false,
-            10: false,
-            11: false,
-            12: false,
-        }
+        'race': {},
+        'level': {}
     },
     'filterSelect': {
         'rarities': [],
@@ -386,18 +345,24 @@ function generateSortedMainCardsList() {
     });
 }
 
+var racesList = [];
+var levelsList = [];
 var raritiesList = [];
 var seriesList = [];
 var propertiesList = [];
 var actionsList = [];
 
 function generateCardSearchFilters(resetFilters = true) {
+    racesList.length = 0;
+    levelsList.length = 0;
     raritiesList.length = 0;
     seriesList.length = 0;
     propertiesList.length = 0;
     actionsList.length = 0;
 
     if (resetFilters) {
+        searchOptions.filterButton.level = {};
+        searchOptions.filterButton.race = {};
         searchOptions.filterSelect.rarities.length = 0;
         searchOptions.filterSelect.series.length = 0;
         searchOptions.filterSelect.properties.length = 0;
@@ -414,6 +379,26 @@ function generateCardSearchFilters(resetFilters = true) {
     cardList.forEach(card => {
         if (regionName != 'all' && (!card.releaseDate.hasOwnProperty(regionName) || !card.releaseDate[regionName])) {
             return;
+        }
+
+        if ('level' in card) {
+            if (!levelsList.includes(card.level)) {
+                levelsList.push(card.level);
+
+                if (resetFilters) {
+                    searchOptions.filterButton.level[card.level] = 0;
+                }
+            }
+        }
+
+        if ('race' in card) {
+            if (!racesList.includes(card.race)) {
+                racesList.push(card.race);
+
+                if (resetFilters) {
+                    searchOptions.filterButton.race[card.race] = 0;
+                }
+            }
         }
 
         if ('series' in card) {
@@ -481,7 +466,13 @@ function generateCardSearchFilters(resetFilters = true) {
         }
     });
 
+    levelsList.sort((a, b) => a - b);
     raritiesList.sort((a, b) => a.order - b.order);
+    racesList.sort(function(a, b) {
+        var textA = getLocalizedString('race', a).toUpperCase();
+        var textB = getLocalizedString('race', b).toUpperCase();
+        return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+    });
     seriesList.sort(function(a, b) {
         var textA = getLocalizedString('series', a).toUpperCase();
         var textB = getLocalizedString('series', b).toUpperCase();
@@ -575,6 +566,18 @@ function loadModule(moduleName, id = null) {
                 $('#search-filter-select-series-list').append(listItem);
             });
 
+            racesList.forEach(race => {
+                var listItem = `<button id="search-filter-button-race-${race.toLowerCase()}" class="btn btn-outline-secondary" onclick="searchSetFilterButton('race', '${race}')"><span>${getLocalizedString('race', race)}</span></button>`;
+
+                $('#search-filter-button-races-list').append(listItem);
+            });
+
+            levelsList.forEach(level => {
+                var listItem = `<button id="search-filter-button-level-${level}" class="btn btn-outline-secondary" onclick="searchSetFilterButton('level', ${level})"><span>${level}</span></button>`;
+
+                $('#search-filter-button-levels-list').append(listItem);
+            });
+
             propertiesList.forEach(property => {
                 var listItem = `<li><button class="dropdown-item" data-filter-select-option="properties" data-filter-select-value="${property}"><span>${getLocalizedString('properties', property)}</span></button></li>`;
 
@@ -588,7 +591,7 @@ function loadModule(moduleName, id = null) {
                     return;
                 }
 
-                var listItem = `<li><button class="dropdown-item" data-filter-effect-option="${action.type}" data-filter-effect-value="${action.abbreviation}"><span>${action.name}</span></button></li>`;
+                var listItem = `<button class="btn btn-outline-secondary" data-filter-effect-option="${action.type}" data-filter-effect-value="${action.abbreviation}"><span>${action.name}</span></button>`;
 
                 $(`#search-filter-effect-${action.type}-list`).append(listItem);
             });
@@ -607,31 +610,31 @@ function loadModule(moduleName, id = null) {
 
             Object.entries(searchOptions['filter']).forEach(i => {
                 Object.entries(i[1]).forEach(j => {
-                    if (typeof j[1] === 'boolean') {
-                        $(`#search-filter-${i[0].toLowerCase()}-${String(j[0]).toLowerCase()}`).toggleClass('active', j[1]);
-                    } else {
-                        switch (j[1]) {
-                            case 1:
-                                $(`#search-filter-${i[0].toLowerCase()}-${String(j[0]).toLowerCase()}`).addClass('active');
-                                $(`#search-filter-${i[0].toLowerCase()}-${String(j[0]).toLowerCase()}`).addClass('btn-outline-secondary');
-                                $(`#search-filter-${i[0].toLowerCase()}-${String(j[0]).toLowerCase()}`).removeClass('btn-outline-danger');
-                                break;
-                            case 2:
-                                $(`#search-filter-${i[0].toLowerCase()}-${String(j[0]).toLowerCase()}`).addClass('active');
-                                $(`#search-filter-${i[0].toLowerCase()}-${String(j[0]).toLowerCase()}`).addClass('btn-outline-danger');
-                                $(`#search-filter-${i[0].toLowerCase()}-${String(j[0]).toLowerCase()}`).removeClass('btn-outline-secondary');
-                                break;
-                            default:
-                                $(`#search-filter-${i[0].toLowerCase()}-${String(j[0]).toLowerCase()}`).addClass('btn-outline-secondary');
-                                $(`#search-filter-${i[0].toLowerCase()}-${String(j[0]).toLowerCase()}`).removeClass('active');
-                                $(`#search-filter-${i[0].toLowerCase()}-${String(j[0]).toLowerCase()}`).removeClass('btn-outline-danger');
-                        }
+                    $(`#search-filter-${i[0].toLowerCase()}-${j[0].toLowerCase()}`).toggleClass('active', j[1]);
+                });
+            });
+
+            Object.entries(searchOptions['filterButton']).forEach(i => {
+                Object.entries(i[1]).forEach(j => {
+                    switch (j[1]) {
+                        case 1:
+                            $(`#search-filter-button-${i[0].toLowerCase()}-${String(j[0]).toLowerCase()}`).addClass('active');
+                            $(`#search-filter-button-${i[0].toLowerCase()}-${String(j[0]).toLowerCase()}`).addClass('btn-outline-secondary');
+                            $(`#search-filter-button-${i[0].toLowerCase()}-${String(j[0]).toLowerCase()}`).removeClass('btn-outline-danger');
+                            break;
+                        case 2:
+                            $(`#search-filter-button-${i[0].toLowerCase()}-${String(j[0]).toLowerCase()}`).addClass('active');
+                            $(`#search-filter-button-${i[0].toLowerCase()}-${String(j[0]).toLowerCase()}`).addClass('btn-outline-danger');
+                            $(`#search-filter-button-${i[0].toLowerCase()}-${String(j[0]).toLowerCase()}`).removeClass('btn-outline-secondary');
+                            break;
+                        default:
+                            $(`#search-filter-button-${i[0].toLowerCase()}-${String(j[0]).toLowerCase()}`).addClass('btn-outline-secondary');
+                            $(`#search-filter-button-${i[0].toLowerCase()}-${String(j[0]).toLowerCase()}`).removeClass('active');
+                            $(`#search-filter-button-${i[0].toLowerCase()}-${String(j[0]).toLowerCase()}`).removeClass('btn-outline-danger');
                     }
                 });
 
-                if (i[0] == 'race' || i[0] == 'level') {
-                    $(`#search-filter-select-${i[0].toLowerCase()}`).toggleClass('active', Object.values(searchOptions['filter'][i[0]]).filter(v => v).length > 0);
-                }
+                $(`#search-filter-button-${i[0]}`).toggleClass('active', Object.values(searchOptions['filterButton'][i[0]]).filter(v => v).length > 0);
             });
 
             Object.entries(searchOptions['filterText']).forEach(i => {
@@ -907,6 +910,14 @@ function getActiveFiltersNum() {
         });
     });
 
+    $.each(searchOptions.filterButton, function(i, v) {
+        $.each(v, function(j, w) {
+            if (w) {
+                num += 1;
+            }
+        });
+    });
+
     $.each(searchOptions.filterText, function(i, v) {
         if (i == 'startDate' || i == 'endDate') {
             if (v.day !== '' && v.month !== '' && v.year !== '') {
@@ -935,18 +946,18 @@ function getActiveFiltersNum() {
 function searchResetFilter(search = true) {
     Object.entries(searchOptions['filter']).forEach((filter) => {
         Object.entries(filter[1]).forEach(val => {
-            if (typeof val[1] === 'boolean') {
-                searchOptions['filter'][filter[0]][val[0]] = false;
-            } else {
-                searchOptions['filter'][filter[0]][val[0]] = 0;
-            }
+            searchOptions['filter'][filter[0]][val[0]] = false;
+
+            $(`#search-filter-${filter[0].toLowerCase()}-${val[0].toLowerCase()}`).removeClass('active');
+        });
+    });
+
+    Object.entries(searchOptions['filterButton']).forEach((filter) => {
+        Object.entries(filter[1]).forEach(val => {
+            searchOptions['filterButton'][filter[0]][val[0]] = 0;
 
             $(`#search-filter-${filter[0].toLowerCase()}-${String(val[0]).toLowerCase()}`).removeClass('active');
         });
-        
-        if (filter[0] == 'race' || filter[0] == 'level') {
-            $(`#search-filter-select-${filter[0]}`).removeClass('active');
-        }
     });
 
     Object.entries(searchOptions['filterText']).forEach((filter) => {
@@ -1025,59 +1036,67 @@ function searchSetOrder(value, changeDir = true) {
     loadCardSearchList(true);
 }
 
-function searchSetFilterButton(option, value, withExclude = false, search = true) {
+function searchSetFilter(option, value, search = true) {
     if (value != null) {
-        if (withExclude) {
-            switch(searchOptions['filter'][option][value]) {
-                case 0:
-                    searchOptions['filter'][option][value] = 1;
-                    $(`#search-filter-${option.toLowerCase()}-${value.toLowerCase()}`).addClass('active');
-                    break;
+        searchOptions['filter'][option][value] = !searchOptions['filter'][option][value];
+            $(`#search-filter-${option.toLowerCase()}-${value.toLowerCase()}`).toggleClass('active', searchOptions['filter'][option][value]);
+    } else {
+        for (optionValue in searchOptions['filter'][option]) {
+            searchOptions['filter'][option][optionValue] = !searchOptions['filter'][option][optionValue];
+            $(`#search-filter-${option.toLowerCase()}-${optionValue.toLowerCase()}`).toggleClass('active', searchOptions['filter'][option][optionValue]);
+        }
+    }
 
-                case 1:
-                    searchOptions['filter'][option][value] = 2;
-                    $(`#search-filter-${option.toLowerCase()}-${value.toLowerCase()}`).removeClass('btn-outline-secondary');
-                    $(`#search-filter-${option.toLowerCase()}-${value.toLowerCase()}`).addClass('btn-outline-danger');
-                    break;
+    if (search) {
+        loadCardSearchList(true);
+    }
+}
 
-                default:
-                    searchOptions['filter'][option][value] = 0;
-                    $(`#search-filter-${option.toLowerCase()}-${value.toLowerCase()}`).addClass('btn-outline-secondary');
-                    $(`#search-filter-${option.toLowerCase()}-${value.toLowerCase()}`).removeClass('active');
-                    $(`#search-filter-${option.toLowerCase()}-${value.toLowerCase()}`).removeClass('btn-outline-danger');
-            }
-        } else {
-            searchOptions['filter'][option][value] = !searchOptions['filter'][option][value];
-            $(`#search-filter-${option.toLowerCase()}-${String(value).toLowerCase()}`).toggleClass('active', searchOptions['filter'][option][value]);
+function searchSetFilterButton(option, value, withExclude = true, search = true) {
+    if (value != null) {
+        switch(searchOptions['filterButton'][option][value]) {
+            case 0:
+                searchOptions['filterButton'][option][value] = 1;
+                $(`#search-filter-button-${option.toLowerCase()}-${String(value).toLowerCase()}`).addClass('active');
+                break;
+
+            case 1:
+                searchOptions['filterButton'][option][value] = 2;
+                $(`#search-filter-button-${option.toLowerCase()}-${String(value).toLowerCase()}`).removeClass('btn-outline-secondary');
+                $(`#search-filter-button-${option.toLowerCase()}-${String(value).toLowerCase()}`).addClass('btn-outline-danger');
+                break;
+
+            default:
+                searchOptions['filterButton'][option][value] = 0;
+                $(`#search-filter-button-${option.toLowerCase()}-${String(value).toLowerCase()}`).addClass('btn-outline-secondary');
+                $(`#search-filter-button-${option.toLowerCase()}-${String(value).toLowerCase()}`).removeClass('active');
+                $(`#search-filter-button-${option.toLowerCase()}-${String(value).toLowerCase()}`).removeClass('btn-outline-danger');
         }
     } else {
-        if (withExclude) {
-            switch(searchOptions['filter'][option]) {
+        for (optionValue in searchOptions['filter'][option]) {
+            switch(searchOptions['filterButton'][option][optionValue]) {
                 case 0:
-                    searchOptions['filter'][option] = 1;
-                    $(`#search-filter-${option.toLowerCase()}`).addClass('active');
+                    searchOptions['filterButton'][option][optionValue] = 1;
+                    $(`#search-filter-button-${option.toLowerCase()}-${String(optionValue).toLowerCase()}`).addClass('active');
                     break;
 
                 case 1:
-                    searchOptions['filter'][option] = 2;
-                    $(`#search-filter-${option.toLowerCase()}`).removeClass('btn-outline-secondary');
-                    $(`#search-filter-${option.toLowerCase()}`).addClass('btn-outline-danger');
+                    searchOptions['filterButton'][option][optionValue] = 2;
+                    $(`#search-filter-button-${option.toLowerCase()}-${String(optionValue).toLowerCase()}`).removeClass('btn-outline-secondary');
+                    $(`#search-filter-button-${option.toLowerCase()}-${String(optionValue).toLowerCase()}`).addClass('btn-outline-danger');
                     break;
 
                 default:
-                    searchOptions['filter'][option] = 0;
-                    $(`#search-filter-${option.toLowerCase()}`).addClass('btn-outline-secondary');
-                    $(`#search-filter-${option.toLowerCase()}`).removeClass('active');
-                    $(`#search-filter-${option.toLowerCase()}`).removeClass('btn-outline-danger');
+                    searchOptions['filterButton'][option][optionValue] = 0;
+                    $(`#search-filter-button-${option.toLowerCase()}-${String(optionValue).toLowerCase()}`).addClass('btn-outline-secondary');
+                    $(`#search-filter-button-${option.toLowerCase()}-${String(optionValue).toLowerCase()}`).removeClass('active');
+                    $(`#search-filter-button-${option.toLowerCase()}-${String(optionValue).toLowerCase()}`).removeClass('btn-outline-danger');
             }
-        } else {
-            searchOptions['filter'][option] = !searchOptions['filter'][option];
-            $(`#search-filter-${option.toLowerCase()}`).toggleClass('active', searchOptions['filter'][option]);
         }
     }
 
     if (option == 'race' || option == 'level') {
-        $(`#search-filter-select-${option.toLowerCase()}`).toggleClass('active', Object.values(searchOptions['filter'][option]).filter(v => v).length);
+        $(`#search-filter-button-${option.toLowerCase()}`).toggleClass('active', Object.values(searchOptions['filterButton'][option]).filter(v => v).length > 0);
     }
 
     if (search) {
@@ -1215,7 +1234,7 @@ function getFilterTextList(options) {
     return textFilterList;
 }
 
-function checkFilters(card, filterList, textFilterList, selectFilterList, effectFilterList, typeFilter, effectFilter, typeFilterCount = 0, effectFilterCount = 0) {
+function checkFilters(card, filterList, buttonFilterList, textFilterList, selectFilterList, effectFilterList, typeFilter, effectFilter, typeFilterCount = 0, effectFilterCount = 0) {
     if (textFilterList.startDate) {
         var startDate = new Date(`${textFilterList.startDate}`).getTime();
 
@@ -1285,68 +1304,74 @@ function checkFilters(card, filterList, textFilterList, selectFilterList, effect
     }
 
     for (let i = 0; i < filterList.length; i++) {
-        if (filterList[i] == 'type') {
-            if (typeFilter == 'all') {
-                var matched = 0;
+        if (!searchOptions['filter'][filterList[i]][card[filterList[i]]]) {
+            return false;
+        }
+    }
 
-                $.each(searchOptions['filter'].type, function (type, value) {
-                    if (type == 'Legend') {
-                        if (value == 1 && ('properties' in card && card.properties.includes('LegendCard'))) {
-                            matched++;
-                        } else if (value == 2 && (!('properties' in card) || !card.properties.includes('LegendCard'))) {
-                            matched++;
-                        }
-                    } else  if (card.hasOwnProperty('subtype')) {
-                        if (value == 1 && (card.type === type || card.subtype === type)) {
-                            matched++;
-                        } else if (value == 2 && !(card.type === type || card.subtype === type)) {
-                            matched++;
-                        }
-                    } else {
-                        if (value == 1 && card.type === type) {
-                            matched++;
-                        } else if (value == 2 && card.type !== type) {
-                            matched++;
-                        }
+    for (let i = 0; i < buttonFilterList.length; i++) {
+        if (!(buttonFilterList[i] in card)) {
+            return false;
+        }
+
+        if (buttonFilterList[i] == 'type' && typeFilter == 'all') {
+            var matched = 0;
+
+            $.each(searchOptions['filterButton'].type, function (type, value) {
+                if (type == 'Legend') {
+                    if (value == 1 && ('properties' in card && card.properties.includes('LegendCard'))) {
+                        matched++;
+                    } else if (value == 2 && (!('properties' in card) || !card.properties.includes('LegendCard'))) {
+                        matched++;
                     }
-                });
-
-                if (typeFilterCount != matched) {
-                    return false;
+                } else  if (card.hasOwnProperty('subtype')) {
+                    if (value == 1 && (card.type === type || card.subtype === type)) {
+                        matched++;
+                    } else if (value == 2 && !(card.type === type || card.subtype === type)) {
+                        matched++;
+                    }
+                } else {
+                    if (value == 1 && card.type === type) {
+                        matched++;
+                    } else if (value == 2 && card.type !== type) {
+                        matched++;
+                    }
                 }
-            } else {
-                var filterActive = false;
-                var type = searchOptions['filter'][filterList[i]][card[filterList[i]]];
+            });
+
+            if (typeFilterCount != matched) {
+                return false;
+            }
+        } else {
+            var filterActive = Object.values(searchOptions['filterButton'][buttonFilterList[i]]).includes(1);
+            var filter = searchOptions['filterButton'][buttonFilterList[i]][card[buttonFilterList[i]]];
+
+            if (buttonFilterList[i] == 'type') {
                 var subtype = 0;
 
                 if (card.hasOwnProperty('subtype')) {
-                    subtype = searchOptions['filter'][filterList[i]][card.subtype];
+                    subtype = searchOptions['filterButton'][buttonFilterList[i]][card.subtype];
                 }
 
-                $.each(searchOptions['filter'].type, function (type, value) {
-                    if (value == 1) {
-                        filterActive = true;
-                        return false;
-                    }
-                });
-
-                if (!filterActive && searchOptions['filter'].type.Legend == 1) {
+                if (!filterActive && searchOptions['filterButton'].type.Legend == 1) {
                     if (!('properties' in card) || !card.properties.includes('LegendCard')) {
                         return false;
                     }
-                } else if (filterActive && type == 0 && subtype == 0) {
-                    if (searchOptions['filter'].type.Legend == 1 && 'properties' in card && card.properties.includes('LegendCard')) {
+                } else if (filterActive && filter == 0 && subtype == 0) {
+                    if (searchOptions['filterButton'].type.Legend == 1 && 'properties' in card && card.properties.includes('LegendCard')) {
                         continue;
                     }
 
                     return false;
-                } else if (type == 2 || subtype == 2 || (searchOptions['filter'].type.Legend == 2 && 'properties' in card && card.properties.includes('LegendCard'))) {
+                } else if (filter == 2 || subtype == 2 || (searchOptions['filterButton'].type.Legend == 2 && 'properties' in card && card.properties.includes('LegendCard'))) {
                     return false;
                 }
-            }
-        } else {
-            if (!searchOptions['filter'][filterList[i]][card[filterList[i]]]) {
-                return false;
+            } else {
+                if (filterActive && filter == 0) {
+                    return false;
+                } else if (filter == 2) {
+                    return false;
+                }
             }
         }
     }
@@ -1442,6 +1467,7 @@ var searchedCards = [];
 
 function loadCardSearchList(updateSortFilter = false, resetPaginator = true) {
     const filterList = getFilterList(searchOptions['filter']);
+    const buttonFilterList = getFilterList(searchOptions['filterButton']);
     const textFilterList = getFilterTextList(searchOptions['filterText']);
     const selectFilterList = [];
     const effectFilterList = [];
@@ -1454,7 +1480,7 @@ function loadCardSearchList(updateSortFilter = false, resetPaginator = true) {
     }
 
     if (typeRadio == 'all') {
-        $.each(searchOptions['filter'].type, function (type, value) {
+        $.each(searchOptions['filterButton'].type, function (type, value) {
             if (value == 1 || value == 2) {
                 typeFilterCount++;
             }
@@ -1488,7 +1514,7 @@ function loadCardSearchList(updateSortFilter = false, resetPaginator = true) {
         }
 
         //if correct add to array
-        if (checkFilters(card, filterList, textFilterList, selectFilterList, effectFilterList, typeRadio, effectRadio, typeFilterCount, effectFilterCount)) {
+        if (checkFilters(card, filterList, buttonFilterList, textFilterList, selectFilterList, effectFilterList, typeRadio, effectRadio, typeFilterCount, effectFilterCount)) {
             searchedCards.push(card);
         }
     });
@@ -2611,28 +2637,32 @@ function loadCardFilter(property, index) {
     }
 
     if ('levels' in filter && filter.levels) {
-        searchOptions['filter']['level'][filter.levels[0]] = true;
+        if (filter.levels[1] === '!=') {
+            searchOptions['filterButton']['level'][filter.levels[0]] = 2;
+        } else {
+            searchOptions['filterButton']['level'][filter.levels[0]] = 1;
+        }
 
         switch(filter.levels[1]) {
             case '>=':
                 for(let i = filter.levels[0] + 1; i < 13; i++) {
-                    searchOptions['filter']['level'][i] = true;
+                    searchOptions['filterButton']['level'][i] = 1;
                 }
                 break;
 
             case '<=':
                 for(let i = filter.levels[0] - 1; i > 0; i--) {
-                    searchOptions['filter']['level'][i] = true;
+                    searchOptions['filterButton']['level'][i] = 1;
                 }
                 break;
 
             case '||':
-                searchOptions['filter']['level'][filter.levels[2]] = true;
+                searchOptions['filterButton']['level'][filter.levels[2]] = 1;
                 break;
 
             case '-':
                 for(let i = filter.levels[0] + 1; i <= filter.levels[2]; i++) {
-                    searchOptions['filter']['level'][i] = true;
+                    searchOptions['filterButton']['level'][i] = 1;
                 }
                 break;
 
@@ -2643,29 +2673,29 @@ function loadCardFilter(property, index) {
 
     if ('attributes' in filter && filter.attributes) {
         filter.attributes.forEach(attribute => {
-            searchOptions['filter']['attribute'][attribute] = true;
+            searchOptions['filterButton']['attribute'][attribute] = 1;
         });
     }
 
     if ('races' in filter && filter.races) {
         filter.races.forEach(race => {
-            searchOptions['filter']['race'][race] = true;
+            searchOptions['filterButton']['race'][race] = 1;
         });
     }
 
     if ('subtype' in filter && filter.subtype) {
         if (filter.subtype == 'NonEffect') {
-            searchOptions['filterSelect']['properties'].push("NonEffect");
+            searchOptions['filterButton']['type'].Effect = 2;
         } else {
-            searchOptions['filter']['type'][filter.subtype] = 1;
+            searchOptions['filterButton']['type'][filter.subtype] = 1;
         }
     }
 
     if ('type' in filter && filter.type) {
         if (filter.type == 'NonEffect') {
-            searchOptions['filterSelect']['properties'].push("NonEffect");
+            searchOptions['filterButton']['type'].Effect = 2;
         } else {
-            searchOptions['filter']['type'][filter.type] = 1;
+            searchOptions['filterButton']['type'][filter.type] = 1;
         }
     }
 
@@ -2680,7 +2710,7 @@ function loadCardFilter(property, index) {
         }
 
         filter.excludeTypes.forEach(type => {
-            searchOptions['filter']['type'][type] = 2;
+            searchOptions['filterButton']['type'][type] = 2;
         });
     }
 

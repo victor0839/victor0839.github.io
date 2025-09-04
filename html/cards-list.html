@@ -38,21 +38,21 @@
                         <div>
                             <h5 data-translate-string="ui,CardType"></h5>
                             <div class="search-filter-group">
-                                <button id="search-filter-cardtype-monster" class="btn btn-outline-secondary" onclick="searchSetFilterButton('cardType', 'Monster')"><span data-translate-string="cardTypeShort,Monster"></span></button>
-                                <button id="search-filter-cardtype-spell" class="btn btn-outline-secondary" onclick="searchSetFilterButton('cardType', 'Spell')"><span data-translate-string="cardTypeShort,Spell"></span></button>
-                                <button id="search-filter-cardtype-trap" class="btn btn-outline-secondary" onclick="searchSetFilterButton('cardType', 'Trap')"><span data-translate-string="cardTypeShort,Trap"></span></button>
+                                <button id="search-filter-cardtype-monster" class="btn btn-outline-secondary" onclick="searchSetFilter('cardType', 'Monster')"><span data-translate-string="cardTypeShort,Monster"></span></button>
+                                <button id="search-filter-cardtype-spell" class="btn btn-outline-secondary" onclick="searchSetFilter('cardType', 'Spell')"><span data-translate-string="cardTypeShort,Spell"></span></button>
+                                <button id="search-filter-cardtype-trap" class="btn btn-outline-secondary" onclick="searchSetFilter('cardType', 'Trap')"><span data-translate-string="cardTypeShort,Trap"></span></button>
                             </div>
                         </div>
                         <hr>
                         <div>
                             <h5 data-translate-string="ui,Attributes"></h5>
                             <div id="search-attributes-list" class="search-filter-group">
-                                <button id="search-filter-attribute-dark" class="btn btn-outline-secondary" onclick="searchSetFilterButton('attribute', 'DARK')"><span data-translate-string="attribute,DARK"></span></button>
-                                <button id="search-filter-attribute-earth" class="btn btn-outline-secondary" onclick="searchSetFilterButton('attribute', 'EARTH')"><span data-translate-string="attribute,EARTH"></span></button>
-                                <button id="search-filter-attribute-fire" class="btn btn-outline-secondary" onclick="searchSetFilterButton('attribute', 'FIRE')"><span data-translate-string="attribute,FIRE"></span></button>
-                                <button id="search-filter-attribute-light" class="btn btn-outline-secondary" onclick="searchSetFilterButton('attribute', 'LIGHT')"><span data-translate-string="attribute,LIGHT"></span></button>
-                                <button id="search-filter-attribute-water" class="btn btn-outline-secondary" onclick="searchSetFilterButton('attribute', 'WATER')"><span data-translate-string="attribute,WATER"></span></button>
-                                <button id="search-filter-attribute-wind" class="btn btn-outline-secondary" onclick="searchSetFilterButton('attribute', 'WIND')"><span data-translate-string="attribute,WIND"></span></button>
+                                <button id="search-filter-button-attribute-dark" class="btn btn-outline-secondary" onclick="searchSetFilterButton('attribute', 'DARK')"><span data-translate-string="attribute,DARK"></span></button>
+                                <button id="search-filter-button-attribute-earth" class="btn btn-outline-secondary" onclick="searchSetFilterButton('attribute', 'EARTH')"><span data-translate-string="attribute,EARTH"></span></button>
+                                <button id="search-filter-button-attribute-fire" class="btn btn-outline-secondary" onclick="searchSetFilterButton('attribute', 'FIRE')"><span data-translate-string="attribute,FIRE"></span></button>
+                                <button id="search-filter-button-attribute-light" class="btn btn-outline-secondary" onclick="searchSetFilterButton('attribute', 'LIGHT')"><span data-translate-string="attribute,LIGHT"></span></button>
+                                <button id="search-filter-button-attribute-water" class="btn btn-outline-secondary" onclick="searchSetFilterButton('attribute', 'WATER')"><span data-translate-string="attribute,WATER"></span></button>
+                                <button id="search-filter-button-attribute-wind" class="btn btn-outline-secondary" onclick="searchSetFilterButton('attribute', 'WIND')"><span data-translate-string="attribute,WIND"></span></button>
                             </div>
                         </div>
                         <hr>
@@ -75,68 +75,23 @@
                                 </div>
                             </div>
                             <div class="search-filter-group">
-                                <button id="search-filter-type-normal" class="btn btn-outline-secondary" onclick="searchSetFilterButton('type', 'Normal', true)"><span data-translate-string="type,Normal"></span></button>
-                                <button id="search-filter-type-effect" class="btn btn-outline-secondary" onclick="searchSetFilterButton('type', 'Effect', true)"><span data-translate-string="type,Effect"></span></button>
-                                <button id="search-filter-type-maximum" class="btn btn-outline-secondary" onclick="searchSetFilterButton('type', 'Maximum', true)"><span data-translate-string="type,Maximum"></span></button>
-                                <button id="search-filter-type-fusion" class="btn btn-outline-secondary" onclick="searchSetFilterButton('type', 'Fusion', true)"><span data-translate-string="type,Fusion"></span></button>
-                                <button id="search-filter-type-ritual" class="btn btn-outline-secondary" onclick="searchSetFilterButton('type', 'Ritual', true)"><span data-translate-string="type,Ritual"></span></button>
-                                <button id="search-filter-type-field" class="btn btn-outline-secondary" onclick="searchSetFilterButton('type', 'Field', true)"><span data-translate-string="type,Field"></span></button>
-                                <button id="search-filter-type-equip" class="btn btn-outline-secondary" onclick="searchSetFilterButton('type', 'Equip', true)"><span data-translate-string="type,Equip"></span></button>
-                                <button id="search-filter-type-legend" class="btn btn-outline-secondary" onclick="searchSetFilterButton('type', 'Legend', true)"><span data-translate-string="type,Legend"></span></button>
+                                <button id="search-filter-button-type-normal" class="btn btn-outline-secondary" onclick="searchSetFilterButton('type', 'Normal')"><span data-translate-string="type,Normal"></span></button>
+                                <button id="search-filter-button-type-effect" class="btn btn-outline-secondary" onclick="searchSetFilterButton('type', 'Effect')"><span data-translate-string="type,Effect"></span></button>
+                                <button id="search-filter-button-type-maximum" class="btn btn-outline-secondary" onclick="searchSetFilterButton('type', 'Maximum')"><span data-translate-string="type,Maximum"></span></button>
+                                <button id="search-filter-button-type-fusion" class="btn btn-outline-secondary" onclick="searchSetFilterButton('type', 'Fusion')"><span data-translate-string="type,Fusion"></span></button>
+                                <button id="search-filter-button-type-ritual" class="btn btn-outline-secondary" onclick="searchSetFilterButton('type', 'Ritual')"><span data-translate-string="type,Ritual"></span></button>
+                                <button id="search-filter-button-type-field" class="btn btn-outline-secondary" onclick="searchSetFilterButton('type', 'Field')"><span data-translate-string="type,Field"></span></button>
+                                <button id="search-filter-button-type-equip" class="btn btn-outline-secondary" onclick="searchSetFilterButton('type', 'Equip')"><span data-translate-string="type,Equip"></span></button>
+                                <button id="search-filter-button-type-legend" class="btn btn-outline-secondary" onclick="searchSetFilterButton('type', 'Legend')"><span data-translate-string="type,Legend"></span></button>
                             </div>
                         </div>
                         <hr>
                         <div class="d-flex flex-wrap gap-1">
                             <div>
-                                <button id="search-filter-select-race" type="button" class="btn btn-outline-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"><span class="px-2" data-translate-string="ui,Race"></span><i class="fas fa-caret-down ms-2"></i></button>
-                                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
-                                    <li><a id="search-filter-race-spellcaster" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Spellcaster')"><span data-translate-string="race,Spellcaster"></span></a></li>
-                                    <li><a id="search-filter-race-dragon" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Dragon')"><span data-translate-string="race,Dragon"></span></a></li>
-                                    <li><a id="search-filter-race-warrior" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Warrior')"><span data-translate-string="race,Warrior"></span></a></li>
-                                    <li><a id="search-filter-race-fiend" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Fiend')"><span data-translate-string="race,Fiend"></span></a></li>
-                                    <li><a id="search-filter-race-psychic" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Psychic')"><span data-translate-string="race,Psychic"></span></a></li>
-                                    <li><a id="search-filter-race-reptile" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Reptile')"><span data-translate-string="race,Reptile"></span></a></li>
-                                    <li><a id="search-filter-race-pyro" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Pyro')"><span data-translate-string="race,Pyro"></span></a></li>
-                                    <li><a id="search-filter-race-fish" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Fish')"><span data-translate-string="race,Fish"></span></a></li>
-                                    <li><a id="search-filter-race-insect" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Insect')"><span data-translate-string="race,Insect"></span></a></li>
-                                    <li><a id="search-filter-race-machine" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Machine')"><span data-translate-string="race,Machine"></span></a></li>
-                                    <li><a id="search-filter-race-thunder" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Thunder')"><span data-translate-string="race,Thunder"></span></a></li>
-                                    <li><a id="search-filter-race-wingedbeast" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'WingedBeast')"><span data-translate-string="race,WingedBeast"></span></a></li>
-                                    <li><a id="search-filter-race-aqua" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Aqua')"><span data-translate-string="race,Aqua"></span></a></li>
-                                    <li><a id="search-filter-race-beast" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Beast')"><span data-translate-string="race,Beast"></span></a></li>
-                                    <li><a id="search-filter-race-dinosaur" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Dinosaur')"><span data-translate-string="race,Dinosaur"></span></a></li>
-                                    <li><a id="search-filter-race-fairy" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Fairy')"><span data-translate-string="race,Fairy"></span></a></li>
-                                    <li><a id="search-filter-race-zombie" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Zombie')"><span data-translate-string="race,Zombie"></span></a></li>
-                                    <li><a id="search-filter-race-beastwarrior" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'BeastWarrior')"><span data-translate-string="race,BeastWarrior"></span></a></li>
-                                    <li><a id="search-filter-race-rock" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Rock')"><span data-translate-string="race,Rock"></span></a></li>
-                                    <li><a id="search-filter-race-seaserpent" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'SeaSerpent')"><span data-translate-string="race,SeaSerpent"></span></a></li>
-                                    <li><a id="search-filter-race-plant" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Plant')"><span data-translate-string="race,Plant"></span></a></li>
-                                    <li><a id="search-filter-race-cyberse" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Cyberse')"><span data-translate-string="race,Cyberse"></span></a></li>
-                                    <li><a id="search-filter-race-wyrm" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Wyrm')"><span data-translate-string="race,Wyrm"></span></a></li>
-                                    <li><a id="search-filter-race-galaxy" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Galaxy')"><span data-translate-string="race,Galaxy"></span></a></li>
-                                    <li><a id="search-filter-race-cyborg" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'Cyborg')"><span data-translate-string="race,Cyborg"></span></a></li>
-                                    <li><a id="search-filter-race-magicalknight" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'MagicalKnight')"><span data-translate-string="race,MagicalKnight"></span></a></li>
-                                    <li><a id="search-filter-race-highdragon" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'HighDragon')"><span data-translate-string="race,HighDragon"></span></a></li>
-                                    <li><a id="search-filter-race-omegapsychic" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'OmegaPsychic')"><span data-translate-string="race,OmegaPsychic"></span></a></li>
-                                    <li><a id="search-filter-race-celestialwarrior" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('race', 'CelestialWarrior')"><span data-translate-string="race,CelestialWarrior"></span></a></li>
-                                </ul>
+                                <button id="search-filter-button-race" type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#raceButtonsModal"><span class="px-2" data-translate-string="ui,Race"></span><i class="fas fa-caret-right ms-2"></i></button>
                             </div>
                             <div>
-                                <button id="search-filter-select-level" type="button" class="btn btn-outline-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"><span class="px-2" data-translate-string="ui,Level"></span><i class="fas fa-caret-down ms-2"></i></button>
-                                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
-                                    <li><a id="search-filter-level-1" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('level', 1)"><span>1</span></a></li>
-                                    <li><a id="search-filter-level-2" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('level', 2)"><span>2</span></a></li>
-                                    <li><a id="search-filter-level-3" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('level', 3)"><span>3</span></a></li>
-                                    <li><a id="search-filter-level-4" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('level', 4)"><span>4</span></a></li>
-                                    <li><a id="search-filter-level-5" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('level', 5)"><span>5</span></a></li>
-                                    <li><a id="search-filter-level-6" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('level', 6)"><span>6</span></a></li>
-                                    <li><a id="search-filter-level-7" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('level', 7)"><span>7</span></a></li>
-                                    <li><a id="search-filter-level-8" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('level', 8)"><span>8</span></a></li>
-                                    <li><a id="search-filter-level-9" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('level', 9)"><span>9</span></a></li>
-                                    <li><a id="search-filter-level-10" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('level', 10)"><span>10</span></a></li>
-                                    <li><a id="search-filter-level-11" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('level', 11)"><span>11</span></a></li>
-                                    <li><a id="search-filter-level-12" href="javascript:;" class="dropdown-item" onclick="searchSetFilterButton('level', 12)"><span>12</span></a></li>
-                                </ul>
+                                <button id="search-filter-button-level" type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#levelButtonsModal"><span class="px-2" data-translate-string="ui,Level"></span><i class="fas fa-caret-right ms-2"></i></button>
                             </div>
                             <div>
                                 <button id="search-filter-select-series" type="button" class="btn btn-outline-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"><span class="px-2" data-translate-string="ui,Series"></span><i class="fas fa-caret-down ms-2"></i></button>
@@ -241,36 +196,28 @@
                             </div>
                             <div class="d-flex flex-wrap gap-1">
                                 <div>
-                                    <button id="search-filter-effect-activation" type="button" class="btn btn-outline-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"><span class="px-2" data-translate-string="ui,Activations"></span><i class="fas fa-caret-down ms-2"></i></button>
-                                    <ul id="search-filter-effect-activation-list" class="dropdown-menu dropdown-menu-dark dropdown-menu-end dropdown-menu-scroll"></ul>
+                                    <button id="search-filter-effect-activation" type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#activationButtonsModal"><span class="px-2" data-translate-string="ui,Activations"></span><i class="fas fa-caret-right ms-2"></i></button>
                                 </div>
                                 <div>
-                                    <button id="search-filter-effect-actions" type="button" class="btn btn-outline-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"><span class="px-2" data-translate-string="ui,Actions"></span><i class="fas fa-caret-down ms-2"></i></button>
-                                    <ul id="search-filter-effect-actions-list" class="dropdown-menu dropdown-menu-dark dropdown-menu-end dropdown-menu-scroll"></ul>
+                                    <button id="search-filter-effect-actions" type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#actionsButtonsModal"><span class="px-2" data-translate-string="ui,Actions"></span><i class="fas fa-caret-right ms-2"></i></button>
                                 </div>
                                 <div>
-                                    <button id="search-filter-effect-stats" type="button" class="btn btn-outline-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"><span class="px-2" data-translate-string="ui,StatsChanges"></span><i class="fas fa-caret-down ms-2"></i></button>
-                                    <ul id="search-filter-effect-stats-list" class="dropdown-menu dropdown-menu-dark dropdown-menu-end dropdown-menu-scroll"></ul>
+                                    <button id="search-filter-effect-stats" type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#statsButtonsModal"><span class="px-2" data-translate-string="ui,StatsChanges"></span><i class="fas fa-caret-right ms-2"></i></button>
                                 </div>
                                 <div>
-                                    <button id="search-filter-effect-cards" type="button" class="btn btn-outline-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"><span class="px-2" data-translate-string="ui,CardsCategories"></span><i class="fas fa-caret-down ms-2"></i></button>
-                                    <ul id="search-filter-effect-cards-list" class="dropdown-menu dropdown-menu-dark dropdown-menu-end dropdown-menu-scroll"></ul>
+                                    <button id="search-filter-effect-cards" type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#cardsButtonsModal"><span class="px-2" data-translate-string="ui,CardsCategories"></span><i class="fas fa-caret-right ms-2"></i></button>
                                 </div>
                                 <div>
-                                    <button id="search-filter-effect-summoning" type="button" class="btn btn-outline-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"><span class="px-2" data-translate-string="ui,SummoningCategories"></span><i class="fas fa-caret-down ms-2"></i></button>
-                                    <ul id="search-filter-effect-summoning-list" class="dropdown-menu dropdown-menu-dark dropdown-menu-end dropdown-menu-scroll"></ul>
+                                    <button id="search-filter-effect-summoning" type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#summoningButtonsModal"><span class="px-2" data-translate-string="ui,SummoningCategories"></span><i class="fas fa-caret-right ms-2"></i></button>
                                 </div>
                                 <div>
-                                    <button id="search-filter-effect-attack" type="button" class="btn btn-outline-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"><span class="px-2" data-translate-string="ui,AttackCategories"></span><i class="fas fa-caret-down ms-2"></i></button>
-                                    <ul id="search-filter-effect-attack-list" class="dropdown-menu dropdown-menu-dark dropdown-menu-end dropdown-menu-scroll"></ul>
+                                    <button id="search-filter-effect-attack" type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#attackButtonsModal"><span class="px-2" data-translate-string="ui,AttackCategories"></span><i class="fas fa-caret-right ms-2"></i></button>
                                 </div>
                                 <div>
-                                    <button id="search-filter-effect-lp" type="button" class="btn btn-outline-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"><span class="px-2" data-translate-string="ui,LpCategories"></span><i class="fas fa-caret-down ms-2"></i></button>
-                                    <ul id="search-filter-effect-lp-list" class="dropdown-menu dropdown-menu-dark dropdown-menu-end dropdown-menu-scroll"></ul>
+                                    <button id="search-filter-effect-lp" type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#lpButtonsModal"><span class="px-2" data-translate-string="ui,LpCategories"></span><i class="fas fa-caret-right ms-2"></i></button>
                                 </div>
                                 <div>
-                                    <button id="search-filter-effect-miscellaneous" type="button" class="btn btn-outline-secondary" data-bs-toggle="dropdown" data-bs-auto-close="outside"><span class="px-2" data-translate-string="ui,Miscellaneous"></span><i class="fas fa-caret-down ms-2"></i></button>
-                                    <ul id="search-filter-effect-miscellaneous-list" class="dropdown-menu dropdown-menu-dark dropdown-menu-end dropdown-menu-scroll"></ul>
+                                    <button id="search-filter-effect-miscellaneous" type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#miscellaneousButtonsModal"><span class="px-2" data-translate-string="ui,Miscellaneous"></span><i class="fas fa-caret-right ms-2"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -283,6 +230,166 @@
             <nav id="search-pagination" class="p-2" aria-label="Page navigation" style="display: none;">
                 <ul class="pagination justify-content-center"></ul>
             </nav>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="raceButtonsModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" data-translate-string="ui,Race"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div id="search-filter-button-races-list" class="search-filter-group"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><span data-translate-string="ui,Close"></span></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="levelButtonsModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" data-translate-string="ui,Level"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div id="search-filter-button-levels-list" class="search-filter-group"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><span data-translate-string="ui,Close"></span></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="activationButtonsModal" tabindex="-1">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" data-translate-string="ui,Activations"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div id="search-filter-effect-activation-list" class="search-filter-group"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><span data-translate-string="ui,Close"></span></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="actionsButtonsModal" tabindex="-1">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" data-translate-string="ui,Actions"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div id="search-filter-effect-actions-list" class="search-filter-group"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><span data-translate-string="ui,Close"></span></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="statsButtonsModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" data-translate-string="ui,StatsChanges"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div id="search-filter-effect-stats-list" class="search-filter-group"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><span data-translate-string="ui,Close"></span></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="cardsButtonsModal" tabindex="-1">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" data-translate-string="ui,CardsCategories"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div id="search-filter-effect-cards-list" class="search-filter-group"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><span data-translate-string="ui,Close"></span></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="summoningButtonsModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" data-translate-string="ui,SummoningCategories"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div id="search-filter-effect-summoning-list" class="search-filter-group"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><span data-translate-string="ui,Close"></span></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="attackButtonsModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" data-translate-string="ui,AttackCategories"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div id="search-filter-effect-attack-list" class="search-filter-group"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><span data-translate-string="ui,Close"></span></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="lpButtonsModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" data-translate-string="ui,LpCategories"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div id="search-filter-effect-lp-list" class="search-filter-group"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><span data-translate-string="ui,Close"></span></button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="miscellaneousButtonsModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" data-translate-string="ui,Miscellaneous"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div id="search-filter-effect-miscellaneous-list" class="search-filter-group"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><span data-translate-string="ui,Close"></span></button>
+            </div>
         </div>
     </div>
 </div>
