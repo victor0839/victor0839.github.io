@@ -111,7 +111,7 @@
 	},
 	{
 		"type": "activation",
-		"abbreviation": "FromOpponentDeckSentToGraveyard",
+		"abbreviation": "CardFromOpponentDeckSentToGraveyard",
 		"name": "Activates if a monster is sent from your opponent's Deck to the Graveyard"
 	},
 	{
@@ -126,7 +126,7 @@
 	},
 	{
 		"type": "activation",
-		"abbreviation": "OpponentTakesDamage",
+		"abbreviation": "OpponentTakesEffectDamage",
 		"name": "Activates if your opponent takes effect damage"
 	},
 	{
@@ -162,7 +162,7 @@
 	{
 		"type": "actions",
 		"abbreviation": "SendMonsterFromHandToGraveyard",
-		"name": "Sends Monster Cards from your hand to Graveyard"
+		"name": "Sends monsters from your hand to Graveyard"
 	},
 	{
 		"type": "actions",
@@ -287,7 +287,7 @@
 	{
 		"type": "actions",
 		"abbreviation": "PlacesMonsterFromGraveyardOnTopDeck",
-		"name": "Places Monster Cards from your Graveyard on the top of the Deck"
+		"name": "Places monsters from your Graveyard on the top of the Deck"
 	},
 	{
 		"type": "actions",
@@ -312,7 +312,7 @@
 	{
 		"type": "actions",
 		"abbreviation": "PlacesMonsterFromGraveyardOnBottomDeck",
-		"name": "Places Monster Cards from your Graveyard on the bottom of the Deck"
+		"name": "Places monsters from your Graveyard on the bottom of the Deck"
 	},
 	{
 		"type": "actions",
@@ -377,12 +377,12 @@
 	{
 		"type": "actions",
 		"abbreviation": "ShuffleMonsterFromGraveyardToDeck",
-		"name": "Shuffles Monster Cards from your Graveyard into the Deck"
+		"name": "Shuffles monsters from your Graveyard into the Deck"
 	},
 	{
 		"type": "actions",
 		"abbreviation": "ShuffleMonsterFromOpponentGraveyardToDeck",
-		"name": "Shuffles Monster Cards from your opponent's Graveyard into the Deck"
+		"name": "Shuffles monsters from your opponent's Graveyard into the Deck"
 	},
 	{
 		"type": "actions",
@@ -467,12 +467,12 @@
 	{
 		"type": "actions",
 		"abbreviation": "AddsMonsterFromGraveyardToHand",
-		"name": "Adds Monster Cards from your Graveyard to your hand"
+		"name": "Adds monsters from your Graveyard to your hand"
 	},
 	{
 		"type": "actions",
 		"abbreviation": "AddsMonsterFromOpponentGraveyardToOpponentHand",
-		"name": "Adds Monster Cards from your opponent's Graveyard to your opponent's hand"
+		"name": "Adds monsters from your opponent's Graveyard to your opponent's hand"
 	},
 	{
 		"type": "actions",
@@ -621,6 +621,11 @@
 	},
 	{
 		"type": "actions",
+		"abbreviation": "CardsOnOpponentFieldAsFusionMaterials",
+		"name": "Uses cards on the opponent's field as Fusion Materials"
+	},
+	{
+		"type": "actions",
 		"abbreviation": "CardsInGraveyardAsFusionMaterials",
 		"name": "Uses cards in the player's Graveyard as Fusion Materials"
 	},
@@ -638,11 +643,6 @@
 		"type": "actions",
 		"abbreviation": "ModifiesCardsUsedAsFusionMaterials",
 		"name": "Modifies which cards can be used as Fusion Material"
-	},
-	{
-		"type": "actions",
-		"abbreviation": "MustIncludeCertainFusionMaterials",
-		"name": "Must include certain Fusion Materials"
 	},
 	{
 		"type": "actions",
@@ -847,12 +847,12 @@
 	{
 		"type": "cards",
 		"abbreviation": "DestroysPlayerMonsters",
-		"name": "Destroys your Monster Cards"
+		"name": "Destroys your monsters"
 	},
 	{
 		"type": "cards",
 		"abbreviation": "DestroysOpponentMonsters",
-		"name": "Destroys your opponent's Monster Cards"
+		"name": "Destroys your opponent's monsters"
 	},
 	{
 		"type": "cards",
@@ -1015,21 +1015,6 @@
 		"name": "Negates the effects of your opponent's Trap Cards"
 	},
 	{
-		"type": "cards",
-		"abbreviation": "RestrictsPlayerEffectsActivationToSpecificCard",
-		"name": "Restricts the player's effect activation to specific cards"
-	},
-	{
-		"type": "cards",
-		"abbreviation": "RestrictsPlayerEffectsActivationToSpecificAttribute",
-		"name": "Restricts the player's effect activation to Attribute specific monsters"
-	},
-	{
-		"type": "cards",
-		"abbreviation": "RestrictsPlayerEffectsActivationToSpecificType",
-		"name": "Restricts the player's effect activation to Type specific monsters"
-	},
-	{
 		"type": "summoning",
 		"abbreviation": "NormalSummonNoTributes",
 		"name": "Normal Summon monsters without Tribute"
@@ -1162,7 +1147,7 @@
 	{
 		"type": "summoning",
 		"abbreviation": "PlayerMonstersCannotBeTributedForATributeSummon",
-		"name": "Prevents your monsters being Tributed for a Tribute Summon"
+		"name": "Prevents your monsters from being Tributed for a Tribute Summon"
 	},
 	{
 		"type": "summoning",
@@ -1176,113 +1161,68 @@
 	},
 	{
 		"type": "summoning",
-		"abbreviation": "PreventsPlayerNormalSummons",
-		"name": "Prevents the player's Normal Summons"
+		"abbreviation": "PreventsNormalSummons",
+		"name": "Prevents Normal Summons"
 	},
 	{
 		"type": "summoning",
-		"abbreviation": "PreventsOpponentNormalSummons",
-		"name": "Prevents your opponent's Normal Summons"
+		"abbreviation": "PreventsSets",
+		"name": "Prevents Sets"
 	},
 	{
 		"type": "summoning",
-		"abbreviation": "PreventsPlayerSets",
-		"name": "Prevents the player's Sets"
+		"abbreviation": "PreventsTributeSummons",
+		"name": "Prevents Tribute Summons"
 	},
 	{
 		"type": "summoning",
-		"abbreviation": "PreventsOpponentSets",
-		"name": "Prevents your opponent's Sets"
+		"abbreviation": "PreventsSpecialSummons",
+		"name": "Prevents Special Summons"
 	},
 	{
 		"type": "summoning",
-		"abbreviation": "PreventsPlayerTributeSummons",
-		"name": "Prevents the player's Tribute Summons"
+		"abbreviation": "PreventsSpecialSummonsFromTheHand",
+		"name": "Prevents Special Summons from the hand"
 	},
 	{
 		"type": "summoning",
-		"abbreviation": "PreventsOpponentTributeSummons",
-		"name": "Prevents your opponent's Tribute Summons"
+		"abbreviation": "PreventsSpecialSummonsFromTheGraveyard",
+		"name": "Prevents Special Summons from the Graveyard"
 	},
 	{
 		"type": "summoning",
-		"abbreviation": "PreventsPlayerSpecialSummons",
-		"name": "Prevents the player's Special Summons"
+		"abbreviation": "PreventsSpecialSummonsFromTheExtraDeck",
+		"name": "Prevents Special Summons from the Extra Deck"
 	},
 	{
 		"type": "summoning",
-		"abbreviation": "PreventsTheOpponentSpecialSummons",
-		"name": "Prevents your opponent's Special Summons"
+		"abbreviation": "RestrictsTributeSummonsToSpecificLevel",
+		"name": "Restricts Tribute Summons to Level specific monsters"
 	},
 	{
 		"type": "summoning",
-		"abbreviation": "PreventsPlayerSpecialSummonsFromTheHand",
-		"name": "Prevents the player's Special Summons from the hand"
+		"abbreviation": "RestrictsSpecialSummonsToSpecificCards",
+		"name": "Restricts Special Summons to specific cards"
 	},
 	{
 		"type": "summoning",
-		"abbreviation": "PreventsPlayerSpecialSummonsFromTheGraveyard",
-		"name": "Prevents the player's Special Summons from the Graveyard"
+		"abbreviation": "RestrictsSpecialSummonsToSpecificAttribute",
+		"name": "Restricts Special Summons to Attribute specific monsters"
 	},
 	{
 		"type": "summoning",
-		"abbreviation": "RestrictsPlayerTributeSummonsToSpecificLevel",
-		"name": "Restricts the player's Tribute Summons to Level specific monsters"
+		"abbreviation": "RestrictsSpecialSummonsToSpecificLevel",
+		"name": "Restricts Special Summons to Level specific monsters"
 	},
 	{
 		"type": "summoning",
-		"abbreviation": "RestrictsOpponentTributeSummonsToSpecificLevel",
-		"name": "Restricts your opponent's Tribute Summons to Level specific monsters"
+		"abbreviation": "RestrictsSpecialSummonsToSpecificType",
+		"name": "Restricts Special Summons to Type specific monsters"
 	},
 	{
 		"type": "summoning",
-		"abbreviation": "RestrictsTheOpponentSpecialSummonsToSpecificCards",
-		"name": "Restricts your opponent's Special Summons to specific cards"
-	},
-	{
-		"type": "summoning",
-		"abbreviation": "RestrictsPlayerSpecialSummonsToSpecificCards",
-		"name": "Restricts the player's Special Summons to specific cards"
-	},
-	{
-		"type": "summoning",
-		"abbreviation": "RestrictsPlayerSpecialSummonsToSpecificAttribute",
-		"name": "Restricts the player's Special Summons to Attribute specific monsters"
-	},
-	{
-		"type": "summoning",
-		"abbreviation": "RestrictsTheOpponentSpecialSummonsToSpecificAttribute",
-		"name": "Restricts your opponent's Special Summons to Attribute specific monsters"
-	},
-	{
-		"type": "summoning",
-		"abbreviation": "RestrictsPlayerSpecialSummonsToSpecificLevel",
-		"name": "Restricts the player's Special Summons to Level specific monsters"
-	},
-	{
-		"type": "summoning",
-		"abbreviation": "RestrictsTheOpponentSpecialSummonsToSpecificLevel",
-		"name": "Restricts your opponent's Special Summons to Level specific monsters"
-	},
-	{
-		"type": "summoning",
-		"abbreviation": "RestrictsPlayerSpecialSummonsToSpecificType",
-		"name": "Restricts the player's Special Summons to Type specific monsters"
-	},
-	{
-		"type": "summoning",
-		"abbreviation": "RestrictsTheOpponentSpecialSummonsToSpecificType",
-		"name": "Restricts your opponent's Special Summons to Type specific monsters"
-	},
-	{
-		"type": "summoning",
-		"abbreviation": "RestrictsPlayerSpecialSummonsToSpecificBattlePosition",
-		"name": "Restricts the player's Special Summons to specific battle position"
-	},
-	{
-		"type": "summoning",
-		"abbreviation": "RestrictsTheOpponentSpecialSummonsToSpecificBattlePosition",
-		"name": "Restricts your opponent's Special Summons to specific battle position"
+		"abbreviation": "RestrictsSpecialSummonsToSpecificBattlePosition",
+		"name": "Restricts Special Summons to specific battle position"
 	},
 	{
 		"type": "attack",
@@ -1328,11 +1268,6 @@
 		"type": "attack",
 		"abbreviation": "PlayerMonstersCannotBeDestroyedByBattle",
 		"name": "Prevents your monsters from being destroyed by battle"
-	},
-	{
-		"type": "attack",
-		"abbreviation": "PreventsPlayerMonsterFromAttacking",
-		"name": "Prevents your monsters from attacking"
 	},
 	{
 		"type": "attack",

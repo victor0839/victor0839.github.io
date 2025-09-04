@@ -86,22 +86,22 @@
 	},
 	{
 		"type": "activation",
-		"abbreviation": "PlayerCardDestroyedByOpponentCardEffect",
+		"abbreviation": "CardDestroyedByOpponentCardEffect",
 		"name": "Cuando tu carta es destruida por el efecto de una carta del adversario"
 	},
 	{
 		"type": "activation",
-		"abbreviation": "PlayerMonsterDestroyedByOpponentCardEffect",
+		"abbreviation": "MonsterDestroyedByOpponentCardEffect",
 		"name": "Cuando tu monstruo es destruido por el efecto de una carta del adversario"
 	},
 	{
 		"type": "activation",
-		"abbreviation": "PlayerSpellDestroyedByOpponentCardEffect",
+		"abbreviation": "SpellDestroyedByOpponentCardEffect",
 		"name": "Cuando tu Carta Mágica es destruida por el efecto de una carta del adversario"
 	},
 	{
 		"type": "activation",
-		"abbreviation": "PlayerTrapDestroyedByOpponentCardEffect",
+		"abbreviation": "TrapDestroyedByOpponentCardEffect",
 		"name": "Cuando tu Carta de Trampa es destruida por el efecto de una carta del adversario"
 	},
 	{
@@ -1131,11 +1131,6 @@
 	},
 	{
 		"type": "summoning",
-		"abbreviation": "CanBeSpecialSummonedByContactFusion",
-		"name": "Puede ser Invocado por Fusión de Contacto"
-	},
-	{
-		"type": "summoning",
 		"abbreviation": "CannotBeSpecialSummoned",
 		"name": "No puede ser Invocado de Modo Especial"
 	},
@@ -1176,12 +1171,12 @@
 	},
 	{
 		"type": "summoning",
-		"abbreviation": "PreventsPlayerTributeSummons",
+		"abbreviation": "PreventsTributeSummons",
 		"name": "Previene Invocaciones por Sacrificio"
 	},
 	{
 		"type": "summoning",
-		"abbreviation": "PreventsPlayerSpecialSummons",
+		"abbreviation": "PreventsSpecialSummons",
 		"name": "Previene Invocaciones Especiales"
 	},
 	{
