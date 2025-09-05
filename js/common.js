@@ -786,10 +786,11 @@ function loadModule(moduleName, id = null) {
 
 function generateLatestCards(maxCardCount = 8) {
     var homeCards = [...data.cards].sort((a, b) => (b.id - a.id));
+
     if (regionName == 'all') {
-        homeCards.sort((a,b) => new Date(b.releaseDate.jp) - new Date(a.releaseDate.jp));
+        homeCards.sort((a,b) => new Date(b.releaseDate.jp).getTime() - new Date(a.releaseDate.jp).getTime());
     } else {
-        homeCards.sort((a,b) => new Date(b.releaseDate[regionName] || '01/01/1999') - new Date(a.releaseDate[regionName] || '01/01/1999'));
+        homeCards.sort((a,b) => new Date(b.releaseDate[regionName] || '1999-01-01').getTime() - new Date(a.releaseDate[regionName] || '1999-01-01').getTime());
     }
 
     var cardCount = 0;
@@ -1635,7 +1636,7 @@ function loadCardSearchList(updateSortFilter = false, resetPaginator = true) {
             }
         }
 
-        cardSearchLoadPage();
+        cardSearchLoadPage(currentPage);
 
         $.each(document.querySelectorAll('.card-item-stats'), function(key, item) {
             if (item.offsetWidth < 262) {
@@ -1752,7 +1753,7 @@ function generateSearchedCard(card, rarities = []) {
                 }
             }
 
-            if (!cardImage && cardSpecialRarities.some(r => card.images[r])) {
+            if (!cardImage && cardSpecialRarities.some(r => r in card.images)) {
                 for(let i = cardSpecialRarities.length - 1; i >= 0; i--) {
                     var rarity = cardSpecialRarities[i];
                     var alt_index = card.images[rarity];
@@ -1837,7 +1838,6 @@ function cardSearchPagination(total = 1) {
     }
 
     var innerHtml = '';
-    var additionalPages = currentPage - 4;
     var remainingPages = totalPages - currentPage;
 
     if (currentPage <= 1) {
@@ -1847,21 +1847,27 @@ function cardSearchPagination(total = 1) {
     }
 
     if (currentPage > 1) {
-        var initialPages = 1;
+        var initialPage = 1;
 
         if (currentPage > 6) {
-            if (additionalPages >= 3) {
-                innerHtml += `<li class="page-item"><a href="javascript:;" class="page-link" onclick="cardSearchLoadPage(1, true)">1</a></li><li class="page-item"><a href="javascript:;" class="page-link" onclick="cardSearchLoadPage(1, true)">2</a></li><li class="page-item disabled"><span class="page-link">...</span></li>`;
+            if (remainingPages < 5) {
+                initialPage = currentPage - (8 - remainingPages);
+            } else {
+                initialPage = currentPage - 3;
             }
 
-            if (remainingPages < 5) {
-                initialPages = currentPage - (8 - remainingPages);
-            } else {
-                initialPages = currentPage - 3;
+            if (initialPage < 1) {
+                initialPage = 1;
+            }
+
+            var additionalPages = currentPage - 4;
+
+            if (additionalPages >= 3 && initialPage > 3) {
+                innerHtml += `<li class="page-item"><a href="javascript:;" class="page-link" onclick="cardSearchLoadPage(1, true)">1</a></li><li class="page-item"><a href="javascript:;" class="page-link" onclick="cardSearchLoadPage(2, true)">2</a></li><li class="page-item disabled"><span class="page-link">...</span></li>`;
             }
         }
 
-        for (var i = initialPages; i < currentPage; i++) {
+        for (var i = initialPage; i < currentPage; i++) {
             innerHtml += `<li class="page-item"><a href="javascript:;" class="page-link" onclick="cardSearchLoadPage(${i}, true)">${i}</a></li>`;
         }
     }
@@ -1869,15 +1875,15 @@ function cardSearchPagination(total = 1) {
     innerHtml += `<li class="page-item active"><span class="page-link" aria-current="page">${currentPage}</span></li>`;
 
     if (currentPage < totalPages) {
-        var lastPages = currentPage + 3;
+        var lastPage = currentPage + 3;
         
         if (currentPage < 7) {
-            var lastPages = 8;
+            lastPage = 8;
         } else if (remainingPages <= 5) {
-            var lastPages = currentPage + remainingPages;
+            lastPage = currentPage + remainingPages;
         }
 
-        for (var i = currentPage + 1; i <= lastPages; i++) {
+        for (var i = currentPage + 1; i <= lastPage; i++) {
             innerHtml += `<li class="page-item"><a href="javascript:;" class="page-link" onclick="cardSearchLoadPage(${i}, true)">${i}</a></li>`;
 
             if (i == totalPages) {
@@ -1885,7 +1891,7 @@ function cardSearchPagination(total = 1) {
             }
         }
 
-        if (remainingPages > 5) {
+        if (remainingPages > 5 && (lastPage + 2) < totalPages) {
             innerHtml += `<li class="page-item disabled"><span class="page-link">...</span></li><li class="page-item"><a href="javascript:;" class="page-link" onclick="cardSearchLoadPage(${totalPages-1}, true)">${totalPages-1}</a></li><li class="page-item"><a href="javascript:;" class="page-link" onclick="cardSearchLoadPage(${totalPages}, true)">${totalPages}</a></li>`;
         }
 
@@ -1953,6 +1959,10 @@ function loadCard(id) {
 
         $('#card-categories').show();
         $('#card-sets-list').show();
+
+        if (!currentCard) {
+            currentCard = find(cardList, 'id', id);
+        }
 
         renderCardRelatedInfo();
         window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
@@ -2191,7 +2201,7 @@ function renderCardRelatedInfo() {
     $('.rarity-tooltip').tooltip('dispose').tooltip({title: getTooltipTitle, html: true, placement: 'top'});
 
     //generate related cards
-    $.each(cardCategories, function (key, sections) {        
+    $.each(cardCategories, function (key, sections) {
         $.each(sections, function(k, category) {
             if (category.type == 2) {
                 return;
@@ -2582,14 +2592,18 @@ function createStringFromFilter(filter) {
             if ('type' in filter && filter.type) {
                 keywords[3] += `${getLocalizedString('type', filter.type)} ${getLocalizedString('cardTypeShort', 'Monster')}`;
             } else {
-                keywords[3] = getLocalizedString('cardTypeShort', 'Monster').toLowerCase();
+                if (keywords[0] != null || keywords[1] != null || keywords[2] != null) {
+                    keywords[3] = getLocalizedString('cardTypeShort', 'Monster').toLowerCase();
+                } else {
+                    keywords[3] = getLocalizedString('cardTypeShort', 'Monster');
+                }
             }
         }
 
-        if ('atk' in filter && !isNaN(filter.atk)) {
+        if ('atk' in filter && !isNaN(filter.atk[0])) {
             keywords[5] = `${getLocalizedString('effectConjuction', 'with')} ${filter.atk[0]}`;
 
-            if (filter.atk[2]) {
+            if (userLang != 'Es' && filter.atk[2]) {
                 keywords[5] += ` ${getLocalizedString('effectString', 'original')}`;
             }
 
@@ -2609,18 +2623,22 @@ function createStringFromFilter(filter) {
 
                 default:
                     keywords[5] += ' ATK';
+
+                    if (userLang == 'Es' && filter.atk[2]) {
+                        keywords[5] += ` ${getLocalizedString('effectString', 'original')}`;
+                    }
                     break;
             }
         }
 
-        if ('def' in filter && !isNaN(filter.def)) {
+        if ('def' in filter && !isNaN(filter.def[0])) {
             if (keywords[5]) {
                 keywords[6] = `${getLocalizedString('effectConjuction', 'and')} ${filter.def[0]}`;
             } else {
                 keywords[6] = `${getLocalizedString('effectConjuction', 'with')} ${filter.def[0]}`;
             }
 
-            if (filter.atk[2]) {
+            if (userLang != 'Es' && filter.def[2]) {
                 keywords[6] += ` ${getLocalizedString('effectString', 'original')}`;
             }
 
@@ -2648,6 +2666,10 @@ function createStringFromFilter(filter) {
 
                 default:
                     keywords[6] += ' DEF';
+
+                    if (userLang == 'Es' && filter.def[2]) {
+                        keywords[6] += ` ${getLocalizedString('effectString', 'original')}`;
+                    }
                     break;
             }
         }
@@ -2670,12 +2692,24 @@ function createStringFromFilter(filter) {
     }
 
     if (userLang == 'Es') {
-        for(var i = keywords.length; i >= 0; i--) {
+        for(var i = 4; i >= 0; i--) {
             if (!keywords[i]) {
                 continue;
             }
 
-            if (i != keywords.length && string) {
+            if (i != keywords.length && string.length > 0) {
+                string += ' ';
+            }
+
+            string += keywords[i];
+        }
+
+        for(var i = 5; i < 9; i++) {
+            if (!keywords[i]) {
+                continue;
+            }
+
+            if (i != keywords.length && string.length > 0) {
                 string += ' ';
             }
 
@@ -2687,7 +2721,7 @@ function createStringFromFilter(filter) {
                 return;
             }
 
-            if (key && string) {
+            if (key && string.length > 0) {
                 string += ' ';
             }
 
@@ -2821,36 +2855,44 @@ function loadCardFilter(property, index) {
         typeRadio = 'all';
     }
 
-    if ('atk' in filter && !isNaN(filter.atk)) {
+    if ('atk' in filter && !isNaN(filter.atk[0])) {
         switch(filter.atk[1]) {
             case '>=':
-                searchOptions['filterText']['ATK'].min = parseInt(filter.atk);
+                searchOptions['filterText']['ATK'].min = parseInt(filter.atk[0]);
                 break;
 
             case '<=':
-                searchOptions['filterText']['ATK'].max = parseInt(filter.atk);
+                searchOptions['filterText']['ATK'].max = parseInt(filter.atk[0]);
+                break;
+
+            case '!=':
+                searchOptions['filterText']['ATK'].exclude = parseInt(filter.atk[0]);
                 break;
 
             default:
-                searchOptions['filterText']['ATK'].min = parseInt(filter.atk);
-                searchOptions['filterText']['ATK'].max = parseInt(filter.atk);
+                searchOptions['filterText']['ATK'].min = parseInt(filter.atk[0]);
+                searchOptions['filterText']['ATK'].max = parseInt(filter.atk[0]);
                 break;
         }
     }
 
-    if ('def' in filter && !isNaN(filter.def)) {
+    if ('def' in filter && !isNaN(filter.def[0])) {
         switch(filter.def[1]) {
             case '>=':
-                searchOptions['filterText']['DEF'].min = parseInt(filter.def);
+                searchOptions['filterText']['DEF'].min = parseInt(filter.def[0]);
                 break;
 
             case '<=':
-                searchOptions['filterText']['DEF'].max = parseInt(filter.def);
+                searchOptions['filterText']['DEF'].max = parseInt(filter.def[0]);
+                break;
+
+            case '!=':
+                searchOptions['filterText']['DEF'].exclude = parseInt(filter.def[0]);
                 break;
 
             default:
-                searchOptions['filterText']['DEF'].min = parseInt(filter.def);
-                searchOptions['filterText']['DEF'].max = parseInt(filter.def);
+                searchOptions['filterText']['DEF'].min = parseInt(filter.def[0]);
+                searchOptions['filterText']['DEF'].max = parseInt(filter.def[0]);
                 break;
         }
     }
@@ -3063,8 +3105,6 @@ function changeRegion(region) {
             region = 'all';
         }
 
-        generateCardSearchFilters();
-
         $(`#navbar-region-selector-${regionName}`).removeClass('active');
 
         regionName = region;
@@ -3072,6 +3112,8 @@ function changeRegion(region) {
 
         $('#navbar-region-selector span').text($(`#navbar-region-selector-${regionName} span`).text());
         $(`#navbar-region-selector-${regionName}`).addClass('active');
+
+        generateCardSearchFilters();
 
         loadModule(selectedModule);
     }
