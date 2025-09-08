@@ -619,7 +619,7 @@
                 "normal": true
             },
             {
-                "normal": false,
+                "normal": true,
                 "ORR": true
             }
         ],
@@ -1640,6 +1640,62 @@
         ]
     },
     {
+        "id": 17721,
+        "name": "Canjear",
+        "cardType": "Spell",
+        "type": "Normal",
+        "cardText": "<b>[REQUISITO]</b> Manda al Cementerio 1 monstruo de Nivel 8 en tu mano.\n<b>[EFECTO]</b> Roba 2 cartas.",
+        "releaseDate": {
+            "jp": "2022-06-04",
+            "kr": "2022-09-15"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendMonsterFromHandToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "PlayerDrawCards"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "levels": [
+                    8,
+                    "="
+                ]
+            }
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "R",
+                "SR",
+                "UR+R",
+                "SE"
+            ],
+            "kr": [
+                "C",
+                "R",
+                "SE"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
         "id": 18282,
         "name": "Armas del Camino - Lanza Sevens",
         "cardType": "Spell",
@@ -1799,6 +1855,822 @@
         ]
     },
     {
+        "id": 18907,
+        "name": "Soldado Satélite",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUISITO]</b> Manda al Cementerio la carta de la parte superior de tu Deck.\n<b>[EFECTO]</b> Aumenta en 2 el Nivel de 1 monstruo de Nivel 6 o menor boca arriba en tu Campo con 1000 DEF hasta el final de este turno.",
+        "attribute": "LIGHT",
+        "level": 5,
+        "atk": 1700,
+        "def": 1000,
+        "race": "Galaxy",
+        "releaseDate": {
+            "jp": "2023-05-02",
+            "kr": "2023-10-20"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "PlayerMonstersGainLevels"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "levels": [
+                    6,
+                    "<="
+                ],
+                "def": [
+                    1000,
+                    "="
+                ]
+            }
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "P"
+            ],
+            "kr": [
+                "C",
+                "SE"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 18943,
+        "name": "Zuse, el Vasallo de la Sabiduría",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUISITO]</b> Durante el turno en el que has Invocado de Modo Normal esta carta, baraja 2 monstruos con 1000 de DEF de tu Cementerio al Deck.\n<b>[EFECTO]</b> Tu adversario Coloca 1 Carta Mágica de su Cementerio en su Campo. Después, puedes añadir a tu mano desde tu Cementerio 1 monstruo de Nivel 5 o superior con 1000 de DEF.",
+        "attribute": "DARK",
+        "level": 3,
+        "atk": 800,
+        "def": 1000,
+        "race": "Cyberse",
+        "releaseDate": {
+            "jp": "2023-05-13",
+            "kr": "2023-08-18",
+            "dl": "2024-08-05"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "ShuffleMonsterFromGraveyardToDeck"
+            },
+            {
+                "type": "effects",
+                "name": "SetsSpellFromOpponentGraveyardToOpponentField"
+            },
+            {
+                "type": "effects",
+                "name": "AddsMonsterFromGraveyardToHand"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "def": [
+                    1000,
+                    "="
+                ]
+            },
+            {
+                "cardType": "Monster",
+                "levels": [
+                    5,
+                    ">="
+                ],
+                "def": [
+                    1000,
+                    "="
+                ]
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "P"
+            ],
+            "kr": [
+                "C"
+            ],
+            "dl": [
+                "SR+DL"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 18944,
+        "name": "Hebe el Vasallo Estelar",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUISITO]</b> Durante el turno en el que Invocaste de Modo Normal esta carta, baraja 2 monstruos con 1000 DEF de tu Cementerio al Deck.\n<b>[EFECTO]</b> Tu adversario Invoca de Modo Especial 1 Monstruo de Efecto de Nivel 6 o menor desde su Cementerio a su Campo en Posición de Defensa boca arriba. Después, puedes añadir a tu mano 1 monstruo de Nivel 5 o mayor con 1000 DEF desde tu Cementerio.",
+        "attribute": "LIGHT",
+        "level": 4,
+        "atk": 800,
+        "def": 1000,
+        "race": "Galaxy",
+        "releaseDate": {
+            "jp": "2023-05-13",
+            "kr": "2023-08-18"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "ShuffleMonsterFromGraveyardToDeck"
+            },
+            {
+                "type": "effects",
+                "name": "SpecialSummonsFromOpponentGraveyardToOpponentField"
+            },
+            {
+                "type": "effects",
+                "name": "OpponentSpecialSummons"
+            },
+            {
+                "type": "effects",
+                "name": "AddsMonsterFromGraveyardToHand"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "def": [
+                    1000,
+                    "="
+                ]
+            },
+            {
+                "cardType": "Monster",
+                "levels": [
+                    5,
+                    ">="
+                ],
+                "def": [
+                    1000,
+                    "="
+                ]
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "P"
+            ],
+            "kr": [
+                "C"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 18945,
+        "name": "Wilhel, el Monarca de la Sabiduría",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUISITO]</b> Durante el turno en el que Invocaste por Sacrificio esta carta en Posición de Ataque.\n<b>[EFECTO]</b> Mira 1 Carta Mágica o de Trampa boca abajo en el Campo de tu adversario. Después, si esa carta es una Carta Mágica, puedes destruirla.",
+        "attribute": "DARK",
+        "level": 5,
+        "atk": 2000,
+        "def": 1000,
+        "race": "Cyberse",
+        "releaseDate": {
+            "jp": "2023-05-13",
+            "kr": "2023-08-18",
+            "dl": "2024-08-05"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "RevealsOpponentFaceDownCard"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentSpells"
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "R",
+                "SR"
+            ],
+            "kr": [
+                "R"
+            ],
+            "dl": [
+                "R+DL"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 18946,
+        "name": "Estrome el Monarca de la Estrella",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUISITO]</b> Durante el turno en el que Invocaste por Sacrificio esta carta en Posición de Ataque.\n<b>[EFECTO]</b> Destruye 1 Monstruo de Efecto de Nivel 6 o menor boca arriba en el Campo de tu adversario.",
+        "attribute": "LIGHT",
+        "level": 5,
+        "atk": 2000,
+        "def": 1000,
+        "race": "Galaxy",
+        "releaseDate": {
+            "jp": "2023-05-13",
+            "kr": "2023-08-18"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "DestroysOpponentMonsters"
+            }
+        ],
+        "antiSupports": [
+            {
+                "cardType": "Monster",
+                "type": "Effect",
+                "levels": [
+                    6,
+                    "<="
+                ]
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "R",
+                "SR"
+            ],
+            "kr": [
+                "R"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 18947,
+        "name": "Wilhel, el Mega Monarca",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "Puedes Invocar por Sacrificio esta carta en Posición de Ataque Sacrificando 1 monstruo de Nivel 5 o superior boca arriba con 1000 DEF.\n<b>[REQUISITO]</b> Durante el turno en el que Invocaste por Sacrificio esta carta en Posición de Ataque.\n<b>[EFECTO]</b> Tu adversario elige 1 carta en su Campo, y tú la destruyes.",
+        "attribute": "DARK",
+        "level": 8,
+        "atk": 2400,
+        "def": 1000,
+        "race": "Cyberse",
+        "releaseDate": {
+            "jp": "2023-05-13",
+            "kr": "2023-08-18",
+            "dl": "2024-08-05"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "NormalSummonThisCardOneTribute"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentCards"
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "UR",
+                "P",
+                "SE",
+                "ORR"
+            ],
+            "kr": [
+                "UR",
+                "SE",
+                "ORR"
+            ],
+            "dl": [
+                "UR+DL"
+            ]
+        },
+        "images": {
+            "default": 0,
+            "ORR": 0
+        },
+        "artworks": [
+            {
+                "normal": true,
+                "ORR": true
+            }
+        ]
+    },
+    {
+        "id": 18948,
+        "name": "Estrome el Mega Monarca",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "Puedes Invocar por Sacrificio esta carta en Posición de Ataque Sacrificando 1 monstruo de Nivel 5 o mayor boca arriba con 1000 DEF.\n<b>[REQUISITO]</b> Durante el turno en el que has Invocado por Sacrificio esta carta en Posición de Ataque.\n<b>[EFECTO]</b> Tu adversario elige 1 carta en su Campo, y tú destruyes otra carta en el Campo.",
+        "attribute": "LIGHT",
+        "level": 8,
+        "atk": 2400,
+        "def": 1000,
+        "race": "Galaxy",
+        "releaseDate": {
+            "jp": "2023-05-13",
+            "kr": "2023-08-18"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "NormalSummonThisCardOneTribute"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentCards"
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "UR",
+                "P",
+                "SE",
+                "ORR"
+            ],
+            "kr": [
+                "UR",
+                "P",
+                "SE",
+                "ORR"
+            ]
+        },
+        "images": {
+            "default": 0,
+            "ORR": 0
+        },
+        "artworks": [
+            {
+                "normal": true,
+                "ORR": true
+            }
+        ]
+    },
+    {
+        "id": 18951,
+        "name": "Sustituidor de Estrellas",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUISITO]</b> Si no tienes otros monstruos en tu Campo, devuelve esta carta de tu Campo a la mano.\n<b>[EFECTO]</b> Invoca de Modo Especial desde tu Cementerio 1 monstruo de Nivel 4 o menor en Posición de Defensa boca abajo a tu Campo. No puedes Invocar de Modo Especial monstruos desde tu mano o Cementerio hasta el final de este turno.",
+        "attribute": "LIGHT",
+        "level": 1,
+        "atk": 200,
+        "def": 1000,
+        "race": "Dragon",
+        "releaseDate": {
+            "jp": "2023-05-13",
+            "kr": "2023-08-18",
+            "dl": "2024-11-28"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "ReturnsItselfFromFieldToHand"
+            },
+            {
+                "type": "effects",
+                "name": "SpecialSummonsFromGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "PreventsSpecialSummonsFromTheHand"
+            },
+            {
+                "type": "effects",
+                "name": "PreventsSpecialSummonsFromTheGraveyard"
+            }
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "SR",
+                "SE"
+            ],
+            "kr": [
+                "C",
+                "SR",
+                "SE"
+            ],
+            "dl": [
+                "SR+DL"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            },
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 18958,
+        "name": "Explorador de Yeso",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUISITO]</b> Ninguno\n<b>[EFECTO CONTINUO]</b> Durante la Main Phase de tu adversario, no recibes daño de efecto de tu adversario.",
+        "attribute": "EARTH",
+        "level": 4,
+        "atk": 1300,
+        "def": 1000,
+        "race": "Warrior",
+        "releaseDate": {
+            "jp": "2023-05-13",
+            "kr": "2023-08-18",
+            "dl": "2023-12-19"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "PreventsEffectDamage"
+            }
+        ],
+        "rarities": {
+            "jp": [
+                "C"
+            ],
+            "kr": [
+                "C"
+            ],
+            "dl": [
+                "R+DL"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 18975,
+        "name": "Impacto Avanzado",
+        "cardType": "Spell",
+        "type": "Normal",
+        "cardText": "<b>[REQUISITO]</b> No tienes monstruos en tu Campo.\n<b>[EFECTO]</b> Manda al Cementerio monstruos en tu mano cuyos Niveles totales sean iguales al Nivel de 1 monstruo boca arriba en el Campo de tu adversario. Este turno, si fueras a Invocar por Sacrificio un monstruo, puedes Sacrificar ese monstruo boca arriba de tu adversario en lugar de 1 monstruo en tu Campo.",
+        "releaseDate": {
+            "jp": "2023-05-13",
+            "kr": "2023-08-18"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "SendMonsterFromHandToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "TributesOpponentMonsters"
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "mentionedBy": [
+            20329
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "SR",
+                "SE"
+            ],
+            "kr": [
+                "SR",
+                "SE"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 18985,
+        "name": "Reino del Emperador",
+        "cardType": "Spell",
+        "type": "Field",
+        "cardText": "<b>[REQUISITO]</b> Activa esta carta mandando al Cementerio las 2 cartas de la parte superior de tu Deck.\n<b>[EFECTO]</b> Mientras esta carta está boca arriba en la Zona del Campo, los monstruos de Nivel 5 o mayor boca arriba con 1000 DEF original en el Campo ganan 400 ATK.",
+        "releaseDate": {
+            "jp": "2023-05-13",
+            "kr": "2023-08-18"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "AllMonstersGainATK"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "levels": [
+                    5,
+                    ">="
+                ],
+                "def": [
+                    1000,
+                    "=",
+                    true
+                ]
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "mentionedBy": [
+            20329
+        ],
+        "rarities": {
+            "jp": [
+                "C"
+            ],
+            "kr": [
+                "C"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 18991,
+        "name": "Maquinaciones de los Monarcas",
+        "cardType": "Trap",
+        "type": "Field",
+        "cardText": "<b>[REQUISITO]</b> Cuando tu adversario Invoca de Modo Normal un monstruo mientras tienes un monstruo de Nivel 5 o mayor boca arriba con 1000 DEF en tu Campo.\n<b>[EFECTO]</b> Cambia ese monstruo Invocado de Modo Normal a Posición de Defensa boca abajo. Luego, puedes añadir a tu mano 1 monstruo de Nivel 5 o mayor con 1000 DEF en tu Cementerio.",
+        "releaseDate": {
+            "jp": "2023-05-13",
+            "kr": "2023-08-18"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "OpponentNormalSummoned"
+            },
+            {
+                "type": "effects",
+                "name": "ChangesOpponentBattlePositions"
+            },
+            {
+                "type": "effects",
+                "name": "ChangesOpponentMonstersToDefensePosition"
+            },
+            {
+                "type": "effects",
+                "name": "AddsMonsterFromGraveyardToHand"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "levels": [
+                    5,
+                    ">="
+                ],
+                "def": [
+                    1000,
+                    "="
+                ]
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "C"
+            ],
+            "kr": [
+                "C"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 18992,
+        "name": "Natividad de los Monarcas",
+        "cardType": "Trap",
+        "type": "Field",
+        "cardText": "<b>[REQUISITO]</b> Cuando tu adversario Invoca de Modo Normal o Especial un monstruo de Nivel 8 o menor boca arriba, manda al Cementerio 1 monstruo en tu Campo.\n<b>[EFECTO]</b> Invoca de Modo Especial, desde tu mano, 1 monstruo de Nivel 5 o mayor con 1000 DEF en tu Campo en Posición de Ataque boca arriba. Luego, puedes destruir 1 de esos monstruos del adversario Invocados de Modo Normal o Especial.",
+        "releaseDate": {
+            "jp": "2023-05-13",
+            "kr": "2023-08-18"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "OpponentNormalSummoned"
+            },
+            {
+                "type": "requeriments",
+                "name": "OpponentSpecialSummoned"
+            },
+            {
+                "type": "requeriments",
+                "name": "SendMonsterFromFieldToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "SpecialSummonsFromHand"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentMonsters"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "levels": [
+                    5,
+                    ">="
+                ],
+                "def": [
+                    1000,
+                    "="
+                ]
+            }
+        ],
+        "antiSupports": [
+            {
+                "cardType": "Monster",
+                "levels": [
+                    8,
+                    "<="
+                ]
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "C"
+            ],
+            "kr": [
+                "C"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
         "id": 18995,
         "name": "Crisis del Terrado de Arroz",
         "cardType": "Trap",
@@ -1855,6 +2727,238 @@
             {
                 "normal": true
             }
+        ]
+    },    
+    {
+        "id": 19311,
+        "name": "Dragón Negadors",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUISITO]</b> Durante el turno en el que Invocaste de Modo Normal esta carta.\n<b>[EFECTO]</b> Manda al Cementerio las 2 cartas de la parte superior de tu Deck. Luego, si tienes un \"Negar Ataque\" en tu Cementerio, puedes hacer que hasta 3 monstruos boca arriba en el Campo de tu adversario pierdan 2000 ATK hasta el final del próximo turno del adversario.",
+        "attribute": "DARK",
+        "level": 4,
+        "atk": 900,
+        "def": 1000,
+        "race": "Dragon",
+        "releaseDate": {
+            "jp": "2023-08-11",
+            "kr": "2023-12-20"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "OpponentMonstersLoseATK"
+            },
+            {
+                "type": "effects",
+                "name": "TurnLimitedEffect"
+            }
+        ],
+        "mentions": [
+            19342
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "P",
+                "P+UR",
+                "SE"
+            ],
+            "kr": [
+                "C",
+                "P",
+                "P+UR",
+                "SE"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            },
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 19317,
+        "name": "Harvey Omnividente",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUISITO]</b> Durante tu Main Phase en la que Invocaste de Modo Normal o Especial esta carta.\n<b>[EFECTO]</b> Mira 1 carta boca abajo en el Campo de tu adversario. Si esa carta es una Carta de Monstruo con 1500 DEF o más, puedes destruirla.",
+        "attribute": "EARTH",
+        "level": 4,
+        "atk": 1300,
+        "def": 1000,
+        "race": "Warrior",
+        "releaseDate": {
+            "jp": "2023-08-11",
+            "kr": "2023-12-20",
+            "dl": "2024-10-01"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "RevealsOpponentFaceDownCard"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentMonsters"
+            }
+        ],
+        "antiSupports": [
+            {
+                "cardType": "Monster",
+                "def": [
+                    1500,
+                    ">="
+                ]
+            }            
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "UR",
+                "SE",
+                "ORR"
+            ],
+            "kr": [
+                "UR",
+                "SE",
+                "ORR"
+            ],
+            "dl": [
+                "SR+DL"
+            ]
+        },
+        "images": {
+            "default": 0,
+            "ORR": 0
+        },
+        "artworks": [
+            {
+                "normal": true,
+                "ORR": true
+            }
+        ],
+        "properties": [
+            "NonEffect"
+        ]
+    },
+    {
+        "id": 19342,
+        "name": "Negar Ataque",
+        "cardType": "Trap",
+        "type": "Normal",
+        "cardText": "<b>[REQUISITO]</b> Cuando un monstruo de tu adversario declara un ataque.\n<b>[EFECTO]</b> Niega el ataque. Este turno, tu adversario no puede declarar un ataque.",
+        "releaseDate": {
+            "jp": "2023-08-11",
+            "kr": "2023-12-20",
+            "dl": "2024-05-16"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": "l1"
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "OpponentAttackDeclaration"
+            },
+            {
+                "type": "effects",
+                "name": "NegatesAttacks"
+            },
+            {
+                "type": "effects",
+                "name": "PreventsOpponentMonsterFromAttacking"
+            }
+        ],
+        "mentionedBy": [
+            19311
+        ],
+        "rarities": {
+            "jp": [
+                "R",
+                "P",
+                "P+UR",
+                "SE"
+            ],
+            "kr": [
+                "R",
+                "UR",
+                "P",
+                "SE"
+            ],
+            "dl": [
+                "UR+DL"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            },
+            {
+                "normal": true
+            }
+        ],
+        "properties": [
+            "LegendCard"
+        ]
+    },
+    {
+        "id": 19441,
+        "name": "Golem de Destructor",
+        "cardType": "Monster",
+        "type": "Normal",
+        "cardText": "Un golem con una maciza mano derecha para aplastar a sus víctimas.",
+        "attribute": "EARTH",
+        "level": 4,
+        "atk": 1500,
+        "def": 1000,
+        "race": "Rock",
+        "releaseDate": {
+            "jp": "2023-10-23"
+        },
+        "status": {
+            "jp": 3
+        },
+        "rarities": {
+            "jp": [
+                "C",
+                "P"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ],
+        "properties": [
+            "NonEffect"
         ]
     },
     {
@@ -2003,6 +3107,256 @@
         ]
     },
     {
+        "id": 19930,
+        "name": "Trampa de Eliminación",
+        "cardType": "Spell",
+        "type": "Normal",
+        "cardText": "<b>[REQUISITO]</b> Ninguno\n<b>[EFECTO]</b> Mira 1 carta boca abajo en la Zona de Magia y Trampas de tu adversario y después la devuelve a su posición original. Si era una Carta de Trampa, destruye esa carta.",
+        "releaseDate": {
+            "jp": "2023-12-16",
+            "kr": "2024-06-15"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "RevealsOpponentFaceDownCard"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentTraps"
+            }
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "P"
+            ],
+            "kr": [
+                "C"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 20146,
+        "name": "Kaiser Tributo",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUISITO]</b> Manda al Cementerio la carta de la parte superior de tu Deck.\n<b>[EFECTO]</b> Reduce en 2 el Nivel de 1 Monstruo de Efecto de Nivel 3-8 boca arriba en el Campo de tu adversario hasta el final de este turno. Luego, puedes añadir a tu mano 1 monstruo de Nivel 8 con 2400 ATK/1000 DEF en tu Cementerio.",
+        "attribute": "EARTH",
+        "level": 3,
+        "atk": 800,
+        "def": 1000,
+        "race": "Warrior",
+        "releaseDate": {
+            "jp": "2024-04-06",
+            "kr": "2024-07-10"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "OpponentMonstersLoseLevels"
+            },
+            {
+                "type": "effects",
+                "name": "AddsMonsterFromGraveyardToHand"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "levels": [
+                    8,
+                    "="
+                ],
+                "atk": [
+                    2400,
+                    "="
+                ],
+                "def": [
+                    1000,
+                    "="
+                ]
+            }
+        ],
+        "antiSupports": [
+            {
+                "cardType": "Monster",
+                "type": "Effect",
+                "levels": [
+                    3,
+                    "-",
+                    8
+                ]
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "C"
+            ],
+            "kr": [
+                "C"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 20328,
+        "name": "Guardias de la Sabiduría Real",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUISITO]</b> Si tienes 10 o más cartas en tu Deck, baraja al Deck 4 monstruos con 1000 DEF en tu Cementerio, excepto monstruos con 1200 ATK.\n<b>[EFECTO]</b> Roba 1 carta. Luego, aumenta el Nivel de esta carta en 2 hasta el final de este turno.",
+        "attribute": "DARK",
+        "level": 3,
+        "atk": 1200,
+        "def": 1000,
+        "race": "Cyberse",
+        "releaseDate": {
+            "jp": "2024-05-11",
+            "kr": "2024-08-23"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "ShuffleMonsterFromGraveyardToDeck"
+            },
+            {
+                "type": "effects",
+                "name": "PlayerDrawCards"
+            },
+            {
+                "type": "effects",
+                "name": "ThisCardGainLevels"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "levels": [
+                    5,
+                    ">="
+                ],
+                "atk": [
+                    1200,
+                    "!="
+                ],
+                "def": [
+                    1000,
+                    "="
+                ]
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "C"
+            ],
+            "kr": [
+                "C"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 20329,
+        "name": "Forma Avanzada",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUISITO]</b> Manda al Cementerio hasta 2 cartas en tu Campo.\n<b>[EFECTO]</b> Baraja al Deck monstruos del Cementerio de tu adversario igual [al número de cartas mandadas al Cementerio para cumplir con el requisito]. Luego, puedes añadir a tu mano 1 \"Impacto Avanzado\" o 1 \"Reino del Emperador\" en tu Cementerio.",
+        "attribute": "LIGHT",
+        "level": 4,
+        "atk": 800,
+        "def": 1000,
+        "race": "Galaxy",
+        "releaseDate": {
+            "jp": "2024-05-11",
+            "kr": "2024-08-23"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromFieldToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "ShuffleMonsterFromOpponentGraveyardToDeck"
+            },
+            {
+                "type": "effects",
+                "name": "AddsSpecificCardFromGraveyardToHand"
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "mentions": [
+            18975,
+            18985
+        ],
+        "rarities": {
+            "jp": [
+                "C"
+            ],
+            "kr": [
+                "C"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
         "id": 20355,
         "name": "Broma de la Princesa del Cosmos",
         "cardType": "Spell",
@@ -2055,6 +3409,64 @@
             {
                 "normal": true,
                 "ORR": true
+            }
+        ]
+    },
+    {
+        "id": 20641,
+        "name": "Goodgoo",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUISITO]</b> Si tu adversario tiene 2 o más monstruos en su Campo, manda al Cementerio esta carta boca arriba en tu Campo.\n<b>[EFECTO]</b> Haz que 1 monstruo de Nivel 7 o mayor boca arriba en el Campo de tu adversario pierda 1000 ATK/DEF hasta el final de este turno.",
+        "attribute": "WATER",
+        "level": 1,
+        "atk": 100,
+        "def": 1000,
+        "race": "Aqua",
+        "releaseDate": {
+            "jp": "2024-08-10",
+            "kr": "2024-11-19"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendItselfFromFieldToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "OpponentMonstersLoseATK"
+            }
+        ],
+        "antiSupports": [
+            {
+                "cardType": "Monster",
+                "levels": [
+                    7,
+                    ">="
+                ]
+            }
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "R",
+                "SE"
+            ],
+            "kr": [
+                "R",
+                "SE"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
             }
         ]
     },
@@ -2122,10 +3534,12 @@
         "def": 2600,
         "race": "Spellcaster",
         "releaseDate": {
-            "jp": "2025-04-26"
+            "jp": "2025-04-26",
+            "kr": "2025-08-20"
         },
         "status": {
-            "jp": 3
+            "jp": 3,
+            "kr": 3
         },
         "actions": [
             {
@@ -2144,6 +3558,10 @@
         ],
         "rarities": {
             "jp": [
+                "UR",
+                "ORR"
+            ],
+            "kr": [
                 "UR",
                 "ORR"
             ]
@@ -2172,10 +3590,12 @@
         "def": 2500,
         "race": "Warrior",
         "releaseDate": {
-            "jp": "2025-04-26"
+            "jp": "2025-04-26",
+            "kr": "2025-08-20"
         },
         "status": {
-            "jp": 3
+            "jp": 3,
+            "kr": 3
         },
         "actions": [
             {
@@ -2214,6 +3634,10 @@
             "jp": [
                 "C",
                 "SR"
+            ],
+            "kr": [
+                "C",
+                "SR"
             ]
         },        
         "images": {
@@ -2232,10 +3656,12 @@
         "type": "Ritual",
         "cardText": "<b>[REQUISITO]</b> None\n<b>[EFECTO]</b> Invoca por Ritual un \"Mago del Caos Negro\" mandando al Cementerio monstruos en tu mano y/o Campo cuyos Niveles totales sean 8 o más como material (no puedes usar más monstruos de los necesarios como material).",
         "releaseDate": {
-            "jp": "2025-04-26"
+            "jp": "2025-04-26",
+            "kr": "2025-08-20"
         },
         "status": {
-            "jp": 3
+            "jp": 3,
+            "kr": 3
         },
         "actions": [
             {
@@ -2267,6 +3693,497 @@
         ],
         "mentionedBy": [
             21591
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "P+UR"
+            ],
+            "kr": [
+                "C"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            },
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 22091,
+        "name": "El Calculador",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUISITO]</b> Ninguno\n<b>[EFECTO CONTINUO]</b> Esta carta gana ATK igual al [total de Niveles originales de los monstruos boca arriba en tu Campo] x 300.",
+        "attribute": "LIGHT",
+        "level": 2,
+        "atk": 0,
+        "def": 0,
+        "race": "Thunder",
+        "preReleaseDate": "2025-08-03",
+        "releaseDate": {
+            "jp": "2025-09-04"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "ThisCardGainsATK"
+            }
+        ],
+        "rarities": {
+            "jp": [
+                "P"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ],
+        "properties": [
+            "LegendCard"
+        ]
+    },
+    {
+        "id": 160324001,
+        "name": "Caius el Monarca de las Sombras",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUISITO]</b> Durante el turno en el que Invocaste por Sacrificio esta carta en Posición de Ataque.\n<b>[EFECTO]</b> Pon 1 carta en el Campo en la parte inferior del Deck de su dueño. Después, si pusiste un monstruo boca arriba cuyo Atributo original sea OSCURIDAD con este efecto, inflige 1000 de daño a tu adversario. Este turno, no puedes activar el efecto de \"Caius el Monarca de las Sombras\".",
+        "attribute": "DARK",
+        "level": 6,
+        "atk": 2400,
+        "def": 1000,
+        "race": "Fiend",
+        "preReleaseDate": "2025-08-12",
+        "releaseDate": {
+            "jp": "2025-09-20"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "PlacesFromFieldOnBottomDeck"
+            },
+            {
+                "type": "effects",
+                "name": "PlacesFromOpponentFieldOnBottomDeck"
+            },
+            {
+                "type": "effects",
+                "name": "InflictsDamageOpponent"
+            },
+            {
+                "type": "effects",
+                "name": "OncePerTurn"
+            }
+        ],
+        "supports": [
+            {
+                "attributes": [
+                    "DARK"
+                ]
+            }
+        ],
+        "antiSupports": [
+            {
+                "attributes": [
+                    "DARK"
+                ]
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "UR",
+                "ORR"
+            ]
+        },
+        "images": {
+            "ORR": 0
+        },
+        "artworks": [
+            {
+                "normal": false,
+                "ORR": true
+            }
+        ],
+        "properties": [
+            "LegendCard"
+        ]
+    },
+    {
+        "id": 160324002,
+        "name": "Lindorm el Mega Monarca",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "Puedes Invocar por Sacrificio esta carta en Posición de Ataque Sacrificando 1 monstruo de Nivel 5 o mayor boca arriba con 1000 DEF.\n<b>[REQUISITO]</b> No tienes cartas en tu Deck Extra durante el turno en el que Invocaste por Sacrificio esta carta en Posición de Ataque.\n<b>[EFECTO]</b> Tu adversario elige 2 cartas en su Campo, y tú barajas al Deck de su dueño 1 de ellas.",
+        "attribute": "WATER",
+        "level": 8,
+        "atk": 2400,
+        "def": 1000,
+        "race": "Wyrm",
+        "preReleaseDate": "2025-08-12",
+        "releaseDate": {
+            "jp": "2025-09-20"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "NormalSummonThisCardOneTribute"
+            },
+            {
+                "type": "effects",
+                "name": "ShuffleFromOpponentFieldToDeck"
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "SR"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 160324003,
+        "name": "Lindorm el Monarca Dragón",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUISITO]</b> No tienes cartas en tu Deck Extra durante el turno en el que Invocaste por Sacrificio esta carta en Posición de Ataque.\n<b>[EFECTO]</b> Baraja al Deck hasta 2 cartas del Cementerio de tu adversario. Después, puedes hacer que 1 Monstruo de Efecto boca arriba en el Campo de tu adversario pierda 800 ATK/DEF hasta el final de este turno.",
+        "attribute": "WATER",
+        "level": 5,
+        "atk": 2000,
+        "def": 1000,
+        "race": "Wyrm",
+        "preReleaseDate": "2025-08-22",
+        "releaseDate": {
+            "jp": "2025-09-20"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "ShuffleFromOpponentGraveyardToDeck"
+            },
+            {
+                "type": "effects",
+                "name": "OpponentMonstersLoseATK"
+            },
+            {
+                "type": "effects",
+                "name": "OpponentMonstersLoseDEF"
+            }
+        ],
+        "antiSupports": [
+            {
+                "cardType": "Monster",
+                "type": "Effect"
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "SR"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 160324004,
+        "name": "Drache el Vasallo Dragón",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUISITO]</b> Si no tienes cartas en tu Deck Extra, manda al Cementerio la carta de la parte superior de tu Deck.\n<b>[EFECTO]</b> Aumenta el Nivel de esta carta en 2 hasta el final de este turno. Después, si no has Invocado de Modo Especial un monstruo este turno, puedes añadir a tu mano 1 \"Lindorm el Mega Monarca\" o \"Lindorm el Monarca Dragón\" en tu Cementerio.",
+        "attribute": "WATER",
+        "level": 3,
+        "atk": 800,
+        "def": 1000,
+        "race": "Wyrm",
+        "preReleaseDate": "2025-09-04",
+        "releaseDate": {
+            "jp": "2025-09-20"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "ThisCardGainLevels"
+            },
+            {
+                "type": "effects",
+                "name": "AddsSpecificCardFromGraveyardToHand"
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "C"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 160324005,
+        "name": "Criatura Brazo",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUISITO]</b> Si no tienes cartas en tu Deck Extra y no tienes otros monstruos en tu Campo, manda al Cementerio las 2 cartas de la parte superior de tu Deck.\n<b>[EFECTO]</b> Elige 1 Carta Mágica/de Trampa boca abajo en el Campo de tu adversario. Esa carta no puede ser activada hasta el final del siguiente turno de tu adversario.",
+        "attribute": "DARK",
+        "level": 3,
+        "atk": 1000,
+        "def": 1000,
+        "race": "Fairy",
+        "preReleaseDate": "2025-08-29",
+        "releaseDate": {
+            "jp": "2025-09-20"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "PreventsOpponentActivationOfFacedDownSpellTrapCards"
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "P"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ],
+        "properties": [
+            "ATKEqualsDEF"
+        ]
+    },
+    {
+        "id": 160324022,
+        "name": "Los Monarcas Avanzan",
+        "cardType": "Spell",
+        "type": "Normal",
+        "cardText": "<b>[REQUISITO]</b> Durante un turno en el que no has Invocado de Modo Especial un monstruo de tu Deck Extra.\n<b>[EFECTO]</b> Elige 1 monstruo en el Campo de tu adversario. Este turno, si fueras a Invocar por Sacrificio un monstruo, puedes Sacrificar ese monstruo de tu adversario en lugar de 1 monstruo en tu Campo. No puedes Invocar de Modo Especial monstruos desde tu Deck Extra hasta el final de este turno.",
+        "preReleaseDate": "2025-08-22",
+        "releaseDate": {
+            "jp": "2025-09-20"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "TributesOpponentMonsters"
+            },
+            {
+                "type": "effects",
+                "name": "PreventsSpecialSummonsFromTheExtraDeck"
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "UR"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ],
+        "properties": [
+            "LegendCard"
+        ]
+    },
+    {
+        "id": 160324023,
+        "name": "Invasión de los Monarcas",
+        "cardType": "Spell",
+        "type": "Normal",
+        "cardText": "<b>[REQUISITO]</b> Ninguno\n<b>[EFECTO]</b> Añade a tu mano 1 monstruo con 2000 o 2400 ATK/1000 DEF en tu Cementerio.",
+        "preReleaseDate": "2025-08-12",
+        "releaseDate": {
+            "jp": "2025-09-20"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "AddsMonsterFromGraveyardToHand"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "atk": [
+                    2000,
+                    "="
+                ],
+                "def": [
+                    1000,
+                    "="
+                ]
+            },
+            {
+                "cardType": "Monster",
+                "atk": [
+                    2400,
+                    "="
+                ],
+                "def": [
+                    1000,
+                    "="
+                ]
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "SR"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 160324024,
+        "name": "Triunfo de los Monarcas",
+        "cardType": "Spell",
+        "type": "Normal",
+        "cardText": "<b>[REQUISITO]</b> Si no tienes cartas en tu Deck Extra, manda al Cementerio 1 monstruo con 2000 o 2400 ATK y 1000 DEF en tu mano.\n<b>[EFECTO]</b> Roba 2 cartas. Después, puedes barajar al Deck hasta 2 cartas del Cementerio de tu adversario.",
+        "preReleaseDate": "2025-08-28",
+        "releaseDate": {
+            "jp": "2025-09-20"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendMonsterFromHandToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "PlayerDrawCards"
+            },
+            {
+                "type": "effects",
+                "name": "ShuffleFromOpponentGraveyardToDeck"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "atk": [
+                    2000,
+                    "="
+                ],
+                "def": [
+                    1000,
+                    "="
+                ]
+            },
+            {
+                "cardType": "Monster",
+                "atk": [
+                    2400,
+                    "="
+                ],
+                "def": [
+                    1000,
+                    "="
+                ]
+            }
+        ],
+        "series": [
+            "Monarch"
         ],
         "rarities": {
             "jp": [

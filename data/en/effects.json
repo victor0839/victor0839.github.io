@@ -1271,6 +1271,11 @@
 	},
 	{
 		"type": "attack",
+		"abbreviation": "NegatesAttacks",
+		"name": "Negates attacks"
+	},
+	{
+		"type": "attack",
 		"abbreviation": "PreventsOpponentMonsterFromAttacking",
 		"name": "Prevents your opponent's monsters from attacking"
 	},

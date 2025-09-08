@@ -619,7 +619,7 @@
                 "normal": true
             },
             {
-                "normal": false,
+                "normal": true,
                 "ORR": true
             }
         ],
@@ -1640,6 +1640,62 @@
         ]
     },
     {
+        "id": 17721,
+        "name": "Trade-In",
+        "cardType": "Spell",
+        "type": "Normal",
+        "cardText": "<b>[REQUIREMENT]</b> Send 1 Level 8 monster from your hand to the Graveyard.\n<b>[EFFECT]</b> Draw 2 cards.",
+        "releaseDate": {
+            "jp": "2022-06-04",
+            "kr": "2022-09-15"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendMonsterFromHandToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "PlayerDrawCards"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "levels": [
+                    8,
+                    "="
+                ]
+            }
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "R",
+                "SR",
+                "UR+R",
+                "SE"
+            ],
+            "kr": [
+                "C",
+                "R",
+                "SE"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
         "id": 18282,
         "name": "Road Arms - Sevens Lance",
         "cardType": "Spell",
@@ -1799,6 +1855,822 @@
         ]
     },
     {
+        "id": 18907,
+        "name": "Satellite Soldier",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUIREMENT]</b> Send the top card of your Deck to the Graveyard.\n<b>[EFFECT]</b> Increase the Level of 1 face-up Level 6 or lower monster on your field with 1000 DEF by 2 until the end of this turn.",
+        "attribute": "LIGHT",
+        "level": 5,
+        "atk": 1700,
+        "def": 1000,
+        "race": "Galaxy",
+        "releaseDate": {
+            "jp": "2023-05-02",
+            "kr": "2023-10-20"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "PlayerMonstersGainLevels"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "levels": [
+                    6,
+                    "<="
+                ],
+                "def": [
+                    1000,
+                    "="
+                ]
+            }
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "P"
+            ],
+            "kr": [
+                "C",
+                "SE"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 18943,
+        "name": "Zuse the Wisdom Vassal",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUIREMENT]</b> During the turn you Normal Summoned this card, shuffle 2 monsters with 1000 DEF from your Graveyard into the Deck.\n<b>[EFFECT]</b> Your opponent Sets 1 Spell Card from their Graveyard to their field. Then, you can add 1 Level 5 or higher monster with 1000 DEF from your Graveyard to your hand.",
+        "attribute": "DARK",
+        "level": 3,
+        "atk": 800,
+        "def": 1000,
+        "race": "Cyberse",
+        "releaseDate": {
+            "jp": "2023-05-13",
+            "kr": "2023-08-18",
+            "dl": "2024-08-05"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "ShuffleMonsterFromGraveyardToDeck"
+            },
+            {
+                "type": "effects",
+                "name": "SetsSpellFromOpponentGraveyardToOpponentField"
+            },
+            {
+                "type": "effects",
+                "name": "AddsMonsterFromGraveyardToHand"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "def": [
+                    1000,
+                    "="
+                ]
+            },
+            {
+                "cardType": "Monster",
+                "levels": [
+                    5,
+                    ">="
+                ],
+                "def": [
+                    1000,
+                    "="
+                ]
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "P"
+            ],
+            "kr": [
+                "C"
+            ],
+            "dl": [
+                "SR+DL"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 18944,
+        "name": "Hebe the Star Vassal",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUIREMENT]</b> During the turn you Normal Summoned this card, shuffle 2 monsters with 1000 DEF from your Graveyard into the Deck.\n<b>[EFFECT]</b> Your opponent Special Summons 1 Level 6 or lower Effect Monster from their Graveyard in face-up Defense Position to their field. Then, you can add 1 Level 5 or higher monster with 1000 DEF from your Graveyard to your hand.",
+        "attribute": "LIGHT",
+        "level": 4,
+        "atk": 800,
+        "def": 1000,
+        "race": "Galaxy",
+        "releaseDate": {
+            "jp": "2023-05-13",
+            "kr": "2023-08-18"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "ShuffleMonsterFromGraveyardToDeck"
+            },
+            {
+                "type": "effects",
+                "name": "SpecialSummonsFromOpponentGraveyardToOpponentField"
+            },
+            {
+                "type": "effects",
+                "name": "OpponentSpecialSummons"
+            },
+            {
+                "type": "effects",
+                "name": "AddsMonsterFromGraveyardToHand"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "def": [
+                    1000,
+                    "="
+                ]
+            },
+            {
+                "cardType": "Monster",
+                "levels": [
+                    5,
+                    ">="
+                ],
+                "def": [
+                    1000,
+                    "="
+                ]
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "P"
+            ],
+            "kr": [
+                "C"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 18945,
+        "name": "Wilhel the Wisdom Monarch",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUIREMENT]</b> During the turn you Tribute Summoned this card in Attack Position.\n<b>[EFFECT]</b> Look at 1 face-down Spell/Trap Card on your opponent's field. Then, if that card is a Spell Card, you can destroy it.",
+        "attribute": "DARK",
+        "level": 5,
+        "atk": 2000,
+        "def": 1000,
+        "race": "Cyberse",
+        "releaseDate": {
+            "jp": "2023-05-13",
+            "kr": "2023-08-18",
+            "dl": "2024-08-05"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "RevealsOpponentFaceDownCard"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentSpells"
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "R",
+                "SR"
+            ],
+            "kr": [
+                "R"
+            ],
+            "dl": [
+                "R+DL"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 18946,
+        "name": "Estrome the Star Monarch",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUIREMENT]</b> During the turn you Tribute Summoned this card in Attack Position.\n<b>[EFFECT]</b> Destroy 1 face-up Level 6 or lower Effect Monster on your opponent's field.",
+        "attribute": "LIGHT",
+        "level": 5,
+        "atk": 2000,
+        "def": 1000,
+        "race": "Galaxy",
+        "releaseDate": {
+            "jp": "2023-05-13",
+            "kr": "2023-08-18"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "DestroysOpponentMonsters"
+            }
+        ],
+        "antiSupports": [
+            {
+                "cardType": "Monster",
+                "type": "Effect",
+                "levels": [
+                    6,
+                    "<="
+                ]
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "R",
+                "SR"
+            ],
+            "kr": [
+                "R"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 18947,
+        "name": "Wilhel the Mega Monarch",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "You can Tribute Summon this card in Attack Position by Tributing 1 face-up Level 5 or higher monster with 1000 DEF.\n<b>[REQUIREMENT]</b> During the turn you Tribute Summoned this card in Attack Position.\n<b>[EFFECT]</b> Your opponent chooses 1 card on their field, and you destroy it.",
+        "attribute": "DARK",
+        "level": 8,
+        "atk": 2400,
+        "def": 1000,
+        "race": "Cyberse",
+        "releaseDate": {
+            "jp": "2023-05-13",
+            "kr": "2023-08-18",
+            "dl": "2024-08-05"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "NormalSummonThisCardOneTribute"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentCards"
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "UR",
+                "P",
+                "SE",
+                "ORR"
+            ],
+            "kr": [
+                "UR",
+                "SE",
+                "ORR"
+            ],
+            "dl": [
+                "UR+DL"
+            ]
+        },
+        "images": {
+            "default": 0,
+            "ORR": 0
+        },
+        "artworks": [
+            {
+                "normal": true,
+                "ORR": true
+            }
+        ]
+    },
+    {
+        "id": 18948,
+        "name": "Estrome the Mega Monarch",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "You can Tribute Summon this card in Attack Position by Tributing 1 face-up Level 5 or higher monster with 1000 DEF.\n<b>[REQUIREMENT]</b> During the turn you Tribute Summoned this card in Attack Position.\n<b>[EFFECT]</b> Your opponent chooses 1 card on their field, and you destroy 1 other card on the field.",
+        "attribute": "LIGHT",
+        "level": 8,
+        "atk": 2400,
+        "def": 1000,
+        "race": "Galaxy",
+        "releaseDate": {
+            "jp": "2023-05-13",
+            "kr": "2023-08-18"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "NormalSummonThisCardOneTribute"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentCards"
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "UR",
+                "P",
+                "SE",
+                "ORR"
+            ],
+            "kr": [
+                "UR",
+                "P",
+                "SE",
+                "ORR"
+            ]
+        },
+        "images": {
+            "default": 0,
+            "ORR": 0
+        },
+        "artworks": [
+            {
+                "normal": true,
+                "ORR": true
+            }
+        ]
+    },
+    {
+        "id": 18951,
+        "name": "Star Replacer",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUIREMENT]</b> If you have no other monsters on your field, return this card from your field to the hand.\n<b>[EFFECT]</b> Special Summon 1 Level 4 or lower monster from your Graveyard in face-down Defense Position to your field. You cannot Special Summon any monsters from your hand or Graveyard until the end of this turn.",
+        "attribute": "LIGHT",
+        "level": 1,
+        "atk": 200,
+        "def": 1000,
+        "race": "Dragon",
+        "releaseDate": {
+            "jp": "2023-05-13",
+            "kr": "2023-08-18",
+            "dl": "2024-11-28"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "ReturnsItselfFromFieldToHand"
+            },
+            {
+                "type": "effects",
+                "name": "SpecialSummonsFromGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "PreventsSpecialSummonsFromTheHand"
+            },
+            {
+                "type": "effects",
+                "name": "PreventsSpecialSummonsFromTheGraveyard"
+            }
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "SR",
+                "SE"
+            ],
+            "kr": [
+                "C",
+                "SR",
+                "SE"
+            ],
+            "dl": [
+                "SR+DL"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            },
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 18958,
+        "name": "Plaster Scout",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUIREMENT]</b> None\n<b>[CONTINUOUS EFFECT]</b> During your opponent's Main Phase, you take no effect damage from your opponent.",
+        "attribute": "EARTH",
+        "level": 4,
+        "atk": 1300,
+        "def": 1000,
+        "race": "Warrior",
+        "releaseDate": {
+            "jp": "2023-05-13",
+            "kr": "2023-08-18",
+            "dl": "2023-12-19"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "PreventsEffectDamage"
+            }
+        ],
+        "rarities": {
+            "jp": [
+                "C"
+            ],
+            "kr": [
+                "C"
+            ],
+            "dl": [
+                "R+DL"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 18975,
+        "name": "Advance Impact",
+        "cardType": "Spell",
+        "type": "Normal",
+        "cardText": "<b>[REQUIREMENT]</b> You have no monsters on your field.\n<b>[EFFECT]</b> Send monsters from your hand to the Graveyard whose total Levels equal the Level of 1 face-up monster on your opponent's field. This turn, if you would Tribute Summon a monster, you can Tribute that opponent's face-up monster instead of 1 monster on your field.",
+        "releaseDate": {
+            "jp": "2023-05-13",
+            "kr": "2023-08-18"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "SendMonsterFromHandToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "TributesOpponentMonsters"
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "mentionedBy": [
+            20329
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "SR",
+                "SE"
+            ],
+            "kr": [
+                "SR",
+                "SE"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 18985,
+        "name": "Emperor Realm",
+        "cardType": "Spell",
+        "type": "Field",
+        "cardText": "<b>[REQUIREMENT]</b> Activate this card by sending the top 2 cards of your Deck to the Graveyard.\n<b>[EFFECT]</b> While this card is face-up in the Field Zone, face-up Level 5 or higher monsters on the field with 1000 original DEF gain 400 ATK.",
+        "releaseDate": {
+            "jp": "2023-05-13",
+            "kr": "2023-08-18"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "AllMonstersGainATK"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "levels": [
+                    5,
+                    ">="
+                ],
+                "def": [
+                    1000,
+                    "=",
+                    true
+                ]
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "mentionedBy": [
+            20329
+        ],
+        "rarities": {
+            "jp": [
+                "C"
+            ],
+            "kr": [
+                "C"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 18991,
+        "name": "Machinations of the Monarchs",
+        "cardType": "Trap",
+        "type": "Field",
+        "cardText": "<b>[REQUIREMENT]</b> When your opponent Normal Summons a monster while you have a face-up Level 5 or higher monster with 1000 DEF on your field.\n<b>[EFFECT]</b> Change that Normal Summoned monster to face-down Defense Position. Then, you can add 1 Level 5 or higher monster with 1000 DEF from your Graveyard to your hand.",
+        "releaseDate": {
+            "jp": "2023-05-13",
+            "kr": "2023-08-18"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "OpponentNormalSummoned"
+            },
+            {
+                "type": "effects",
+                "name": "ChangesOpponentBattlePositions"
+            },
+            {
+                "type": "effects",
+                "name": "ChangesOpponentMonstersToDefensePosition"
+            },
+            {
+                "type": "effects",
+                "name": "AddsMonsterFromGraveyardToHand"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "levels": [
+                    5,
+                    ">="
+                ],
+                "def": [
+                    1000,
+                    "="
+                ]
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "C"
+            ],
+            "kr": [
+                "C"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 18992,
+        "name": "Nativity of the Monarchs",
+        "cardType": "Trap",
+        "type": "Field",
+        "cardText": "<b>[REQUIREMENT]</b> When your opponent Normal or Special Summons a Level 8 or lower monster face-up, send 1 monster from your field to the Graveyard.\n<b>[EFFECT]</b> Special Summon 1 Level 5 or higher monster with 1000 DEF from your hand to your field in face-up Attack Position. Then, you can destroy 1 of those opponent's Normal or Special Summoned monsters.",
+        "releaseDate": {
+            "jp": "2023-05-13",
+            "kr": "2023-08-18"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "OpponentNormalSummoned"
+            },
+            {
+                "type": "requeriments",
+                "name": "OpponentSpecialSummoned"
+            },
+            {
+                "type": "requeriments",
+                "name": "SendMonsterFromFieldToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "SpecialSummonsFromHand"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentMonsters"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "levels": [
+                    5,
+                    ">="
+                ],
+                "def": [
+                    1000,
+                    "="
+                ]
+            }
+        ],
+        "antiSupports": [
+            {
+                "cardType": "Monster",
+                "levels": [
+                    8,
+                    "<="
+                ]
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "C"
+            ],
+            "kr": [
+                "C"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
         "id": 18995,
         "name": "Rice Terrace Crisis",
         "cardType": "Trap",
@@ -1855,6 +2727,238 @@
             {
                 "normal": true
             }
+        ]
+    },
+    {
+        "id": 19311,
+        "name": "Negatwor Dragon",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUIREMENT]</b> During the turn you Normal Summoned this card.\n<b>[EFFECT]</b> Send the top 2 cards of your Deck to the Graveyard. Then, if you have \"Negate Attack\" in your Graveyard, you can make up to 3 face-up monsters on your opponent's field lose 2000 ATK until the end of their next turn.",
+        "attribute": "DARK",
+        "level": 4,
+        "atk": 900,
+        "def": 1000,
+        "race": "Dragon",
+        "releaseDate": {
+            "jp": "2023-08-11",
+            "kr": "2023-12-20"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "OpponentMonstersLoseATK"
+            },
+            {
+                "type": "effects",
+                "name": "TurnLimitedEffect"
+            }
+        ],
+        "mentions": [
+            19342
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "P",
+                "P+UR",
+                "SE"
+            ],
+            "kr": [
+                "C",
+                "P",
+                "P+UR",
+                "SE"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            },
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 19317,
+        "name": "All-Seeing Harvey",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUIREMENT]</b> During your Main Phase that you Normal or Special Summoned this card.\n<b>[EFFECT]</b> Look at 1 face-down card on your opponent's field. If that card is a Monster Card with 1500 or more DEF, you can also destroy it.",
+        "attribute": "EARTH",
+        "level": 4,
+        "atk": 1300,
+        "def": 1000,
+        "race": "Warrior",
+        "releaseDate": {
+            "jp": "2023-08-11",
+            "kr": "2023-12-20",
+            "dl": "2024-10-01"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "RevealsOpponentFaceDownCard"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentMonsters"
+            }
+        ],
+        "antiSupports": [
+            {
+                "cardType": "Monster",
+                "def": [
+                    1500,
+                    ">="
+                ]
+            }            
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "UR",
+                "SE",
+                "ORR"
+            ],
+            "kr": [
+                "UR",
+                "SE",
+                "ORR"
+            ],
+            "dl": [
+                "SR+DL"
+            ]
+        },
+        "images": {
+            "default": 0,
+            "ORR": 0
+        },
+        "artworks": [
+            {
+                "normal": true,
+                "ORR": true
+            }
+        ],
+        "properties": [
+            "NonEffect"
+        ]
+    },
+    {
+        "id": 19342,
+        "name": "Negate Attack",
+        "cardType": "Trap",
+        "type": "Normal",
+        "cardText": "<b>[REQUIREMENT]</b> When an opponent's monster declares an attack.\n<b>[EFFECT]</b> Negate the attack. This turn, your opponent cannot declare an attack.",
+        "releaseDate": {
+            "jp": "2023-08-11",
+            "kr": "2023-12-20",
+            "dl": "2024-05-16"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": "l1"
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "OpponentAttackDeclaration"
+            },
+            {
+                "type": "effects",
+                "name": "NegatesAttacks"
+            },
+            {
+                "type": "effects",
+                "name": "PreventsOpponentMonsterFromAttacking"
+            }
+        ],
+        "mentionedBy": [
+            19311
+        ],
+        "rarities": {
+            "jp": [
+                "R",
+                "P",
+                "P+UR",
+                "SE"
+            ],
+            "kr": [
+                "R",
+                "UR",
+                "P",
+                "SE"
+            ],
+            "dl": [
+                "UR+DL"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            },
+            {
+                "normal": true
+            }
+        ],
+        "properties": [
+            "LegendCard"
+        ]
+    },
+    {
+        "id": 19441,
+        "name": "Destroyer Golem",
+        "cardType": "Monster",
+        "type": "Normal",
+        "cardText": "A golem with a massive right hand for crushing its victims.",
+        "attribute": "EARTH",
+        "level": 4,
+        "atk": 1500,
+        "def": 1000,
+        "race": "Rock",
+        "releaseDate": {
+            "jp": "2023-10-23"
+        },
+        "status": {
+            "jp": 3
+        },
+        "rarities": {
+            "jp": [
+                "C",
+                "P"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ],
+        "properties": [
+            "NonEffect"
         ]
     },
     {
@@ -2003,6 +3107,256 @@
         ]
     },
     {
+        "id": 19930,
+        "name": "Remove Trap",
+        "cardType": "Spell",
+        "type": "Normal",
+        "cardText": "<b>[REQUIREMENT]</b> None\n<b>[EFFECT]</b> Look at 1 face-down card in your opponent's Spell & Trap Zone. Then, if that card is a Trap Card, destroy it.",
+        "releaseDate": {
+            "jp": "2023-12-16",
+            "kr": "2024-06-15"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "RevealsOpponentFaceDownCard"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentTraps"
+            }
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "P"
+            ],
+            "kr": [
+                "C"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 20146,
+        "name": "Tribute Kaiser",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUIREMENT]</b> Send the top card of your Deck to the Graveyard.\n<b>[EFFECT]</b> Reduce the Level of 1 face-up Level 3-8 Effect Monster on your opponent's field by 2 until the end of this turn. Then, you can add 1 Level 8 monster with 2400 ATK/1000 DEF from your Graveyard to your hand.",
+        "attribute": "EARTH",
+        "level": 3,
+        "atk": 800,
+        "def": 1000,
+        "race": "Warrior",
+        "releaseDate": {
+            "jp": "2024-04-06",
+            "kr": "2024-07-10"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "OpponentMonstersLoseLevels"
+            },
+            {
+                "type": "effects",
+                "name": "AddsMonsterFromGraveyardToHand"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "levels": [
+                    8,
+                    "="
+                ],
+                "atk": [
+                    2400,
+                    "="
+                ],
+                "def": [
+                    1000,
+                    "="
+                ]
+            }
+        ],
+        "antiSupports": [
+            {
+                "cardType": "Monster",
+                "type": "Effect",
+                "levels": [
+                    3,
+                    "-",
+                    8
+                ]
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "C"
+            ],
+            "kr": [
+                "C"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 20328,
+        "name": "Royal Wisdom Guards",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUIREMENT]</b> If you have 10 or more cards in your Deck, shuffle 4 monsters with 1000 DEF from your Graveyard into the Deck, except monsters with 1200 ATK.\n<b>[EFFECT]</b> Draw 1 card. Then, increase this card's Level by 2 until the end of this turn.",
+        "attribute": "DARK",
+        "level": 3,
+        "atk": 1200,
+        "def": 1000,
+        "race": "Cyberse",
+        "releaseDate": {
+            "jp": "2024-05-11",
+            "kr": "2024-08-23"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "ShuffleMonsterFromGraveyardToDeck"
+            },
+            {
+                "type": "effects",
+                "name": "PlayerDrawCards"
+            },
+            {
+                "type": "effects",
+                "name": "ThisCardGainLevels"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "levels": [
+                    5,
+                    ">="
+                ],
+                "atk": [
+                    1200,
+                    "!="
+                ],
+                "def": [
+                    1000,
+                    "="
+                ]
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "C"
+            ],
+            "kr": [
+                "C"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 20329,
+        "name": "Advance Form",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUIREMENT]</b> Send up to 2 cards from your field to the Graveyard.\n<b>[EFFECT]</b> Shuffle monsters from your opponent's Graveyard into the Deck equal to [the number of cards sent to the Graveyard to meet the requirement]. Then, you can add 1 \"Advance Impact\" or \"Emperor Realm\" from your Graveyard to your hand.",
+        "attribute": "LIGHT",
+        "level": 4,
+        "atk": 800,
+        "def": 1000,
+        "race": "Galaxy",
+        "releaseDate": {
+            "jp": "2024-05-11",
+            "kr": "2024-08-23"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromFieldToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "ShuffleMonsterFromOpponentGraveyardToDeck"
+            },
+            {
+                "type": "effects",
+                "name": "AddsSpecificCardFromGraveyardToHand"
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "mentions": [
+            18975,
+            18985
+        ],
+        "rarities": {
+            "jp": [
+                "C"
+            ],
+            "kr": [
+                "C"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
         "id": 20355,
         "name": "Jest of the Cosmos Princess",
         "cardType": "Spell",
@@ -2055,6 +3409,64 @@
             {
                 "normal": true,
                 "ORR": true
+            }
+        ]
+    },
+    {
+        "id": 20641,
+        "name": "Goodgoo",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUIREMENT]</b> If your opponent has 2 or more monsters on their field, send this face-up card from your field to the Graveyard.\n<b>[EFFECT]</b> Make 1 face-up Level 7 or higher monster on your opponent's field lose 1000 ATK/DEF until the end of this turn.",
+        "attribute": "WATER",
+        "level": 1,
+        "atk": 100,
+        "def": 1000,
+        "race": "Aqua",
+        "releaseDate": {
+            "jp": "2024-08-10",
+            "kr": "2024-11-19"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendItselfFromFieldToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "OpponentMonstersLoseATK"
+            }
+        ],
+        "antiSupports": [
+            {
+                "cardType": "Monster",
+                "levels": [
+                    7,
+                    ">="
+                ]
+            }
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "R",
+                "SE"
+            ],
+            "kr": [
+                "R",
+                "SE"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
             }
         ]
     },
@@ -2122,10 +3534,12 @@
         "def": 2600,
         "race": "Spellcaster",
         "releaseDate": {
-            "jp": "2025-04-26"
+            "jp": "2025-04-26",
+            "kr": "2025-08-20"
         },
         "status": {
-            "jp": 3
+            "jp": 3,
+            "kr": 3
         },
         "actions": [
             {
@@ -2144,6 +3558,10 @@
         ],
         "rarities": {
             "jp": [
+                "UR",
+                "ORR"
+            ],
+            "kr": [
                 "UR",
                 "ORR"
             ]
@@ -2172,10 +3590,12 @@
         "def": 2500,
         "race": "Warrior",
         "releaseDate": {
-            "jp": "2025-04-26"
+            "jp": "2025-04-26",
+            "kr": "2025-08-20"
         },
         "status": {
-            "jp": 3
+            "jp": 3,
+            "kr": 3
         },
         "actions": [
             {
@@ -2214,6 +3634,10 @@
             "jp": [
                 "C",
                 "SR"
+            ],
+            "kr": [
+                "C",
+                "SR"
             ]
         },        
         "images": {
@@ -2232,10 +3656,12 @@
         "type": "Ritual",
         "cardText": "<b>[REQUIREMENT]</b> None\n<b>[EFFECT]</b> Ritual Summon \"Magician of Black Chaos\" by sending monsters from your hand and/or field to the Graveyard whose total Levels equal 8 or more as material (you cannot use more monsters than necessary as material).",
         "releaseDate": {
-            "jp": "2025-04-26"
+            "jp": "2025-04-26",
+            "kr": "2025-08-20"
         },
         "status": {
-            "jp": 3
+            "jp": 3,
+            "kr": 3
         },
         "actions": [
             {
@@ -2267,6 +3693,497 @@
         ],
         "mentionedBy": [
             21591
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "P+UR"
+            ],
+            "kr": [
+                "C"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            },
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 22091,
+        "name": "The Calculator",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUIREMENT]</b> None\n<b>[CONTINUOUS EFFECT]</b> This card gains ATK equal to [the total original Levels of the face-up monsters on your field] x 300.",
+        "attribute": "LIGHT",
+        "level": 2,
+        "atk": 0,
+        "def": 0,
+        "race": "Thunder",
+        "preReleaseDate": "2025-08-03",
+        "releaseDate": {
+            "jp": "2025-09-04"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "ThisCardGainsATK"
+            }
+        ],
+        "rarities": {
+            "jp": [
+                "P"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ],
+        "properties": [
+            "LegendCard"
+        ]
+    },
+    {
+        "id": 160324001,
+        "name": "Caius the Shadow Monarch",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUIREMENT]</b> During the turn you Tribute Summoned this card in Attack Position.\n<b>[EFFECT]</b> Place 1 card from the field on the bottom of the owner's Deck. Then, if you placed a face-up monster whose original Attribute is DARK by this effect, inflict 1000 damage to your opponent. This turn, you cannot activate the effect of \"Caius the Shadow Monarch\".",
+        "attribute": "DARK",
+        "level": 6,
+        "atk": 2400,
+        "def": 1000,
+        "race": "Fiend",
+        "preReleaseDate": "2025-08-12",
+        "releaseDate": {
+            "jp": "2025-09-20"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "PlacesFromFieldOnBottomDeck"
+            },
+            {
+                "type": "effects",
+                "name": "PlacesFromOpponentFieldOnBottomDeck"
+            },
+            {
+                "type": "effects",
+                "name": "InflictsDamageOpponent"
+            },
+            {
+                "type": "effects",
+                "name": "OncePerTurn"
+            }
+        ],
+        "supports": [
+            {
+                "attributes": [
+                    "DARK"
+                ]
+            }
+        ],
+        "antiSupports": [
+            {
+                "attributes": [
+                    "DARK"
+                ]
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "UR",
+                "ORR"
+            ]
+        },
+        "images": {
+            "ORR": 0
+        },
+        "artworks": [
+            {
+                "normal": false,
+                "ORR": true
+            }
+        ],
+        "properties": [
+            "LegendCard"
+        ]
+    },
+    {
+        "id": 160324002,
+        "name": "Lindorm the Mega Monarch",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "You can Tribute Summon this card in Attack Position by Tributing 1 face-up Level 5 or higher monster with 1000 DEF.\n<b>[REQUIREMENT]</b> You have no cards in your Extra Deck during the turn you Tribute Summoned this card in Attack Position.\n<b>[EFFECT]</b> Your opponent chooses 2 cards on their field, and you shuffle 1 of them into the owner's Deck.",
+        "attribute": "WATER",
+        "level": 8,
+        "atk": 2400,
+        "def": 1000,
+        "race": "Wyrm",
+        "preReleaseDate": "2025-08-12",
+        "releaseDate": {
+            "jp": "2025-09-20"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "NormalSummonThisCardOneTribute"
+            },
+            {
+                "type": "effects",
+                "name": "ShuffleFromOpponentFieldToDeck"
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "SR"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 160324003,
+        "name": "Lindorm the Dragon Monarch",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUIREMENT]</b> You have no cards in your Extra Deck during the turn you Tribute Summoned this card in Attack Position.\n<b>[EFFECT]</b> Shuffle up to 2 cards from your opponent's Graveyard into the Deck. Then, you can make 1 face-up Effect Monster on your opponent's field lose 800 ATK/DEF until the end of this turn.",
+        "attribute": "WATER",
+        "level": 5,
+        "atk": 2000,
+        "def": 1000,
+        "race": "Wyrm",
+        "preReleaseDate": "2025-08-22",
+        "releaseDate": {
+            "jp": "2025-09-20"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "ShuffleFromOpponentGraveyardToDeck"
+            },
+            {
+                "type": "effects",
+                "name": "OpponentMonstersLoseATK"
+            },
+            {
+                "type": "effects",
+                "name": "OpponentMonstersLoseDEF"
+            }
+        ],
+        "antiSupports": [
+            {
+                "cardType": "Monster",
+                "type": "Effect"
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "SR"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 160324004,
+        "name": "Drache the Dragon Vassal",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUIREMENT]</b> If you have no cards in your Extra Deck, send the top card of your Deck to the Graveyard.\n<b>[EFFECT]</b> Increase this card's Level by 2 until the end of this turn. Then, if you have not Special Summoned a monster this turn, you can add 1 \"Lindorm the Mega Monarch\" or \"Lindorm the Dragon Monarch\" from your Graveyard to your hand.",
+        "attribute": "WATER",
+        "level": 3,
+        "atk": 800,
+        "def": 1000,
+        "race": "Wyrm",
+        "preReleaseDate": "2025-09-04",
+        "releaseDate": {
+            "jp": "2025-09-20"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "ThisCardGainLevels"
+            },
+            {
+                "type": "effects",
+                "name": "AddsSpecificCardFromGraveyardToHand"
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "C"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 160324005,
+        "name": "Criatura Brazo",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUIREMENT]</b> If you have no cards in your Extra Deck and no other monsters on your field, send the top 2 cards of your Deck to the Graveyard.\n<b>[EFFECT]</b> Choose 1 face-down Spell/Trap Card on your opponent's field. That card cannot be activated until the end of your opponent's next turn.",
+        "attribute": "DARK",
+        "level": 3,
+        "atk": 1000,
+        "def": 1000,
+        "race": "Fairy",
+        "preReleaseDate": "2025-08-29",
+        "releaseDate": {
+            "jp": "2025-09-20"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "PreventsOpponentActivationOfFacedDownSpellTrapCards"
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "P"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ],
+        "properties": [
+            "ATKEqualsDEF"
+        ]
+    },
+    {
+        "id": 160324022,
+        "name": "The Monarchs Stormforth",
+        "cardType": "Spell",
+        "type": "Normal",
+        "cardText": "<b>[REQUIREMENT]</b> During a turn you have not Special Summoned a monster from the Extra Deck.\n<b>[EFFECT]</b> Choose 1 monster on your opponent's field. This turn, if you would Tribute Summon a monster, you can Tribute that opponent's monster instead of 1 monster on your field. You cannot Special Summon monsters from the Extra Deck for the rest of this turn.",
+        "preReleaseDate": "2025-08-22",
+        "releaseDate": {
+            "jp": "2025-09-20"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "TributesOpponentMonsters"
+            },
+            {
+                "type": "effects",
+                "name": "PreventsSpecialSummonsFromTheExtraDeck"
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "UR"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ],
+        "properties": [
+            "LegendCard"
+        ]
+    },
+    {
+        "id": 160324023,
+        "name": "Invasion of the Monarchs",
+        "cardType": "Spell",
+        "type": "Normal",
+        "cardText": "<b>[REQUIREMENT]</b> None\n<b>[EFFECT]</b> Add 1 monster with 2000 or 2400 ATK/1000 DEF from your Graveyard to your hand.",
+        "preReleaseDate": "2025-08-12",
+        "releaseDate": {
+            "jp": "2025-09-20"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "AddsMonsterFromGraveyardToHand"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "atk": [
+                    2000,
+                    "="
+                ],
+                "def": [
+                    1000,
+                    "="
+                ]
+            },
+            {
+                "cardType": "Monster",
+                "atk": [
+                    2400,
+                    "="
+                ],
+                "def": [
+                    1000,
+                    "="
+                ]
+            }
+        ],
+        "series": [
+            "Monarch"
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "SR"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 160324024,
+        "name": "Triumph of the Monarchs",
+        "cardType": "Spell",
+        "type": "Normal",
+        "cardText": "<b>[REQUIREMENT]</b> If you have no cards in your Extra Deck, send 1 monster with 2000 or 2400 ATK and 1000 DEF from your hand to the Graveyard.\n<b>[EFFECT]</b> Draw 2 cards. Then, you can shuffle up to 2 cards from your opponent's Graveyard into the Deck.",
+        "preReleaseDate": "2025-08-28",
+        "releaseDate": {
+            "jp": "2025-09-20"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendMonsterFromHandToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "PlayerDrawCards"
+            },
+            {
+                "type": "effects",
+                "name": "ShuffleFromOpponentGraveyardToDeck"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "atk": [
+                    2000,
+                    "="
+                ],
+                "def": [
+                    1000,
+                    "="
+                ]
+            },
+            {
+                "cardType": "Monster",
+                "atk": [
+                    2400,
+                    "="
+                ],
+                "def": [
+                    1000,
+                    "="
+                ]
+            }
+        ],
+        "series": [
+            "Monarch"
         ],
         "rarities": {
             "jp": [

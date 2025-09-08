@@ -1271,6 +1271,11 @@
 	},
 	{
 		"type": "attack",
+		"abbreviation": "NegatesAttacks",
+		"name": "Niega ataques"
+	},
+	{
+		"type": "attack",
 		"abbreviation": "PreventsOpponentMonsterFromAttacking",
 		"name": "Previene que los monstruos del adversario ataquen"
 	},

@@ -788,9 +788,9 @@ function generateLatestCards(maxCardCount = 8) {
     var homeCards = [...data.cards].sort((a, b) => (b.id - a.id));
 
     if (regionName == 'all') {
-        homeCards.sort((a,b) => new Date(b.releaseDate.jp).getTime() - new Date(a.releaseDate.jp).getTime());
+        homeCards.sort((a,b) => new Date(b.preReleaseDate || b.releaseDate.jp).getTime() - new Date(a.preReleaseDate || a.releaseDate.jp).getTime());
     } else {
-        homeCards.sort((a,b) => new Date(b.releaseDate[regionName] || '1999-01-01').getTime() - new Date(a.releaseDate[regionName] || '1999-01-01').getTime());
+        homeCards.sort((a,b) => new Date(b.preReleaseDate || b.releaseDate[regionName] || '1999-01-01').getTime() - new Date(a.preReleaseDate || a.releaseDate[regionName] || '1999-01-01').getTime());
     }
 
     var cardCount = 0;
