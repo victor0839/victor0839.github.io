@@ -414,7 +414,7 @@ function generateCardSearchFilters(resetFilters = true) {
 
         if ('properties' in card) {
             for (property of card.properties) {
-                if (!propertiesList.includes(property)) {
+                if (!propertiesList.includes(property) && property != 'LegendCard') {
                     propertiesList.push(property);
                 }
             }
@@ -960,8 +960,10 @@ function searchResetFilter(search = true) {
         Object.entries(filter[1]).forEach(val => {
             searchOptions['filterButton'][filter[0]][val[0]] = 0;
 
-            $(`#search-filter-${filter[0].toLowerCase()}-${String(val[0]).toLowerCase()}`).removeClass('active');
+            $(`#search-filter-button-${filter[0].toLowerCase()}-${String(val[0]).toLowerCase()}`).removeClass('active');
         });
+
+        $(`#search-filter-button-${filter[0].toLowerCase()}`).removeClass('active');
     });
 
     Object.entries(searchOptions['filterText']).forEach((filter) => {
@@ -985,7 +987,7 @@ function searchResetFilter(search = true) {
     }
 
     if (search) {
-        loadCardSearchList();
+        loadCardSearchList(false, true);
     }
 }
 
@@ -1015,7 +1017,7 @@ function searchChangePerPage(value) {
 
     searchOptions['perPage'] = value;
 
-    loadCardSearchList();
+    loadCardSearchList(true);
 }
 
 function searchSetOrder(value, changeDir = true) {
@@ -2609,11 +2611,19 @@ function createStringFromFilter(filter) {
 
             switch(filter.atk[1]) {
                 case '>=':
-                    keywords[5] += ` ATK ${getLocalizedString('effectConjuction', 'orMore')}`;
+                    if (userLang == 'Es') {
+                        keywords[5] += ` ATK ${getLocalizedString('effectString', 'orMore')}`;
+                    } else {
+                        keywords[5] += ` ${getLocalizedString('effectString', 'orMore')} ATK`;
+                    }
                     break;
 
                 case '<=':
-                    keywords[5] += ` ATK ${getLocalizedString('effectConjuction', 'orLess')}`;
+                    if (userLang == 'Es') {
+                        keywords[5] += ` ATK ${getLocalizedString('effectString', 'orLess')}`;
+                    } else {
+                        keywords[5] += ` ${getLocalizedString('effectString', 'orLess')} ATK`;
+                    }
                     break;
 
                 case '!=':
@@ -2644,11 +2654,19 @@ function createStringFromFilter(filter) {
 
             switch(filter.def[1]) {
                 case '>=':
-                    keywords[6] += ` DEF ${getLocalizedString('effectConjuction', 'orMore')}`;
+                    if (userLang == 'Es') {
+                        keywords[6] += ` DEF ${getLocalizedString('effectString', 'orMore')}`;
+                    } else {
+                        keywords[6] += ` ${getLocalizedString('effectString', 'orMore')} DEF`;
+                    }
                     break;
 
                 case '<=':
-                    keywords[6] += ` DEF ${getLocalizedString('effectConjuction', 'orLess')}`;
+                    if (userLang == 'Es') {
+                        keywords[6] += ` DEF ${getLocalizedString('effectString', 'orLess')}`;
+                    } else {
+                        keywords[6] += ` ${getLocalizedString('effectString', 'orLess')} DEF`;
+                    }
                     break;
 
                 case '!=':
@@ -2740,6 +2758,8 @@ function loadCardFilter(property, index) {
     }
 
     searchResetFilter(false);
+
+    currentPage = 1;
 
     if (property === 'series' || property === 'properties') {
         searchOptions['filterSelect'][property].push(filter);
