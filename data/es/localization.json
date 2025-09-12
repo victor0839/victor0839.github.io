@@ -113,15 +113,18 @@
         "Supports": "Soporte a"
     },
     "series": {
+        "BlackLusterSoldier": "Soldado del Brillo Negro",
         "BlueEyes": "Ojos Azules",
         "DarkMagician": "Mago Oscuro",
         "Galactica": "Sideral",
         "Metarion": "Metarión",
         "Monarch": "Monarca",
+        "PrincessCosmos": "Princesa del Cosmos",
         "RedEyes": "Ojos Rojos",
         "SevensRoad": "Camino Sevens",
         "StrikeDragon": "Dragon Ataque",
-        "Tron": "Tron"
+        "Tron": "Tron",
+        "WoolyWonderland": "País de Maravillas Lanudas"
     },
     "setRegion": {
         "all": "Todos",

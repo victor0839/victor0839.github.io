@@ -458,6 +458,1102 @@
         }
     },
     {
+        "prefix": "KP09",
+        "name": "Deck Mod Pack: Galaxy of Fate!!",
+        "type": "BoosterPack",
+        "subtype": "DeckModPack",
+        "releaseDate": {
+            "jp": "2022-04-09",
+            "kr": "2022-07-26"
+        },
+        "cardList": {
+            "jp": [
+                {
+                    "id": 17486,
+                    "setNumber": "RD/KP09-JP000",
+                    "artwork": 0,
+                    "rarities": [
+                        "SE",
+                        "RR"
+                    ]
+                },
+                {
+                    "id": 17487,
+                    "setNumber": "RD/KP09-JP001",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17488,
+                    "setNumber": "RD/KP09-JP002",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR",
+                        "RR"
+                    ]
+                },
+                {
+                    "id": 17489,
+                    "setNumber": "RD/KP09-JP003",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17490,
+                    "setNumber": "RD/KP09-JP004",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17491,
+                    "setNumber": "RD/KP09-JP005",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17492,
+                    "setNumber": "RD/KP09-JP006",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17493,
+                    "setNumber": "RD/KP09-JP007",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17494,
+                    "setNumber": "RD/KP09-JP008",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17495,
+                    "setNumber": "RD/KP09-JP009",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17496,
+                    "setNumber": "RD/KP09-JP010",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17497,
+                    "setNumber": "RD/KP09-JP011",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17498,
+                    "setNumber": "RD/KP09-JP012",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17499,
+                    "setNumber": "RD/KP09-JP013",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17500,
+                    "setNumber": "RD/KP09-JP014",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17501,
+                    "setNumber": "RD/KP09-JP015",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17502,
+                    "setNumber": "RD/KP09-JP016",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17503,
+                    "setNumber": "RD/KP09-JP017",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR"
+                    ]
+                },
+                {
+                    "id": 17504,
+                    "setNumber": "RD/KP09-JP018",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17505,
+                    "setNumber": "RD/KP09-JP019",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR",
+                        "RR"
+                    ]
+                },
+                {
+                    "id": 17506,
+                    "setNumber": "RD/KP09-JP020",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17507,
+                    "setNumber": "RD/KP09-JP021",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR"
+                    ]
+                },
+                {
+                    "id": 17508,
+                    "setNumber": "RD/KP09-JP022",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17509,
+                    "setNumber": "RD/KP09-JP023",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17510,
+                    "setNumber": "RD/KP09-JP024",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17511,
+                    "setNumber": "RD/KP09-JP025",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17512,
+                    "setNumber": "RD/KP09-JP026",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17513,
+                    "setNumber": "RD/KP09-JP027",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17514,
+                    "setNumber": "RD/KP09-JP028",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17515,
+                    "setNumber": "RD/KP09-JP029",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17516,
+                    "setNumber": "RD/KP09-JP030",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17517,
+                    "setNumber": "RD/KP09-JP031",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17518,
+                    "setNumber": "RD/KP09-JP032",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17519,
+                    "setNumber": "RD/KP09-JP033",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17520,
+                    "setNumber": "RD/KP09-JP034",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17521,
+                    "setNumber": "RD/KP09-JP035",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17522,
+                    "setNumber": "RD/KP09-JP036",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17523,
+                    "setNumber": "RD/KP09-JP037",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR",
+                        "RR"
+                    ]
+                },
+                {
+                    "id": 17524,
+                    "setNumber": "RD/KP09-JP038",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17525,
+                    "setNumber": "RD/KP09-JP039",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17526,
+                    "setNumber": "RD/KP09-JP040",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17527,
+                    "setNumber": "RD/KP09-JP041",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17528,
+                    "setNumber": "RD/KP09-JP042",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17529,
+                    "setNumber": "RD/KP09-JP043",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17530,
+                    "setNumber": "RD/KP09-JP044",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17531,
+                    "setNumber": "RD/KP09-JP045",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR"
+                    ]
+                },
+                {
+                    "id": 17532,
+                    "setNumber": "RD/KP09-JP046",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17533,
+                    "setNumber": "RD/KP09-JP047",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17534,
+                    "setNumber": "RD/KP09-JP048",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17535,
+                    "setNumber": "RD/KP09-JP049",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17536,
+                    "setNumber": "RD/KP09-JP050",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17537,
+                    "setNumber": "RD/KP09-JP051",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17538,
+                    "setNumber": "RD/KP09-JP052",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17539,
+                    "setNumber": "RD/KP09-JP053",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17540,
+                    "setNumber": "RD/KP09-JP054",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17541,
+                    "setNumber": "RD/KP09-JP055",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17542,
+                    "setNumber": "RD/KP09-JP056",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17543,
+                    "setNumber": "RD/KP09-JP057",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17544,
+                    "setNumber": "RD/KP09-JP058",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17545,
+                    "setNumber": "RD/KP09-JP059",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17546,
+                    "setNumber": "RD/KP09-JP060",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17547,
+                    "setNumber": "RD/KP09-JP061",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17548,
+                    "setNumber": "RD/KP09-JP062",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17549,
+                    "setNumber": "RD/KP09-JP063",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17550,
+                    "setNumber": "RD/KP09-JP064",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17551,
+                    "setNumber": "RD/KP09-JP065",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR"
+                    ]
+                }
+            ],
+            "kr": [
+                {
+                    "id": 17483,
+                    "setNumber": "RD/KP09-KRS01",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17484,
+                    "setNumber": "RD/KP09-KRS02",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17486,
+                    "setNumber": "RD/KP09-KR000",
+                    "artwork": 1,
+                    "rarities": [
+                        "SE",
+                        "RR"
+                    ]
+                },
+                {
+                    "id": 17487,
+                    "setNumber": "RD/KP09-KR001",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17488,
+                    "setNumber": "RD/KP09-KR002",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR",
+                        "RR"
+                    ]
+                },
+                {
+                    "id": 17489,
+                    "setNumber": "RD/KP09-KR003",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17490,
+                    "setNumber": "RD/KP09-KR004",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17491,
+                    "setNumber": "RD/KP09-KR005",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17492,
+                    "setNumber": "RD/KP09-KR006",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17493,
+                    "setNumber": "RD/KP09-KR007",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17494,
+                    "setNumber": "RD/KP09-KR008",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17495,
+                    "setNumber": "RD/KP09-KR009",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17496,
+                    "setNumber": "RD/KP09-KR010",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17497,
+                    "setNumber": "RD/KP09-KR011",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17498,
+                    "setNumber": "RD/KP09-KR012",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17499,
+                    "setNumber": "RD/KP09-KR013",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17500,
+                    "setNumber": "RD/KP09-KR014",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17501,
+                    "setNumber": "RD/KP09-KR015",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17502,
+                    "setNumber": "RD/KP09-KR016",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17503,
+                    "setNumber": "RD/KP09-KR017",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR"
+                    ]
+                },
+                {
+                    "id": 17504,
+                    "setNumber": "RD/KP09-KR018",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17505,
+                    "setNumber": "RD/KP09-KR019",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR",
+                        "RR"
+                    ]
+                },
+                {
+                    "id": 17506,
+                    "setNumber": "RD/KP09-KR020",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17507,
+                    "setNumber": "RD/KP09-KR021",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR"
+                    ]
+                },
+                {
+                    "id": 17508,
+                    "setNumber": "RD/KP09-KR022",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17509,
+                    "setNumber": "RD/KP09-KR023",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17510,
+                    "setNumber": "RD/KP09-KR024",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17511,
+                    "setNumber": "RD/KP09-KR025",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17512,
+                    "setNumber": "RD/KP09-KR026",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17513,
+                    "setNumber": "RD/KP09-KR027",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17514,
+                    "setNumber": "RD/KP09-KR028",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17515,
+                    "setNumber": "RD/KP09-KR029",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17516,
+                    "setNumber": "RD/KP09-KR030",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17517,
+                    "setNumber": "RD/KP09-KR031",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17518,
+                    "setNumber": "RD/KP09-KR032",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17519,
+                    "setNumber": "RD/KP09-KR033",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17520,
+                    "setNumber": "RD/KP09-KR034",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17521,
+                    "setNumber": "RD/KP09-KR035",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17522,
+                    "setNumber": "RD/KP09-KR036",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17523,
+                    "setNumber": "RD/KP09-KR037",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR",
+                        "RR"
+                    ]
+                },
+                {
+                    "id": 17524,
+                    "setNumber": "RD/KP09-KR038",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17525,
+                    "setNumber": "RD/KP09-KR039",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17526,
+                    "setNumber": "RD/KP09-KR040",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17527,
+                    "setNumber": "RD/KP09-KR041",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17528,
+                    "setNumber": "RD/KP09-KR042",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17529,
+                    "setNumber": "RD/KP09-KR043",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17530,
+                    "setNumber": "RD/KP09-KR044",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17531,
+                    "setNumber": "RD/KP09-KR045",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR"
+                    ]
+                },
+                {
+                    "id": 17532,
+                    "setNumber": "RD/KP09-KR046",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17533,
+                    "setNumber": "RD/KP09-KR047",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17534,
+                    "setNumber": "RD/KP09-KR048",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17535,
+                    "setNumber": "RD/KP09-KR049",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17536,
+                    "setNumber": "RD/KP09-KR050",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17537,
+                    "setNumber": "RD/KP09-KR051",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17538,
+                    "setNumber": "RD/KP09-KR052",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17539,
+                    "setNumber": "RD/KP09-KR053",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17540,
+                    "setNumber": "RD/KP09-KR054",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17541,
+                    "setNumber": "RD/KP09-KR055",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17542,
+                    "setNumber": "RD/KP09-KR056",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17543,
+                    "setNumber": "RD/KP09-KR057",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17544,
+                    "setNumber": "RD/KP09-KR058",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17545,
+                    "setNumber": "RD/KP09-KR059",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17546,
+                    "setNumber": "RD/KP09-KR060",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17547,
+                    "setNumber": "RD/KP09-KR061",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17548,
+                    "setNumber": "RD/KP09-KR062",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17549,
+                    "setNumber": "RD/KP09-KR063",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17550,
+                    "setNumber": "RD/KP09-KR064",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17551,
+                    "setNumber": "RD/KP09-KR065",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR"
+                    ]
+                }
+            ]
+        }
+    },
+    {
         "prefix": "MRP1",
         "name": "Megaroad Pack",
         "type": "BoosterPack",
@@ -1698,6 +2794,1192 @@
                     "artwork": 0,
                     "rarities": [
                         "SE"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "prefix": "KP10",
+        "name": "Deck Mod Pack: Requiem of Destruction!!",
+        "type": "BoosterPack",
+        "subtype": "DeckModPack",
+        "releaseDate": {
+            "jp": "2022-07-09",
+            "kr": "2022-10-21"
+        },
+        "cardList": {
+            "jp": [
+                {
+                    "id": 17848,
+                    "setNumber": "RD/KP10-JP000",
+                    "artwork": 0,
+                    "rarities": [
+                        "SE",
+                        "RR"
+                    ]
+                },
+                {
+                    "id": 17849,
+                    "setNumber": "RD/KP10-JP001",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17850,
+                    "setNumber": "RD/KP10-JP002",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17851,
+                    "setNumber": "RD/KP10-JP003",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17852,
+                    "setNumber": "RD/KP10-JP004",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17853,
+                    "setNumber": "RD/KP10-JP005",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17854,
+                    "setNumber": "RD/KP10-JP006",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17855,
+                    "setNumber": "RD/KP10-JP007",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17856,
+                    "setNumber": "RD/KP10-JP008",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17857,
+                    "setNumber": "RD/KP10-JP009",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17858,
+                    "setNumber": "RD/KP10-JP010",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17859,
+                    "setNumber": "RD/KP10-JP011",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17860,
+                    "setNumber": "RD/KP10-JP012",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17861,
+                    "setNumber": "RD/KP10-JP013",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17862,
+                    "setNumber": "RD/KP10-JP014",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17863,
+                    "setNumber": "RD/KP10-JP015",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17864,
+                    "setNumber": "RD/KP10-JP016",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17865,
+                    "setNumber": "RD/KP10-JP017",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR",
+                        "RR"
+                    ]
+                },
+                {
+                    "id": 17866,
+                    "setNumber": "RD/KP10-JP018",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17867,
+                    "setNumber": "RD/KP10-JP019",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17868,
+                    "setNumber": "RD/KP10-JP020",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR",
+                        "RR"
+                    ]
+                },
+                {
+                    "id": 17869,
+                    "setNumber": "RD/KP10-JP021",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17870,
+                    "setNumber": "RD/KP10-JP022",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17871,
+                    "setNumber": "RD/KP10-JP023",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17872,
+                    "setNumber": "RD/KP10-JP024",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR"
+                    ]
+                },
+                {
+                    "id": 17873,
+                    "setNumber": "RD/KP10-JP025",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR",
+                        "RR"
+                    ]
+                },
+                {
+                    "id": 17874,
+                    "setNumber": "RD/KP10-JP026",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17875,
+                    "setNumber": "RD/KP10-JP027",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17876,
+                    "setNumber": "RD/KP10-JP028",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR"
+                    ]
+                },
+                {
+                    "id": 17877,
+                    "setNumber": "RD/KP10-JP029",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17878,
+                    "setNumber": "RD/KP10-JP030",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17879,
+                    "setNumber": "RD/KP10-JP031",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17880,
+                    "setNumber": "RD/KP10-JP032",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17881,
+                    "setNumber": "RD/KP10-JP033",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17882,
+                    "setNumber": "RD/KP10-JP034",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17883,
+                    "setNumber": "RD/KP10-JP035",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17884,
+                    "setNumber": "RD/KP10-JP036",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17885,
+                    "setNumber": "RD/KP10-JP037",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17886,
+                    "setNumber": "RD/KP10-JP038",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17887,
+                    "setNumber": "RD/KP10-JP039",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17888,
+                    "setNumber": "RD/KP10-JP040",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17889,
+                    "setNumber": "RD/KP10-JP041",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17890,
+                    "setNumber": "RD/KP10-JP042",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17891,
+                    "setNumber": "RD/KP10-JP043",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17892,
+                    "setNumber": "RD/KP10-JP044",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17893,
+                    "setNumber": "RD/KP10-JP045",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17894,
+                    "setNumber": "RD/KP10-JP046",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17895,
+                    "setNumber": "RD/KP10-JP047",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17896,
+                    "setNumber": "RD/KP10-JP048",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17897,
+                    "setNumber": "RD/KP10-JP049",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17898,
+                    "setNumber": "RD/KP10-JP050",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17899,
+                    "setNumber": "RD/KP10-JP051",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17900,
+                    "setNumber": "RD/KP10-JP052",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17901,
+                    "setNumber": "RD/KP10-JP053",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17902,
+                    "setNumber": "RD/KP10-JP054",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17903,
+                    "setNumber": "RD/KP10-JP055",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17904,
+                    "setNumber": "RD/KP10-JP056",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR"
+                    ]
+                },
+                {
+                    "id": 17905,
+                    "setNumber": "RD/KP10-JP057",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17906,
+                    "setNumber": "RD/KP10-JP058",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17907,
+                    "setNumber": "RD/KP10-JP059",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17908,
+                    "setNumber": "RD/KP10-JP060",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17909,
+                    "setNumber": "RD/KP10-JP061",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17910,
+                    "setNumber": "RD/KP10-JP062",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17911,
+                    "setNumber": "RD/KP10-JP063",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17912,
+                    "setNumber": "RD/KP10-JP064",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17913,
+                    "setNumber": "RD/KP10-JP065",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR"
+                    ]
+                }
+            ],
+            "kr": [
+                {
+                    "id": 15581,
+                    "setNumber": "RD/KP10-KRS01",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17846,
+                    "setNumber": "RD/KP10-KRS02",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17848,
+                    "setNumber": "RD/KP10-KR000",
+                    "artwork": 0,
+                    "rarities": [
+                        "SE",
+                        "RR"
+                    ]
+                },
+                {
+                    "id": 17849,
+                    "setNumber": "RD/KP10-KR001",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17850,
+                    "setNumber": "RD/KP10-KR002",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17851,
+                    "setNumber": "RD/KP10-KR003",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17852,
+                    "setNumber": "RD/KP10-KR004",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17853,
+                    "setNumber": "RD/KP10-KR005",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17854,
+                    "setNumber": "RD/KP10-KR006",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17855,
+                    "setNumber": "RD/KP10-KR007",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17856,
+                    "setNumber": "RD/KP10-KR008",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17857,
+                    "setNumber": "RD/KP10-KR009",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17858,
+                    "setNumber": "RD/KP10-KR010",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17859,
+                    "setNumber": "RD/KP10-KR011",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17860,
+                    "setNumber": "RD/KP10-KR012",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17861,
+                    "setNumber": "RD/KP10-KR013",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17862,
+                    "setNumber": "RD/KP10-KR014",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17863,
+                    "setNumber": "RD/KP10-KR015",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17864,
+                    "setNumber": "RD/KP10-KR016",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17865,
+                    "setNumber": "RD/KP10-KR017",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR",
+                        "RR"
+                    ]
+                },
+                {
+                    "id": 17866,
+                    "setNumber": "RD/KP10-KR018",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17867,
+                    "setNumber": "RD/KP10-KR019",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17868,
+                    "setNumber": "RD/KP10-KR020",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR",
+                        "RR"
+                    ]
+                },
+                {
+                    "id": 17869,
+                    "setNumber": "RD/KP10-KR021",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17870,
+                    "setNumber": "RD/KP10-KR022",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17871,
+                    "setNumber": "RD/KP10-KR023",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17872,
+                    "setNumber": "RD/KP10-KR024",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR"
+                    ]
+                },
+                {
+                    "id": 17873,
+                    "setNumber": "RD/KP10-KR025",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR",
+                        "RR"
+                    ]
+                },
+                {
+                    "id": 17874,
+                    "setNumber": "RD/KP10-KR026",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17875,
+                    "setNumber": "RD/KP10-KR027",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17876,
+                    "setNumber": "RD/KP10-KR028",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR"
+                    ]
+                },
+                {
+                    "id": 17877,
+                    "setNumber": "RD/KP10-KR029",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17878,
+                    "setNumber": "RD/KP10-KR030",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17879,
+                    "setNumber": "RD/KP10-KR031",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17880,
+                    "setNumber": "RD/KP10-KR032",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17881,
+                    "setNumber": "RD/KP10-KR033",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17882,
+                    "setNumber": "RD/KP10-KR034",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17883,
+                    "setNumber": "RD/KP10-KR035",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17884,
+                    "setNumber": "RD/KP10-KR036",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17885,
+                    "setNumber": "RD/KP10-KR037",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17886,
+                    "setNumber": "RD/KP10-KR038",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17887,
+                    "setNumber": "RD/KP10-KR039",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17888,
+                    "setNumber": "RD/KP10-KR040",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17889,
+                    "setNumber": "RD/KP10-KR041",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17890,
+                    "setNumber": "RD/KP10-KR042",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17891,
+                    "setNumber": "RD/KP10-KR043",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17892,
+                    "setNumber": "RD/KP10-KR044",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17893,
+                    "setNumber": "RD/KP10-KR045",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17894,
+                    "setNumber": "RD/KP10-KR046",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17895,
+                    "setNumber": "RD/KP10-KR047",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17896,
+                    "setNumber": "RD/KP10-KR048",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17897,
+                    "setNumber": "RD/KP10-KR049",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17898,
+                    "setNumber": "RD/KP10-KR050",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17899,
+                    "setNumber": "RD/KP10-KR051",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17900,
+                    "setNumber": "RD/KP10-KR052",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17901,
+                    "setNumber": "RD/KP10-KR053",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17902,
+                    "setNumber": "RD/KP10-KR054",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17903,
+                    "setNumber": "RD/KP10-KR055",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17904,
+                    "setNumber": "RD/KP10-KR056",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR"
+                    ]
+                },
+                {
+                    "id": 17905,
+                    "setNumber": "RD/KP10-KR057",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17906,
+                    "setNumber": "RD/KP10-KR058",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17907,
+                    "setNumber": "RD/KP10-KR059",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17908,
+                    "setNumber": "RD/KP10-KR060",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17909,
+                    "setNumber": "RD/KP10-KR061",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17910,
+                    "setNumber": "RD/KP10-KR062",
+                    "artwork": 0,
+                    "rarities": [
+                        "R"
+                    ]
+                },
+                {
+                    "id": 17911,
+                    "setNumber": "RD/KP10-KR063",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 17912,
+                    "setNumber": "RD/KP10-KR064",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 17913,
+                    "setNumber": "RD/KP10-KR065",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "prefix": "711B",
+        "name": "Yu-Gi-Oh! GO RUSH!! x 7-Eleven Collaboration Campaign",
+        "type": "PromotionalCards",
+        "subtype": "Collaboration",
+        "releaseDate": {
+            "jp": "2022-08-04"
+        },
+        "cardList": {
+            "jp": [
+                {
+                    "id": 17483,
+                    "setNumber": "RD/711B-JP001",
+                    "artwork": 1,
+                    "rarities": [
+                        "P"
+                    ]
+                },
+                {
+                    "id": 17488,
+                    "setNumber": "RD/711B-JP002",
+                    "artwork": 1,
+                    "rarities": [
+                        "P"
+                    ]
+                },
+                {
+                    "id": 17505,
+                    "setNumber": "RD/711B-JP003",
+                    "artwork": 1,
+                    "rarities": [
+                        "P"
+                    ]
+                },
+                {
+                    "id": 17865,
+                    "setNumber": "RD/711B-JP004",
+                    "artwork": 1,
+                    "rarities": [
+                        "P"
+                    ]
+                },
+                {
+                    "id": 17868,
+                    "setNumber": "RD/711B-JP005",
+                    "artwork": 1,
+                    "rarities": [
+                        "P"
+                    ]
+                },
+                {
+                    "id": 17873,
+                    "setNumber": "RD/711B-JP006",
+                    "artwork": 1,
+                    "rarities": [
+                        "P"
+                    ]
+                },
+                {
+                    "id": 17492,
+                    "setNumber": "RD/711B-JP007",
+                    "artwork": 1,
+                    "rarities": [
+                        "P"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "prefix": "BDG1",
+        "name": "Yu-Gi-Oh! GO RUSH!! Duel-1 Blu-ray & DVD promotional card",
+        "type": "PromotionalCards",
+        "subtype": "AnimeBDPromos",
+        "releaseDate": {
+            "jp": "2022-10-26"
+        },
+        "cardList": {
+            "jp": [
+                {
+                    "id": 17492,
+                    "setNumber": "RD/BDG1-JP001",
+                    "artwork": 2,
+                    "rarities": [
+                        "P+UR"
                     ]
                 }
             ]
@@ -6005,6 +8287,197 @@
         }
     },
     {
+        "prefix": "ORP3",
+        "name": "Over Rush Pack 3",
+        "type": "BoosterPack",
+        "subtype": "OverRushPack",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "cardList": {
+            "jp": [
+                {
+                    "id": 160216001,
+                    "setNumber": "RD/ORP3-JP001",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR",
+                        "ORR"
+                    ]
+                },
+                {
+                    "id": 160216007,
+                    "setNumber": "RD/ORP3-JP007",
+                    "artwork": 0,
+                    "rarities": [
+                        "C",
+                        "ORR"
+                    ]
+                },
+                {
+                    "id": 160216008,
+                    "setNumber": "RD/ORP3-JP008",
+                    "artwork": 0,
+                    "rarities": [
+                        "C",
+                        "ORR"
+                    ]
+                },
+                {
+                    "id": 160216009,
+                    "setNumber": "RD/ORP3-JP009",
+                    "artwork": 0,
+                    "rarities": [
+                        "C",
+                        "ORR"
+                    ]
+                },
+                {
+                    "id": 160216032,
+                    "setNumber": "RD/ORP3-JP032",
+                    "artwork": 0,
+                    "rarities": [
+                        "ORR"
+                    ]
+                },
+                {
+                    "id": 160216038,
+                    "setNumber": "RD/ORP3-JP038",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR",
+                        "ORR"
+                    ]
+                },
+                {
+                    "id": 160216043,
+                    "setNumber": "RD/ORP3-JP043",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR",
+                        "ORR"
+                    ]
+                },
+                {
+                    "id": 160216044,
+                    "setNumber": "RD/ORP3-JP044",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 160216045,
+                    "setNumber": "RD/ORP3-JP045",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 160216046,
+                    "setNumber": "RD/ORP3-JP046",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR",
+                        "ORR"
+                    ]
+                },
+                {
+                    "id": 160216047,
+                    "setNumber": "RD/ORP3-JP047",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 160216048,
+                    "setNumber": "RD/ORP3-JP048",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 160216049,
+                    "setNumber": "RD/ORP3-JP049",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 160216050,
+                    "setNumber": "RD/ORP3-JP050",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 160216051,
+                    "setNumber": "RD/ORP3-JP051",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 160216052,
+                    "setNumber": "RD/ORP3-JP052",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 160216053,
+                    "setNumber": "RD/ORP3-JP053",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR"
+                    ]
+                },
+                {
+                    "id": 160216055,
+                    "setNumber": "RD/ORP3-JP055",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR",
+                        "ORR"
+                    ]
+                },
+                {
+                    "id": 160216057,
+                    "setNumber": "RD/ORP3-JP057",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR",
+                        "ORR"
+                    ]
+                },
+                {
+                    "id": 160216063,
+                    "setNumber": "RD/ORP3-JP063",
+                    "artwork": 0,
+                    "rarities": [
+                        "C"
+                    ]
+                },
+                {
+                    "id": 160216064,
+                    "setNumber": "RD/ORP3-JP064",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR",
+                        "ORR"
+                    ]
+                }
+            ]
+        }
+    },
+    {
         "prefix": "DLMA01",
         "name": "Sevens New Road",
         "type": "BoosterPack",
@@ -6642,6 +9115,27 @@
                     "artwork": 0,
                     "rarities": [
                         "N+DL"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "prefix": "DLSPCT",
+        "name": "Card Trader",
+        "type": "CardTrader",
+        "subtype": "RegularInventory",
+        "releaseDate": {
+            "dl": "2023-09-29"
+        },
+        "cardList": {
+            "dl": [
+                {
+                    "id": 15328,
+                    "setNumber": "",
+                    "artwork": 0,
+                    "rarities": [
+                        "UR+DL"
                     ]
                 }
             ]
@@ -7927,9 +10421,383 @@
                 }
             ]
         }
-    },  
+    },
     {
-        "prefix": "DLSA04",
+        "prefix": "DLMI05",
+        "name": "Galactica Go Rush",
+        "type": "BoosterPack",
+        "subtype": "MiniBox",
+        "releaseDate": {
+            "dl": "2024-06-26"
+        },
+        "cardList": {
+            "dl": [
+                {
+                    "id": 17488,
+                    "setNumber": "",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "style": "ORR",
+                    "rarities": [
+                        "UR+DL"
+                    ]
+                },
+                {
+                    "id": 17505,
+                    "setNumber": "",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "UR+DL"
+                    ]
+                },
+                {
+                    "id": 17865,
+                    "setNumber": "",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "UR+DL"
+                    ]
+                },
+                {
+                    "id": 17212,
+                    "setNumber": "",
+                    "quantity": 1,
+                    "artwork": 1,
+                    "rarities": [
+                        "UR+DL"
+                    ]
+                },
+                {
+                    "id": 17576,
+                    "setNumber": "",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "SR+DL"
+                    ]
+                },
+                {
+                    "id": 17578,
+                    "setNumber": "",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "SR+DL"
+                    ]
+                },
+                {
+                    "id": 17937,
+                    "setNumber": "",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "SR+DL"
+                    ]
+                },
+                {
+                    "id": 17517,
+                    "setNumber": "",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "SR+DL"
+                    ]
+                },
+                {
+                    "id": 18574,
+                    "setNumber": "",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "SR+DL"
+                    ]
+                },
+                {
+                    "id": 17947,
+                    "setNumber": "",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "SR+DL"
+                    ]
+                },
+                {
+                    "id": 17506,
+                    "setNumber": "",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "SR+DL"
+                    ]
+                },
+                {
+                    "id": 17492,
+                    "setNumber": "",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "SR+DL"
+                    ]
+                },
+                {
+                    "id": 17529,
+                    "setNumber": "",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "SR+DL"
+                    ]
+                },
+                {
+                    "id": 18700,
+                    "setNumber": "",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "SR+DL"
+                    ]
+                },
+                {
+                    "id": 17566,
+                    "setNumber": "",
+                    "quantity": 8,
+                    "artwork": 0,
+                    "rarities": [
+                        "R+DL"
+                    ]
+                },
+                {
+                    "id": 17519,
+                    "setNumber": "",
+                    "quantity": 8,
+                    "artwork": 0,
+                    "rarities": [
+                        "R+DL"
+                    ]
+                },
+                {
+                    "id": 17939,
+                    "setNumber": "",
+                    "quantity": 8,
+                    "artwork": 0,
+                    "rarities": [
+                        "R+DL"
+                    ]
+                },
+                {
+                    "id": 17501,
+                    "setNumber": "",
+                    "quantity": 8,
+                    "artwork": 0,
+                    "rarities": [
+                        "R+DL"
+                    ]
+                },
+                {
+                    "id": 17579,
+                    "setNumber": "",
+                    "quantity": 8,
+                    "artwork": 0,
+                    "rarities": [
+                        "R+DL"
+                    ]
+                },
+                {
+                    "id": 17487,
+                    "setNumber": "",
+                    "quantity": 8,
+                    "artwork": 0,
+                    "rarities": [
+                        "R+DL"
+                    ]
+                },
+                {
+                    "id": 17568,
+                    "setNumber": "",
+                    "quantity": 8,
+                    "artwork": 0,
+                    "rarities": [
+                        "R+DL"
+                    ]
+                },
+                {
+                    "id": 17510,
+                    "setNumber": "",
+                    "quantity": 8,
+                    "artwork": 0,
+                    "rarities": [
+                        "R+DL"
+                    ]
+                },
+                {
+                    "id": 15562,
+                    "setNumber": "",
+                    "quantity": 8,
+                    "artwork": 0,
+                    "rarities": [
+                        "R+DL"
+                    ]
+                },
+                {
+                    "id": 17583,
+                    "setNumber": "",
+                    "quantity": 8,
+                    "artwork": 0,
+                    "rarities": [
+                        "R+DL"
+                    ]
+                },
+                {
+                    "id": 17530,
+                    "setNumber": "",
+                    "quantity": 8,
+                    "artwork": 0,
+                    "rarities": [
+                        "R+DL"
+                    ]
+                },
+                {
+                    "id": 17541,
+                    "setNumber": "",
+                    "quantity": 8,
+                    "artwork": 0,
+                    "rarities": [
+                        "R+DL"
+                    ]
+                },
+                {
+                    "id": 17572,
+                    "setNumber": "",
+                    "quantity": 11,
+                    "artwork": 0,
+                    "rarities": [
+                        "N+DL"
+                    ]
+                },
+                {
+                    "id": 17574,
+                    "setNumber": "",
+                    "quantity": 11,
+                    "artwork": 0,
+                    "rarities": [
+                        "N+DL"
+                    ]
+                },
+                {
+                    "id": 17589,
+                    "setNumber": "",
+                    "quantity": 11,
+                    "artwork": 0,
+                    "rarities": [
+                        "N+DL"
+                    ]
+                },
+                {
+                    "id": 17940,
+                    "setNumber": "",
+                    "quantity": 11,
+                    "artwork": 0,
+                    "rarities": [
+                        "N+DL"
+                    ]
+                },
+                {
+                    "id": 17942,
+                    "setNumber": "",
+                    "quantity": 11,
+                    "artwork": 0,
+                    "rarities": [
+                        "N+DL"
+                    ]
+                },
+                {
+                    "id": 17949,
+                    "setNumber": "",
+                    "quantity": 11,
+                    "artwork": 0,
+                    "rarities": [
+                        "N+DL"
+                    ]
+                },
+                {
+                    "id": 17951,
+                    "setNumber": "",
+                    "quantity": 11,
+                    "artwork": 0,
+                    "rarities": [
+                        "N+DL"
+                    ]
+                },
+                {
+                    "id": 17490,
+                    "setNumber": "",
+                    "quantity": 11,
+                    "artwork": 0,
+                    "rarities": [
+                        "N+DL"
+                    ]
+                },
+                {
+                    "id": 17491,
+                    "setNumber": "",
+                    "quantity": 12,
+                    "artwork": 0,
+                    "rarities": [
+                        "N+DL"
+                    ]
+                },
+                {
+                    "id": 17489,
+                    "setNumber": "",
+                    "quantity": 12,
+                    "artwork": 0,
+                    "rarities": [
+                        "N+DL"
+                    ]
+                },
+                {
+                    "id": 15796,
+                    "setNumber": "",
+                    "quantity": 12,
+                    "artwork": 0,
+                    "rarities": [
+                        "N+DL"
+                    ]
+                },
+                {
+                    "id": 16775,
+                    "setNumber": "",
+                    "quantity": 12,
+                    "artwork": 0,
+                    "rarities": [
+                        "N+DL"
+                    ]
+                },
+                {
+                    "id": 15209,
+                    "setNumber": "",
+                    "quantity": 12,
+                    "artwork": 0,
+                    "rarities": [
+                        "N+DL"
+                    ]
+                },
+                {
+                    "id": 17540,
+                    "setNumber": "",
+                    "quantity": 12,
+                    "artwork": 0,
+                    "rarities": [
+                        "N+DL"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "prefix": "DLSA02",
         "name": "Selection BOX Vol.02",
         "type": "BoosterPack",
         "subtype": "SelectionBox",
@@ -9102,6 +11970,480 @@
                     "id": 15825,
                     "setNumber": "",
                     "quantity": 5,
+                    "artwork": 0,
+                    "rarities": [
+                        "N+DL"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "prefix": "DLSA03",
+        "name": "Selection BOX Vol.03",
+        "type": "BoosterPack",
+        "subtype": "SelectionBox",
+        "releaseDate": {
+            "dl": "2025-06-26"
+        },
+        "cardList": {
+            "dl": [
+                {
+                    "id": 18374,
+                    "setNumber": "",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "style": "ORR",
+                    "rarities": [
+                        "UR+DL"
+                    ]
+                },
+                {
+                    "id": 18950,
+                    "setNumber": "",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "UR+DL"
+                    ]
+                },
+                {
+                    "id": 15441,
+                    "setNumber": "",
+                    "quantity": 1,
+                    "artwork": 2,
+                    "style": "ORR",
+                    "rarities": [
+                        "UR+DL"
+                    ]
+                },
+                {
+                    "id": 16331,
+                    "setNumber": "",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "UR+DL"
+                    ]
+                },
+                {
+                    "id": 18351,
+                    "setNumber": "",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "UR+DL"
+                    ]
+                },
+                {
+                    "id": 17212,
+                    "setNumber": "",
+                    "quantity": 1,
+                    "artwork": 0,
+                    "rarities": [
+                        "UR+DL"
+                    ]
+                },
+                {
+                    "id": 16772,
+                    "setNumber": "",
+                    "quantity": 2,
+                    "artwork": 0,
+                    "rarities": [
+                        "SR+DL"
+                    ]
+                },
+                {
+                    "id": 19313,
+                    "setNumber": "",
+                    "quantity": 2,
+                    "artwork": 0,
+                    "rarities": [
+                        "SR+DL"
+                    ]
+                },
+                {
+                    "id": 15663,
+                    "setNumber": "",
+                    "quantity": 2,
+                    "artwork": 0,
+                    "rarities": [
+                        "SR+DL"
+                    ]
+                },
+                {
+                    "id": 15665,
+                    "setNumber": "",
+                    "quantity": 2,
+                    "artwork": 0,
+                    "rarities": [
+                        "SR+DL"
+                    ]
+                },
+                {
+                    "id": 16330,
+                    "setNumber": "",
+                    "quantity": 2,
+                    "artwork": 0,
+                    "rarities": [
+                        "SR+DL"
+                    ]
+                },
+                {
+                    "id": 18264,
+                    "setNumber": "",
+                    "quantity": 2,
+                    "artwork": 0,
+                    "rarities": [
+                        "SR+DL"
+                    ]
+                },
+                {
+                    "id": 17506,
+                    "setNumber": "",
+                    "quantity": 2,
+                    "artwork": 0,
+                    "rarities": [
+                        "SR+DL"
+                    ]
+                },
+                {
+                    "id": 17492,
+                    "setNumber": "",
+                    "quantity": 2,
+                    "artwork": 0,
+                    "rarities": [
+                        "SR+DL"
+                    ]
+                },
+                {
+                    "id": 21007,
+                    "setNumber": "",
+                    "quantity": 2,
+                    "artwork": 0,
+                    "rarities": [
+                        "SR+DL"
+                    ]
+                },
+                {
+                    "id": 16336,
+                    "setNumber": "",
+                    "quantity": 6,
+                    "artwork": 0,
+                    "rarities": [
+                        "R+DL"
+                    ]
+                },
+                {
+                    "id": 16333,
+                    "setNumber": "",
+                    "quantity": 6,
+                    "artwork": 0,
+                    "rarities": [
+                        "R+DL"
+                    ]
+                },
+                {
+                    "id": 16286,
+                    "setNumber": "",
+                    "quantity": 6,
+                    "artwork": 0,
+                    "rarities": [
+                        "R+DL"
+                    ]
+                },
+                {
+                    "id": 16374,
+                    "setNumber": "",
+                    "quantity": 6,
+                    "artwork": 0,
+                    "rarities": [
+                        "R+DL"
+                    ]
+                },
+                {
+                    "id": 18389,
+                    "setNumber": "",
+                    "quantity": 6,
+                    "artwork": 0,
+                    "rarities": [
+                        "R+DL"
+                    ]
+                },
+                {
+                    "id": 15562,
+                    "setNumber": "",
+                    "quantity": 6,
+                    "artwork": 0,
+                    "rarities": [
+                        "R+DL"
+                    ]
+                },
+                {
+                    "id": 17510,
+                    "setNumber": "",
+                    "quantity": 6,
+                    "artwork": 0,
+                    "rarities": [
+                        "R+DL"
+                    ]
+                },
+                {
+                    "id": 15596,
+                    "setNumber": "",
+                    "quantity": 6,
+                    "artwork": 0,
+                    "rarities": [
+                        "R+DL"
+                    ]
+                },
+                {
+                    "id": 16789,
+                    "setNumber": "",
+                    "quantity": 6,
+                    "artwork": 0,
+                    "rarities": [
+                        "R+DL"
+                    ]
+                },
+                {
+                    "id": 16669,
+                    "setNumber": "",
+                    "quantity": 7,
+                    "artwork": 0,
+                    "rarities": [
+                        "R+DL"
+                    ]
+                },
+                {
+                    "id": 15790,
+                    "setNumber": "",
+                    "quantity": 7,
+                    "artwork": 0,
+                    "rarities": [
+                        "R+DL"
+                    ]
+                },
+                {
+                    "id": 16961,
+                    "setNumber": "",
+                    "quantity": 7,
+                    "artwork": 0,
+                    "rarities": [
+                        "R+DL"
+                    ]
+                },
+                {
+                    "id": 17530,
+                    "setNumber": "",
+                    "quantity": 7,
+                    "artwork": 0,
+                    "rarities": [
+                        "R+DL"
+                    ]
+                },
+                {
+                    "id": 17541,
+                    "setNumber": "",
+                    "quantity": 7,
+                    "artwork": 0,
+                    "rarities": [
+                        "R+DL"
+                    ]
+                },
+                {
+                    "id": 17543,
+                    "setNumber": "",
+                    "quantity": 7,
+                    "artwork": 0,
+                    "rarities": [
+                        "R+DL"
+                    ]
+                },
+                {
+                    "id": 16313,
+                    "setNumber": "",
+                    "quantity": 11,
+                    "artwork": 0,
+                    "rarities": [
+                        "N+DL"
+                    ]
+                },
+                {
+                    "id": 16314,
+                    "setNumber": "",
+                    "quantity": 11,
+                    "artwork": 0,
+                    "rarities": [
+                        "N+DL"
+                    ]
+                },
+                {
+                    "id": 17490,
+                    "setNumber": "",
+                    "quantity": 11,
+                    "artwork": 0,
+                    "rarities": [
+                        "N+DL"
+                    ]
+                },
+                {
+                    "id": 17491,
+                    "setNumber": "",
+                    "quantity": 11,
+                    "artwork": 0,
+                    "rarities": [
+                        "N+DL"
+                    ]
+                },
+                {
+                    "id": 17489,
+                    "setNumber": "",
+                    "quantity": 10,
+                    "artwork": 0,
+                    "rarities": [
+                        "N+DL"
+                    ]
+                },
+                {
+                    "id": 15217,
+                    "setNumber": "",
+                    "quantity": 10,
+                    "artwork": 0,
+                    "rarities": [
+                        "N+DL"
+                    ]
+                },
+                {
+                    "id": 16292,
+                    "setNumber": "",
+                    "quantity": 10,
+                    "artwork": 0,
+                    "rarities": [
+                        "N+DL"
+                    ]
+                },
+                {
+                    "id": 15668,
+                    "setNumber": "",
+                    "quantity": 11,
+                    "artwork": 0,
+                    "rarities": [
+                        "N+DL"
+                    ]
+                },
+                {
+                    "id": 15669,
+                    "setNumber": "",
+                    "quantity": 11,
+                    "artwork": 0,
+                    "rarities": [
+                        "N+DL"
+                    ]
+                },
+                {
+                    "id": 16135,
+                    "setNumber": "",
+                    "quantity": 10,
+                    "artwork": 0,
+                    "rarities": [
+                        "N+DL"
+                    ]
+                },
+                {
+                    "id": 15670,
+                    "setNumber": "",
+                    "quantity": 11,
+                    "artwork": 0,
+                    "rarities": [
+                        "N+DL"
+                    ]
+                },
+                {
+                    "id": 15672,
+                    "setNumber": "",
+                    "quantity": 11,
+                    "artwork": 0,
+                    "rarities": [
+                        "N+DL"
+                    ]
+                },
+                {
+                    "id": 16354,
+                    "setNumber": "",
+                    "quantity": 10,
+                    "artwork": 0,
+                    "rarities": [
+                        "N+DL"
+                    ]
+                },
+                {
+                    "id": 15226,
+                    "setNumber": "",
+                    "quantity": 10,
+                    "artwork": 0,
+                    "rarities": [
+                        "N+DL"
+                    ]
+                },
+                {
+                    "id": 15211,
+                    "setNumber": "",
+                    "quantity": 10,
+                    "artwork": 0,
+                    "rarities": [
+                        "N+DL"
+                    ]
+                },
+                {
+                    "id": 15456,
+                    "setNumber": "",
+                    "quantity": 10,
+                    "artwork": 0,
+                    "rarities": [
+                        "N+DL"
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "prefix": "DLSPCT",
+        "name": "Card Trader",
+        "type": "CardTrader",
+        "subtype": "RegularInventory",
+        "releaseDate": {
+            "dl": "2025-07-17"
+        },
+        "cardList": {
+            "dl": [
+                {
+                    "id": 17874,
+                    "setNumber": "",
+                    "artwork": 0,
+                    "rarities": [
+                        "SR+DL"
+                    ]
+                },
+                {
+                    "id": 17849,
+                    "setNumber": "",
+                    "artwork": 0,
+                    "rarities": [
+                        "N+DL"
+                    ]
+                },
+                {
+                    "id": 17850,
+                    "setNumber": "",
+                    "artwork": 0,
+                    "rarities": [
+                        "N+DL"
+                    ]
+                },
+                {
+                    "id": 17851,
+                    "setNumber": "",
                     "artwork": 0,
                     "rarities": [
                         "N+DL"

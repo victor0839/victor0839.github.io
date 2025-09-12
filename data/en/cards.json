@@ -1574,6 +1574,279 @@
         ]
     },
     {
+        "id": 17489,
+        "name": "Wooly Wonderland Ground Mouton",
+        "cardType": "Monster",
+        "type": "Normal",
+        "cardText": "The newcomer of the Wooly Wonderland flock. A dyed-in-the-wool slacker.",
+        "attribute": "EARTH",
+        "level": 1,
+        "atk": 0,
+        "def": 1500,
+        "race": "Beast",
+        "releaseDate": {
+            "jp": "2022-04-09",
+            "kr": "2022-07-26",
+            "dl": "2024-10-01"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "series": [
+            "WoolyWonderland"
+        ],
+        "rarities": {
+            "jp": [
+                "C"
+            ],
+            "kr": [
+                "C"
+            ],
+            "dl": [
+                "N+DL"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ],
+        "properties": [
+            "NonEffect"
+        ]
+    },
+    {
+        "id": 17490,
+        "name": "Wooly Wonderland Pyro Wool",
+        "cardType": "Monster",
+        "type": "Normal",
+        "cardText": "The elder of the Wooly Wonderland flock. It tries to ram through its decisions but the others refuse to be herded.",
+        "attribute": "FIRE",
+        "level": 4,
+        "atk": 1400,
+        "def": 800,
+        "race": "Beast",
+        "releaseDate": {
+            "jp": "2022-04-09",
+            "kr": "2022-07-26",
+            "dl": "2024-10-01"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "series": [
+            "WoolyWonderland"
+        ],
+        "rarities": {
+            "jp": [
+                "C"
+            ],
+            "kr": [
+                "C"
+            ],
+            "dl": [
+                "N+DL"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ],
+        "properties": [
+            "NonEffect"
+        ]
+    },
+    {
+        "id": 17491,
+        "name": "Wooly Wonderland Night Mutton",
+        "cardType": "Monster",
+        "type": "Normal",
+        "cardText": "The most pensive of the Wooly Wonderland flock. Something of a black sheep, it prefers to stick to its own knitting.",
+        "attribute": "DARK",
+        "level": 4,
+        "atk": 1500,
+        "def": 100,
+        "race": "Beast",
+        "releaseDate": {
+            "jp": "2022-04-09",
+            "kr": "2022-07-26",
+            "dl": "2024-10-01"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "series": [
+            "WoolyWonderland"
+        ],
+        "rarities": {
+            "jp": [
+                "R"
+            ],
+            "kr": [
+                "R"
+            ],
+            "dl": [
+                "N+DL"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ],
+        "properties": [
+            "NonEffect"
+        ]
+    },
+    {
+        "id": 17492,
+        "name": "Princess of the Flock - Miss Mutton",
+        "cardType": "Monster",
+        "type": "Normal",
+        "cardText": "Baa-dum, baa-dum, baa-dum, baa-dum, baaaaa-dum! The sheep's in the meadow, the cow's in the corn! You can call me \"miss\", but I'm actually Wooly Wonderland royalty. I'm never sheepish about chowing on paper (even if it happens to be an important letter).",
+        "attribute": "LIGHT",
+        "level": 7,
+        "atk": 2500,
+        "def": 1600,
+        "race": "Beast",
+        "releaseDate": {
+            "jp": "2022-04-09",
+            "kr": "2022-07-26",
+            "dl": "2024-10-01"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "series": [
+            "WoolyWonderland"
+        ],
+        "mentionedBy": [
+            17506,
+            17530,
+            17874,
+            17894,
+            160216007,
+            160216008,
+            160216009
+        ],
+        "rarities": {
+            "jp": [
+                "SR",
+                "P",
+                "P+UR"
+            ],
+            "kr": [
+                "SR"
+            ],
+            "dl": [
+                "SR+DL"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            },
+            {
+                "normal": true
+            },
+            {
+                "normal": true
+            }
+        ],
+        "properties": [
+            "NonEffect"
+        ]
+    },
+    {
+        "id": 17506,
+        "name": "Wooly Wonderland Planewe",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUIREMENT]</b> You have a face-up Beast Type Normal Monster on your field.\n<b>[EFFECT]</b> Set 1 \"Meet and Greed\" or \"Wooly Wonderland - Graveyard Grudge\" from your Graveyard to your Spell & Trap Zone. If you have \"Princess of the Flock - Miss Mutton\" face-up on your field, you can also gain 600 LP.",
+        "attribute": "EARTH",
+        "level": 3,
+        "atk": 1100,
+        "def": 200,
+        "race": "Beast",
+        "releaseDate": {
+            "jp": "2022-04-09",
+            "kr": "2022-07-26",
+            "dl": "2024-10-01"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "SetsSpecificCardFromGraveyardToField"
+            },
+            {
+                "type": "effects",
+                "name": "PlayerGainLifePoints"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "races": [
+                    "Beast"
+                ],
+                "type": "Normal"
+            }
+        ],
+        "series": [
+            "WoolyWonderland"
+        ],
+        "mentions": [
+            17492,
+            17530,
+            17541
+        ],
+        "rarities": {
+            "jp": [
+                "R"
+            ],
+            "kr": [
+                "R"
+            ],
+            "dl": [
+                "SR+DL"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
         "id": 17522,
         "name": "Dynas Dorcus the Beetle King",
         "cardType": "Monster",
@@ -1640,6 +1913,146 @@
         ]
     },
     {
+        "id": 17530,
+        "name": "Meet and Greed",
+        "cardType": "Spell",
+        "type": "Normal",
+        "cardText": "<b>[REQUIREMENT]</b> Send 2 cards from your hand to the Graveyard.\n<b>[EFFECT]</b> Choose 1 face-up Beast Type Normal Monster on your field. This turn, that monster can make up to 3 attacks on monsters. If you have \"Princess of the Flock - Miss Mutton\" face-up on your field, you can also make all face-up Effect Monsters on your opponent's field lose 500 ATK until the end of this turn.",
+        "releaseDate": {
+            "jp": "2022-04-09",
+            "kr": "2022-07-26",
+            "dl": "2024-10-01"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromHandToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "AllowsMultipleAttacksOnMonsters"
+            },
+            {
+                "type": "effects",
+                "name": "OpponentMonstersLoseATK"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "races": [
+                    "Beast"
+                ],
+                "type": "Normal"
+            }
+        ],
+        "antiSupports": [
+            {
+                "cardType": "Monster",
+                "type": "Effect"
+            }
+        ],
+        "series": [
+            "WoolyWonderland"
+        ],
+        "mentions": [
+            17492
+        ],
+        "rarities": {
+            "jp": [
+                "SR"
+            ],
+            "kr": [
+                "SR"
+            ],
+            "dl": [
+                "R+DL"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 17541,
+        "name": "Wooly Wonderland - Graveyard Grudge",
+        "cardType": "Trap",
+        "type": "Normal",
+        "cardText": "<b>[REQUIREMENT]</b> When an opponent's monster declares an attack targeting your Attack Position Beast Type Normal Monster, send the top 4 cards of your Deck to the Graveyard.\n<b>[EFFECT]</b> The attacked monster loses 2000 ATK until the end of this turn. Then, you can add up to 4 cards sent to the Graveyard to meet the requirement to your hand.",
+        "releaseDate": {
+            "jp": "2022-04-09",
+            "kr": "2022-07-26",
+            "dl": "2024-10-01"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "OpponentAttackDeclarationOnMonster"
+            },
+            {
+                "type": "requeriments",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "PlayerMonstersLoseATK"
+            },
+            {
+                "type": "effects",
+                "name": "AddsFromGraveyardToHand"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "races": [
+                    "Beast"
+                ],
+                "type": "Normal"
+            }
+        ],
+        "series": [
+            "WoolyWonderland"
+        ],
+        "mentionedBy": [
+            17506
+        ],
+        "rarities": {
+            "jp": [
+                "C"
+            ],
+            "kr": [
+                "C"
+            ],
+            "dl": [
+                "R+DL"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
         "id": 17721,
         "name": "Trade-In",
         "cardType": "Spell",
@@ -1684,6 +2097,282 @@
                 "C",
                 "R",
                 "SE"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 17849,
+        "name": "Wooly Wonderland Aqua Sheep",
+        "cardType": "Monster",
+        "type": "Normal",
+        "cardText": "The most buoyant of the Wooly Wonderland flock. It always remains serene and laid-baaack.",
+        "attribute": "WATER",
+        "level": 2,
+        "atk": 1000,
+        "def": 500,
+        "race": "Beast",
+        "releaseDate": {
+            "jp": "2022-07-09",
+            "kr": "2022-10-21",
+            "dl": "2025-07-17"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "series": [
+            "WoolyWonderland"
+        ],
+        "rarities": {
+            "jp": [
+                "C"
+            ],
+            "kr": [
+                "C"
+            ],
+            "dl": [
+                "N+DL"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ],
+        "properties": [
+            "NonEffect"
+        ]
+    },
+    {
+        "id": 17850,
+        "name": "Wooly Wonderland Thunder Rambda",
+        "cardType": "Monster",
+        "type": "Normal",
+        "cardText": "The most lambent of the Wooly Wonderland flock. It conducts the others' activities, always with a twinkle in its eye.",
+        "attribute": "LIGHT",
+        "level": 3,
+        "atk": 1200,
+        "def": 400,
+        "race": "Beast",
+        "releaseDate": {
+            "jp": "2022-07-09",
+            "kr": "2022-10-21",
+            "dl": "2025-07-17"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "series": [
+            "WoolyWonderland"
+        ],
+        "rarities": {
+            "jp": [
+                "C"
+            ],
+            "kr": [
+                "C"
+            ],
+            "dl": [
+                "N+DL"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ],
+        "properties": [
+            "NonEffect"
+        ]
+    },
+    {
+        "id": 17851,
+        "name": "Wooly Wonderland Air Aries",
+        "cardType": "Monster",
+        "type": "Normal",
+        "cardText": "The free-roamer of the Wooly Wonderland flock. It remains blase even while others around are venting.",
+        "attribute": "WIND",
+        "level": 3,
+        "atk": 1300,
+        "def": 200,
+        "race": "Beast",
+        "releaseDate": {
+            "jp": "2022-07-09",
+            "kr": "2022-10-21",
+            "dl": "2025-07-17"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "series": [
+            "WoolyWonderland"
+        ],
+        "rarities": {
+            "jp": [
+                "C"
+            ],
+            "kr": [
+                "C"
+            ],
+            "dl": [
+                "N+DL"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ],
+        "properties": [
+            "NonEffect"
+        ]
+    },    
+    {
+        "id": 17874,
+        "name": "Wooly Wonderland Wave Schaf",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUIREMENT]</b> Send the top card of your Deck to the Graveyard.\n<b>[EFFECT]</b> Gain 200 LP. If you have 3 or more Beast Type Normal Monsters with different Attributes in your Graveyard, you can also Special Summon 1 \"Princess of the Flock - Miss Mutton\" from your Graveyard face-up to your field.",
+        "attribute": "WATER",
+        "level": 3,
+        "atk": 800,
+        "def": 300,
+        "race": "Beast",
+        "releaseDate": {
+            "jp": "2022-07-09",
+            "kr": "2022-10-21",
+            "dl": "2025-07-17"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "PlayerGainLifePoints"
+            },
+            {
+                "type": "effects",
+                "name": "SpecialSummonsFromGraveyard"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "races": [
+                    "Beast"
+                ],
+                "type": "Normal"
+            }
+        ],
+        "series": [
+            "WoolyWonderland"
+        ],
+        "mentions": [
+            17492
+        ],
+        "rarities": {
+            "jp": [
+                "C"
+            ],
+            "kr": [
+                "C"
+            ],
+            "dl": [
+                "SR+DL"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 17894,
+        "name": "Beaming Bell Beam",
+        "cardType": "Spell",
+        "type": "Normal",
+        "cardText": "<b>[REQUIREMENT]</b> If you have a \"Princess of the Flock - Miss Mutton\" face-up on your field, send 2 Beast Type Normal Monsters from your hand to the Graveyard.\n<b>[EFFECT]</b> Destroy all face-up Level 8 or lower monsters on your opponent's field. This turn, you can only attack with Beast Type monsters.",
+        "releaseDate": {
+            "jp": "2022-07-09",
+            "kr": "2022-10-21"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendMonsterFromHandToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentMonsters"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "races": [
+                    "Beast"
+                ],
+                "type": "Normal"
+            }
+        ],
+        "antiSupports": [
+            {
+                "cardType": "Monster",
+                "levels": [
+                    8,
+                    "<="
+                ]
+            }
+        ],
+        "series": [
+            "WoolyWonderland"
+        ],
+        "mentions": [
+            17492
+        ],
+        "rarities": {
+            "jp": [
+                "R"
+            ],
+            "kr": [
+                "R"
             ]
         },
         "images": {
@@ -3384,6 +4073,9 @@
                 "name": "PlayerDrawCards"
             }
         ],
+        "series": [
+            "PrincessCosmos"
+        ],
         "rarities": {
             "jp": [
                 "UR",
@@ -3726,12 +4418,11 @@
         "atk": 0,
         "def": 0,
         "race": "Thunder",
-        "preReleaseDate": "2025-08-03",
         "releaseDate": {
             "jp": "2025-09-04"
         },
         "status": {
-            "jp": "unreleased"
+            "jp": 3
         },
         "actions": [
             {
@@ -4196,6 +4887,1168 @@
         "artworks": [
             {
                 "normal": true
+            }
+        ]
+    },
+    {
+        "id": 160216001,
+        "name": "Black Luster Soldier",
+        "cardType": "Monster",
+        "type": "Ritual",
+        "cardText": "\n",
+        "attribute": "EARTH",
+        "level": 8,
+        "atk": 3000,
+        "def": 2500,
+        "race": "Warrior",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "series": [
+            "BlackLusterSoldier"
+        ],
+        "mentionedBy": [
+            160216038
+        ],
+        "rarities": {
+            "jp": [
+                "UR",
+                "ORR"
+            ]
+        },
+        "images": {
+            "ORR": 0
+        },
+        "artworks": [
+            {
+                "normal": false,
+                "ORR": true
+            }
+        ],
+        "properties": [
+            "NonEffect"
+        ]
+    },
+    {
+        "id": 160216007,
+        "name": "Super Princess of the Flock - Max Mutton [L]",
+        "cardType": "Monster",
+        "type": "Maximum",
+        "subtype": "Effect",
+        "cardText": "This card's name becomes \"Princess of the Flock - Miss Mutton\" while in the Graveyard.\n<b>[REQUIREMENT]</b> Send 2 cards from your hand to the Graveyard.\n<b>[EFFECT]</b> This turn, this card inflicts piercing battle damage. Then, if this card is in Maximum Mode, this turn, it gains 1000 ATK, and cannot be destroyed by card effects.",
+        "attribute": "LIGHT",
+        "level": 7,
+        "atk": 2500,
+        "def": 0,
+        "race": "Beast",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromHandToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "ChangesOwnNameInGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "InflictsPiercingDamage"
+            },
+            {
+                "type": "effects",
+                "name": "ThisCardGainsATK"
+            },
+            {
+                "type": "effects",
+                "name": "ThisCardCannotBeDestroyedByCardEffects"
+            }
+        ],
+        "series": [
+            "WoolyWonderland"
+        ],
+        "mentions": [
+            17492
+        ],
+        "mentionedBy": [
+            160216008
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "ORR"
+            ]
+        },
+        "images": {
+            "ORR": 0
+        },
+        "artworks": [
+            {
+                "normal": false,
+                "ORR": true
+            }
+        ]
+    },
+    {
+        "id": 160216008,
+        "name": "Super Princess of the Flock - Max Mutton",
+        "cardType": "Monster",
+        "type": "Maximum",
+        "subtype": "Effect",
+        "cardText": "You can Maximum Summon this card together with \"Super Princess of the Flock - Max Mutton [L]\" and \"Super Princess of the Flock - Max Mutton [R]\". This card's name becomes \"Princess of the Flock - Miss Mutton\" while in the Graveyard.\n<b>[REQUIREMENT]</b> Send 1 \"Meet and Greed\" or \"Beaming Bell Beam\" from your hand to the Graveyard.\n<b>[EFFECT]</b> Destroy 1 card on your opponent's field.",
+        "attribute": "LIGHT",
+        "level": 7,
+        "atk": 2500,
+        "def": 0,
+        "maximumAtk": 4000,
+        "race": "Beast",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendSpecificCardFromHandToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "ChangesOwnNameInGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentCards"
+            }
+        ],
+        "series": [
+            "WoolyWonderland"
+        ],
+        "mentions": [
+            17492,
+            17530,
+            17894,
+            160216007,
+            160216009
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "ORR"
+            ]
+        },
+        "images": {
+            "ORR": 0
+        },
+        "artworks": [
+            {
+                "normal": false,
+                "ORR": true
+            }
+        ]
+    },
+    {
+        "id": 160216009,
+        "name": "Super Princess of the Flock - Max Mutton [R]",
+        "cardType": "Monster",
+        "type": "Maximum",
+        "subtype": "Effect",
+            "cardText": "This card's name becomes \"Princess of the Flock - Miss Mutton\" while in the Graveyard.\n<b>[REQUIREMENT]</b> None\n<b>[EFFECT]</b> Add 1 Beast Type Normal Monster, \"Meet and Greed\", or \"Beaming Bell Beam\" from your Graveyard to your hand. If this card is in Maximum Mode, you can add up to 3 of those cards to your hand instead.",
+        "attribute": "LIGHT",
+        "level": 7,
+        "atk": 2500,
+        "def": 0,
+        "race": "Beast",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "ChangesOwnNameInGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "AddsMonsterFromGraveyardToHand"
+            },
+            {
+                "type": "effects",
+                "name": "AddsSpecificCardFromGraveyardToHand"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "races": [
+                    "Beast"
+                ],
+                "type": "Normal"
+            }
+        ],
+        "series": [
+            "WoolyWonderland"
+        ],
+        "mentions": [
+            17492,
+            17530,
+            17894
+        ],
+        "mentionedBy": [
+            160216008
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "ORR"
+            ]
+        },
+        "images": {
+            "ORR": 0
+        },
+        "artworks": [
+            {
+                "normal": false,
+                "ORR": true
+            }
+        ]
+    },
+    {
+        "id": 160216038,
+        "name": "Black Luster Ritual",
+        "cardType": "Spell",
+        "type": "Ritual",
+        "cardText": "<b>[REQUIREMENT]</b> None\n<b>[EFFECT]</b> Ritual Summon \"Black Luster Soldier\" by sending monsters from your hand and/or field to the Graveyard whose total Levels equal 8 or more as material (you cannot use more monsters than necessary as material).",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "PerformsRitualSummon"
+            },
+            {
+                "type": "effects",
+                "name": "SendMonsterFromHandToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "SendMonsterFromFieldToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "CardsInHandAsRitualMaterials"
+            },
+            {
+                "type": "effects",
+                "name": "CardsOnFieldAsRitualMaterials"
+            }
+        ],
+        "series": [
+            "BlackLusterSoldier"
+        ],
+        "mentions": [
+            160216001
+        ],
+        "rarities": {
+            "jp": [
+                "UR",
+                "ORR"
+            ]
+        },
+        "images": {
+            "ORR": 0
+        },
+        "artworks": [
+            {
+                "normal": false,
+                "ORR": true
+            }
+        ]
+    },
+    {
+        "id": 160216043,
+        "name": "Princess Cosmos the Cosmic Trickster",
+        "cardType": "Monster",
+        "type": "Fusion",
+        "subtype": "Effect",
+        "cardText": "\"Princess Cosmos the Trickster\" + 2 or more Galaxy Type monsters with 900 ATK\n<b>[REQUIREMENT]</b> During your Main Phase that you Special Summoned this card.\n<b>[EFFECT]</b> Destroy 1 card on your opponent's field. If you used 9 or more monsters as material when Fusion Summoning this card, destroy all other cards on the field instead.",
+        "attribute": "DARK",
+        "level": 11,
+        "atk": 2800,
+        "def": 2600,
+        "race": "Galaxy",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "DestroysOpponentCards"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysPlayerCards"
+            }
+        ],
+        "series": [
+            "PrincessCosmos"
+        ],
+        "fusionMaterials": [
+            {
+                "id": 160216046
+            },
+            {
+                "cardType": "Monster",
+                "atk": [
+                    900,
+                    "="
+                ],
+                "races": [
+                    "Galaxy"
+                ]
+            }
+        ],
+        "rarities": {
+            "jp": [
+                "UR",
+                "ORR"
+            ]
+        },
+        "images": {
+            "ORR": 0
+        },
+        "artworks": [
+            {
+                "ORR": true
+            }
+        ]
+    },
+    {
+        "id": 160216044,
+        "name": "Cosmostar the Black Hole Polairy",
+        "cardType": "Monster",
+        "type": "Fusion",
+        "subtype": "Effect",
+        "cardText": "2 Galaxy Type monsters with 900 ATK\n<b>[REQUIREMENT]</b> None\n<b>[CONTINUOUS EFFECT]</b> This card inflicts piercing battle damage. During your turn, face-up monsters on your opponent's field lose 1000 ATK/DEF.",
+        "attribute": "DARK",
+        "level": 10,
+        "atk": 2000,
+        "def": 1900,
+        "race": "Galaxy",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "InflictsPiercingDamage"
+            },
+            {
+                "type": "effects",
+                "name": "OpponentMonstersLoseATK"
+            },
+            {
+                "type": "effects",
+                "name": "OpponentMonstersLoseDEF"
+            }
+        ],
+        "series": [
+            "PrincessCosmos"
+        ],
+        "fusionMaterials": [
+            {
+                "cardType": "Monster",
+                "atk": [
+                    900,
+                    "="
+                ],
+                "races": [
+                    "Galaxy"
+                ]
+            }
+        ],
+        "rarities": {
+            "jp": [
+                "SR"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ],
+        "properties": [
+            "ContinuousEffect"
+        ]
+    },
+    {
+        "id": 160216045,
+        "name": "Cosmostar the White Hole Polairy",
+        "cardType": "Monster",
+        "type": "Fusion",
+        "subtype": "Effect",
+        "cardText": "3 Galaxy Type monsters with 900 ATK\n<b>[REQUIREMENT]</b> During your Main Phase that you Fusion Summoned this card.\n<b>[EFFECT]</b> Special Summon 1 Galaxy Type Fusion Monster with 1900 or 2600 DEF from your Graveyard face-up to your field. Then, you can add 1 \"Jest of the Cosmos Princess\" from your Graveyard to your hand. This turn, you cannot activate the effect of \"Cosmostar the White Hole Polairy\".",
+        "attribute": "FIRE",
+        "level": 10,
+        "atk": 2000,
+        "def": 1900,
+        "race": "Galaxy",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "SpecialSummonsFromGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "AddsSpecificCardFromGraveyardToHand"
+            },
+            {
+                "type": "effects",
+                "name": "OncePerTurn"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "def": [
+                    1900,
+                    "="
+                ],
+                "races": [
+                    "Galaxy"
+                ]
+            },
+            {
+                "cardType": "Monster",
+                "def": [
+                    2600,
+                    "="
+                ],
+                "races": [
+                    "Galaxy"
+                ]
+            }
+        ],
+        "series": [
+            "PrincessCosmos"
+        ],
+        "mentions": [
+            20355
+        ],
+        "fusionMaterials": [
+            {
+                "cardType": "Monster",
+                "atk": [
+                    900,
+                    "="
+                ],
+                "races": [
+                    "Galaxy"
+                ]
+            }
+        ],
+        "rarities": {
+            "jp": [
+                "SR"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 160216046,
+        "name": "Princess Cosmos the Trickster",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUIREMENT]</b> During your Main Phase that you Normal or Special Summoned this card.\n<b>[EFFECT]</b> Destroy up to 3 monsters on your field. Then, you can Fusion Summon a Galaxy Type monster with 1900 or 2600 DEF by shuffling up to 9 Galaxy Type monsters from your Graveyard into the Deck as material. This turn, you cannot activate the effect of \"Princess Cosmos the Trickster\".",
+        "attribute": "DARK",
+        "level": 9,
+        "atk": 900,
+        "def": 2600,
+        "race": "Galaxy",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "DestroysPlayerMonsters"
+            },
+            {
+                "type": "effects",
+                "name": "PerformsFusionSummon"
+            },
+            {
+                "type": "effects",
+                "name": "ShuffleMonsterFromGraveyardToDeck"
+            },
+            {
+                "type": "effects",
+                "name": "CardsInGraveyardAsFusionMaterials"
+            },
+            {
+                "type": "effects",
+                "name": "ShufflesFusionMaterialsToDeck"
+            },
+            {
+                "type": "effects",
+                "name": "OncePerTurn"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "races": [
+                    "Galaxy"
+                ]
+            },
+            {
+                "cardType": "Monster",
+                "def": [
+                    1900,
+                    "="
+                ],
+                "races": [
+                    "Galaxy"
+                ],
+                "type": "Fusion"
+            },
+            {
+                "cardType": "Monster",
+                "def": [
+                    2600,
+                    "="
+                ],
+                "races": [
+                    "Galaxy"
+                ],
+                "type": "Fusion"
+            }
+        ],
+        "series": [
+            "PrincessCosmos"
+        ],
+        "fusionMaterialFor": [
+            160216043
+        ],
+        "rarities": {
+            "jp": [
+                "UR",
+                "ORR"
+            ]
+        },
+        "images": {
+            "ORR": 0
+        },
+        "artworks": [
+            {
+                "ORR": true
+            }
+        ]
+    },
+    {
+        "id": 160216047,
+        "name": "Uranulycoris the Planetairy",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "You can Special Summon this card from your hand face-up to your field by revealing 1 \"Princess Cosmos the Trickster\" or 1 \"Jest of the Cosmos Princess\" in your hand.\n<b>[REQUIREMENT]</b> During your Main Phase that a card on your field was destroyed by a card effect.\n<b>[EFFECT]</b> Destroy 1 Spell/Trap Card on your opponent's field.",
+        "attribute": "LIGHT",
+        "level": 7,
+        "atk": 900,
+        "def": 1600,
+        "race": "Galaxy",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "RevealsHandForSpecialSummons"
+            },
+            {
+                "type": "effects",
+                "name": "SpecialSummonsItselfFromHand"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentSpells"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentTraps"
+            }
+        ],
+        "series": [
+            "PrincessCosmos"
+        ],
+        "mentions": [
+            20355,
+            160216046
+        ],
+        "rarities": {
+            "jp": [
+                "SR"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 160216048,
+        "name": "Saturnchamomile the Planetairy",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "You can Special Summon this card from your hand face-up to your field by revealing 1 \"Princess Cosmos the Trickster\" or 1 \"Jest of the Cosmos Princess\" in your hand.\n<b>[REQUIREMENT]</b> During your Main Phase that you Normal or Special Summoned this card.\n<b>[EFFECT]</b> Fusion Summon a Galaxy Type monster with 1900 or 2600 DEF by sending face-up Galaxy Type monsters from your field to the Graveyard as material.",
+        "attribute": "DARK",
+        "level": 6,
+        "atk": 900,
+        "def": 1600,
+        "race": "Galaxy",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "RevealsHandForSpecialSummons"
+            },
+            {
+                "type": "effects",
+                "name": "SpecialSummonsItselfFromHand"
+            },
+            {
+                "type": "effects",
+                "name": "PerformsFusionSummon"
+            },
+            {
+                "type": "effects",
+                "name": "SendMonsterFromFieldToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "CardsOnFieldAsFusionMaterials"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "races": [
+                    "Galaxy"
+                ]
+            },
+            {
+                "cardType": "Monster",
+                "def": [
+                    1900,
+                    "="
+                ],
+                "races": [
+                    "Galaxy"
+                ],
+                "type": "Fusion"
+            },
+            {
+                "cardType": "Monster",
+                "def": [
+                    2600,
+                    "="
+                ],
+                "races": [
+                    "Galaxy"
+                ],
+                "type": "Fusion"
+            }
+        ],
+        "series": [
+            "PrincessCosmos"
+        ],
+        "mentions": [
+            20355,
+            160216046
+        ],
+        "rarities": {
+            "jp": [
+                "SR"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 160216049,
+        "name": "Osmanjupiter the Planetairy",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUIREMENT]</b> During the turn you Normal Summoned this card.\n<b>[EFFECT]</b> Destroy this card on your field. Then, you can Special Summon 1 Level 6 or higher Galaxy Type monster with 900 ATK from your Graveyard to your field in face-up Defense Position.",
+        "attribute": "WIND",
+        "level": 5,
+        "atk": 900,
+        "def": 1600,
+        "race": "Galaxy",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "DestroysItself"
+            },
+            {
+                "type": "effects",
+                "name": "SpecialSummonsFromGraveyard"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "levels": [
+                    6,
+                    ">="
+                ],
+                "atk": [
+                    900,
+                    "="
+                ],
+                "races": [
+                    "Galaxy"
+                ]
+            }
+        ],
+        "series": [
+            "PrincessCosmos"
+        ],
+        "rarities": {
+            "jp": [
+                "SR"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 160216050,
+        "name": "Marsphlox the Planetairy",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUIREMENT]</b> During the turn you Normal Summoned this card.\n<b>[EFFECT]</b> Destroy 1 card on your field. Then, you can change the battle position of 1 monster on your opponent's field. You cannot activate the effects of non-Galaxy Type monsters until the end of this turn.",
+        "attribute": "FIRE",
+        "level": 4,
+        "atk": 900,
+        "def": 600,
+        "race": "Galaxy",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "DestroysPlayerCards"
+            },
+            {
+                "type": "effects",
+                "name": "ChangesOpponentBattlePositions"
+            },
+            {
+                "type": "effects",
+                "name": "PreventsActivationOfMonsterEffects"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "races": [
+                    "Galaxy"
+                ]
+            }
+        ],
+        "series": [
+            "PrincessCosmos"
+        ],
+        "rarities": {
+            "jp": [
+                "SR"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 160216051,
+        "name": "Yewearth the Planetairy",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUIREMENT]</b> You have 10 or more cards in your Deck during the turn you Normal Summoned this card.\n<b>[EFFECT]</b> Destroy 1 other card on your field. Then, you can draw 1 card. You cannot activate the effects of non-Galaxy Type monsters until the end of this turn.",
+        "attribute": "EARTH",
+        "level": 3,
+        "atk": 900,
+        "def": 600,
+        "race": "Galaxy",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "DestroysPlayerCards"
+            },
+            {
+                "type": "effects",
+                "name": "PlayerDrawCards"
+            },
+            {
+                "type": "effects",
+                "name": "PreventsActivationOfMonsterEffects"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "races": [
+                    "Galaxy"
+                ]
+            }
+        ],
+        "series": [
+            "PrincessCosmos"
+        ],
+        "rarities": {
+            "jp": [
+                "SR"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 160216052,
+        "name": "Dendrovenus the Planetairy",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUIREMENT]</b> During the turn you Normal Summoned this card.\n<b>[EFFECT]</b> Send the top 2 cards of your Deck to the Graveyard. Then, you can destroy this card on your field.",
+        "attribute": "LIGHT",
+        "level": 2,
+        "atk": 900,
+        "def": 600,
+        "race": "Galaxy",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysItself"
+            }
+        ],
+        "series": [
+            "PrincessCosmos"
+        ],
+        "rarities": {
+            "jp": [
+                "SR"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 160216053,
+        "name": "Mercissus the Planetairy",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUIREMENT]</b> During the turn you Normal Summoned this card.\n<b>[EFFECT]</b> Excavate the top 4 cards of your Deck. You can add 1 excavated Level 6 or higher Galaxy Type monster with 900 ATK to your hand. Place the other cards on the bottom of your Deck in any order.",
+        "attribute": "LIGHT",
+        "level": 1,
+        "atk": 900,
+        "def": 600,
+        "race": "Galaxy",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "ExcavatesDeck"
+            },
+            {
+                "type": "effects",
+                "name": "AddsExcavatedCardToHand"
+            },
+            {
+                "type": "effects",
+                "name": "PlacesExcavatedCardsOnBottomDeck"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "levels": [
+                    6,
+                    ">="
+                ],
+                "atk": [
+                    900,
+                    "="
+                ],
+                "races": [
+                    "Galaxy"
+                ]
+            }
+        ],
+        "series": [
+            "PrincessCosmos"
+        ],
+        "rarities": {
+            "jp": [
+                "SR"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 160216055,
+        "name": "Princess Cosmos' Astronomical Observation",
+        "cardType": "Spell",
+        "type": "Normal",
+        "cardText": "<b>[REQUIREMENT]</b> During a turn you have not activated \"Princess Cosmos' Astronomical Observation\".\n<b>[EFFECT]</b> Add 1 Level 5 or lower Galaxy Type monster with 900 ATK from your Graveyard to your hand.",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "AddsMonsterFromGraveyardToHand"
+            },
+            {
+                "type": "effects",
+                "name": "OncePerTurn"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "levels": [
+                    5,
+                    "<="
+                ],
+                "atk": [
+                    900,
+                    "="
+                ],
+                "races": [
+                    "Galaxy"
+                ]
+            }
+        ],
+        "series": [
+            "PrincessCosmos"
+        ],
+        "rarities": {
+            "jp": [
+                "UR",
+                "ORR"
+            ]
+        },
+        "images": {
+            "ORR": 0
+        },
+        "artworks": [
+            {
+                "ORR": true
+            }
+        ]
+    },
+    {
+        "id": 160216057,
+        "name": "Princess Cosmos' Beauty Sleep",
+        "cardType": "Trap",
+        "type": "Normal",
+        "cardText": "This card's name becomes \"Jest of the Cosmos Princess\" while in the hand or Graveyard.\n<b>[REQUIREMENT]</b> When a player Normal Summons a monster, send 1 card from your hand to the Graveyard.\n<b>[EFFECT]</b> Destroy that Normal Summoned monster. Then, you can draw 2 cards.",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "PlayerNormalSummoned"
+            },
+            {
+                "type": "requeriments",
+                "name": "OpponentNormalSummoned"
+            },
+            {
+                "type": "requeriments",
+                "name": "SendFromHandToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "ChangesOwnNameinHand"
+            },
+            {
+                "type": "effects",
+                "name": "ChangesOwnNameInGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysPlayerMonsters"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentMonsters"
+            },
+            {
+                "type": "effects",
+                "name": "PlayerDrawCards"
+            }
+        ],
+        "series": [
+            "PrincessCosmos"
+        ],
+        "mentions": [
+            20355
+        ],
+        "rarities": {
+            "jp": [
+                "UR",
+                "ORR"
+            ]
+        },
+        "images": {
+            "ORR": 0
+        },
+        "artworks": [
+            {
+                "ORR": true
             }
         ]
     }

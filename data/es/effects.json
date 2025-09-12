@@ -132,17 +132,17 @@
 	{
 		"type": "actions",
 		"abbreviation": "SendFromTopDeckToGraveyard",
-		"name": "Manda al Cementerio la carta de la parte superior de tu Deck"
+		"name": "Manda al Cementerio cartas de la parte superior de tu Deck"
 	},
 	{
 		"type": "actions",
 		"abbreviation": "SendFromTopOpponentDeckToGraveyard",
-		"name": "Manda al Cementerio la carta de la parte superior del Deck de tu adversario"
+		"name": "Manda al Cementerio cartas de la parte superior del Deck de tu adversario"
 	},
 	{
 		"type": "actions",
 		"abbreviation": "SendFromBottomDeckToGraveyard",
-		"name": "Manda al Cementerio la carta de la parte inferior de tu Deck"
+		"name": "Manda al Cementerio cartas de la parte inferior de tu Deck"
 	},
 	{
 		"type": "actions",
@@ -826,6 +826,11 @@
 	},
 	{
 		"type": "stats",
+		"abbreviation": "PlayerMonstersLoseATK",
+		"name": "Tus monstruos pierden ATK"
+	},
+	{
+		"type": "stats",
 		"abbreviation": "OpponentMonstersLoseDEF",
 		"name": "Los monstruos del adversario pierden DEF"
 	},
@@ -853,6 +858,11 @@
 		"type": "cards",
 		"abbreviation": "DestroysOpponentMonsters",
 		"name": "Destruye los monstruos del adversario"
+	},
+	{
+		"type": "cards",
+		"abbreviation": "DestroysItself",
+		"name": "Se destruye a si mismo"
 	},
 	{
 		"type": "cards",

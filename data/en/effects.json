@@ -826,6 +826,11 @@
 	},
 	{
 		"type": "stats",
+		"abbreviation": "PlayerMonstersLoseATK",
+		"name": "Your monsters lose ATK"
+	},
+	{
+		"type": "stats",
 		"abbreviation": "OpponentMonstersLoseDEF",
 		"name": "Your opponent's monsters lose DEF"
 	},
@@ -853,6 +858,11 @@
 		"type": "cards",
 		"abbreviation": "DestroysOpponentMonsters",
 		"name": "Destroys your opponent's monsters"
+	},
+	{
+		"type": "cards",
+		"abbreviation": "DestroysItself",
+		"name": "Destroys itself"
 	},
 	{
 		"type": "cards",

@@ -113,15 +113,18 @@
         "Supports": "Supports"
     },
     "series": {
+        "BlackLusterSoldier": "Black Luster Soldier",
         "BlueEyes": "Blue-Eyes",
         "DarkMagician": "Dark Magician",
         "Galactica": "Galactica",
         "Metarion": "Metarion",
         "Monarch": "Monarch",
+        "PrincessCosmos": "Princess Cosmos",
         "RedEyes": "Red-Eyes",
         "SevensRoad": "Sevens Road",
         "StrikeDragon": "Strike Dragon",
-        "Tron": "Tron"
+        "Tron": "Tron",
+        "WoolyWonderland": "Wooly Wonderland"
     },
     "setRegion": {
         "all": "All",

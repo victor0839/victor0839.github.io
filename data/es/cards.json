@@ -1574,6 +1574,279 @@
         ]
     },
     {
+        "id": 17489,
+        "name": "Mouton de Tierra del País de Maravillas Lanudas",
+        "cardType": "Monster",
+        "type": "Normal",
+        "cardText": "La nueva integrante del rebaño del País de las Maravillas Lanudas. Una holgazana de tomo y lomo que prefiere encomendar las ovejas al lobo.",
+        "attribute": "EARTH",
+        "level": 1,
+        "atk": 0,
+        "def": 1500,
+        "race": "Beast",
+        "releaseDate": {
+            "jp": "2022-04-09",
+            "kr": "2022-07-26",
+            "dl": "2024-10-01"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "series": [
+            "WoolyWonderland"
+        ],
+        "rarities": {
+            "jp": [
+                "C"
+            ],
+            "kr": [
+                "C"
+            ],
+            "dl": [
+                "N+DL"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ],
+        "properties": [
+            "NonEffect"
+        ]
+    },
+    {
+        "id": 17490,
+        "name": "Lana Piro del País de Maravillas Lanudas",
+        "cardType": "Monster",
+        "type": "Normal",
+        "cardText": "La nueva anciana del rebaño del País de las Maravillas Lanudas. Los demás suelen cardarle la lana por sus decisiones impulsivas, pero ella no se baja del burro.",
+        "attribute": "FIRE",
+        "level": 4,
+        "atk": 1400,
+        "def": 800,
+        "race": "Beast",
+        "releaseDate": {
+            "jp": "2022-04-09",
+            "kr": "2022-07-26",
+            "dl": "2024-10-01"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "series": [
+            "WoolyWonderland"
+        ],
+        "rarities": {
+            "jp": [
+                "C"
+            ],
+            "kr": [
+                "C"
+            ],
+            "dl": [
+                "N+DL"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ],
+        "properties": [
+            "NonEffect"
+        ]
+    },
+    {
+        "id": 17491,
+        "name": "Cordero Nocturno del País de Maravillas Lanudas",
+        "cardType": "Monster",
+        "type": "Normal",
+        "cardText": "La oveja más pensativa del rebaño del del País de las Maravillas Lanudas. Es la oveja negra del grupo, dado que prefiere ir a la suya y no seguir a las masas.",
+        "attribute": "DARK",
+        "level": 4,
+        "atk": 1500,
+        "def": 100,
+        "race": "Beast",
+        "releaseDate": {
+            "jp": "2022-04-09",
+            "kr": "2022-07-26",
+            "dl": "2024-10-01"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "series": [
+            "WoolyWonderland"
+        ],
+        "rarities": {
+            "jp": [
+                "R"
+            ],
+            "kr": [
+                "R"
+            ],
+            "dl": [
+                "N+DL"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ],
+        "properties": [
+            "NonEffect"
+        ]
+    },
+    {
+        "id": 17492,
+        "name": "Princesa del Rebaño - Miss Carnero",
+        "cardType": "Monster",
+        "type": "Normal",
+        "cardText": "¡Pum-pum, pum-pum, pum-pum, pum-pum, puuum-pum! La oveja fue a por la lana y volvió trasquilada. Puedes llamarme \"señorita\", pero estás ante realeza del País de las Maravillas Lanudas. Me como cualquier papel que se me ponga por delante, por mucho que sea una carta importantísima.",
+        "attribute": "LIGHT",
+        "level": 7,
+        "atk": 2500,
+        "def": 1600,
+        "race": "Beast",
+        "releaseDate": {
+            "jp": "2022-04-09",
+            "kr": "2022-07-26",
+            "dl": "2024-10-01"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "series": [
+            "WoolyWonderland"
+        ],
+        "mentionedBy": [
+            17506,
+            17530,
+            17874,
+            17894,
+            160216007,
+            160216008,
+            160216009
+        ],
+        "rarities": {
+            "jp": [
+                "SR",
+                "P",
+                "P+UR"
+            ],
+            "kr": [
+                "SR"
+            ],
+            "dl": [
+                "SR+DL"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            },
+            {
+                "normal": true
+            },
+            {
+                "normal": true
+            }
+        ],
+        "properties": [
+            "NonEffect"
+        ]
+    },
+    {
+        "id": 17506,
+        "name": "Planoveja del País de Maravillas Lanudas",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUISITO]</b> Tienes un Monstruo Normal de Tipo Bestia boca arriba en tu Campo.\n<b>[EFECTO]</b> Coloca 1 \"Meet and Greed\" o 1 \"País de Maravillas Lanudas - Rencor de Cementerio\" de tu Cementerio en tu Zona de Magia y Trampas. Si tienes \"Princesa del Rebaño - Miss Carnero\" boca arriba en tu Campo, también puedes ganar 600 LP.",
+        "attribute": "EARTH",
+        "level": 3,
+        "atk": 1100,
+        "def": 200,
+        "race": "Beast",
+        "releaseDate": {
+            "jp": "2022-04-09",
+            "kr": "2022-07-26",
+            "dl": "2024-10-01"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "SetsSpecificCardFromGraveyardToField"
+            },
+            {
+                "type": "effects",
+                "name": "PlayerGainLifePoints"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "races": [
+                    "Beast"
+                ],
+                "type": "Normal"
+            }
+        ],
+        "series": [
+            "WoolyWonderland"
+        ],
+        "mentions": [
+            17492,
+            17530,
+            17541
+        ],
+        "rarities": {
+            "jp": [
+                "R"
+            ],
+            "kr": [
+                "R"
+            ],
+            "dl": [
+                "SR+DL"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
         "id": 17522,
         "name": "Dynas Dorcus el Escarabajo Rey",
         "cardType": "Monster",
@@ -1640,6 +1913,146 @@
         ]
     },
     {
+        "id": 17530,
+        "name": "Meet and Greed",
+        "cardType": "Spell",
+        "type": "Normal",
+        "cardText": "<b>[REQUISITO]</b> Manda al Cementerio 2 cartas en tu mano.\n<b>[EFECTO]</b> Elige 1 Monstruo Normal de Tipo Bestia boca arriba en tu Campo. Este turno, ese monstruo puede hacer hasta 3 ataques a monstruos. Si tienes \"Princesa del Rebaño - Miss Carnero\" boca arriba en tu Campo, también puedes hacer que todos los Monstruos de Efecto boca arriba en el Campo de tu adversario pierdan 500 ATK hasta el final de este turno.",
+        "releaseDate": {
+            "jp": "2022-04-09",
+            "kr": "2022-07-26",
+            "dl": "2024-10-01"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromHandToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "AllowsMultipleAttacksOnMonsters"
+            },
+            {
+                "type": "effects",
+                "name": "OpponentMonstersLoseATK"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "races": [
+                    "Beast"
+                ],
+                "type": "Normal"
+            }
+        ],
+        "antiSupports": [
+            {
+                "cardType": "Monster",
+                "type": "Effect"
+            }
+        ],
+        "series": [
+            "WoolyWonderland"
+        ],
+        "mentions": [
+            17492
+        ],
+        "rarities": {
+            "jp": [
+                "SR"
+            ],
+            "kr": [
+                "SR"
+            ],
+            "dl": [
+                "R+DL"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 17541,
+        "name": "País de Maravillas Lanudas - Rencor del Cementerio",
+        "cardType": "Trap",
+        "type": "Normal",
+        "cardText": "<b>[REQUISITO]</b> Cuando un monstruo de tu adversario declara un ataque que hace objetivo a tu Monstruo Normal de Tipo Bestia en Posición de Ataque, manda al Cementerio las 4 cartas de la parte superior de tu Deck.\n<b>[EFECTO]</b> El monstruo atacado pierde 2000 ATK hasta el final de este turno. Después, puedes añadir a tu mano hasta 4 cartas mandadas al Cementerio para cumplir el requisito.",
+        "releaseDate": {
+            "jp": "2022-04-09",
+            "kr": "2022-07-26",
+            "dl": "2024-10-01"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "OpponentAttackDeclarationOnMonster"
+            },
+            {
+                "type": "requeriments",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "PlayerMonstersLoseATK"
+            },
+            {
+                "type": "effects",
+                "name": "AddsFromGraveyardToHand"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "races": [
+                    "Beast"
+                ],
+                "type": "Normal"
+            }
+        ],
+        "series": [
+            "WoolyWonderland"
+        ],
+        "mentionedBy": [
+            17506
+        ],
+        "rarities": {
+            "jp": [
+                "C"
+            ],
+            "kr": [
+                "C"
+            ],
+            "dl": [
+                "R+DL"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
         "id": 17721,
         "name": "Canjear",
         "cardType": "Spell",
@@ -1684,6 +2097,282 @@
                 "C",
                 "R",
                 "SE"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 17849,
+        "name": "Oveja Aqua del País de Maravillas Lanudas",
+        "cardType": "Monster",
+        "type": "Normal",
+        "cardText": "La oveja más optimista del rebaño del País de las Maravillas Lanudas. Siempre está tranquila y se siente bieeen.",
+        "attribute": "WATER",
+        "level": 2,
+        "atk": 1000,
+        "def": 500,
+        "race": "Beast",
+        "releaseDate": {
+            "jp": "2022-07-09",
+            "kr": "2022-10-21",
+            "dl": "2025-07-17"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "series": [
+            "WoolyWonderland"
+        ],
+        "rarities": {
+            "jp": [
+                "C"
+            ],
+            "kr": [
+                "C"
+            ],
+            "dl": [
+                "N+DL"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ],
+        "properties": [
+            "NonEffect"
+        ]
+    },
+    {
+        "id": 17850,
+        "name": "Carnada de Trueno del País de Maravillas Lanudas",
+        "cardType": "Monster",
+        "type": "Normal",
+        "cardText": "La oveja más diligente del rebaño del País de las Maravillas Lanudas. Dirige las actividades del resto y siempre le brillan los ojos.",
+        "attribute": "LIGHT",
+        "level": 3,
+        "atk": 1200,
+        "def": 400,
+        "race": "Beast",
+        "releaseDate": {
+            "jp": "2022-07-09",
+            "kr": "2022-10-21",
+            "dl": "2025-07-17"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "series": [
+            "WoolyWonderland"
+        ],
+        "rarities": {
+            "jp": [
+                "C"
+            ],
+            "kr": [
+                "C"
+            ],
+            "dl": [
+                "N+DL"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ],
+        "properties": [
+            "NonEffect"
+        ]
+    },
+    {
+        "id": 17851,
+        "name": "Aries de Aire del País de Maravillas Lanudas",
+        "cardType": "Monster",
+        "type": "Normal",
+        "cardText": "El espiritu libre del rebaño del País de las Maravillas Lanudas. Mantiene la calma incluso cuando otras están de mal humor.",
+        "attribute": "WIND",
+        "level": 3,
+        "atk": 1300,
+        "def": 200,
+        "race": "Beast",
+        "releaseDate": {
+            "jp": "2022-07-09",
+            "kr": "2022-10-21",
+            "dl": "2025-07-17"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "series": [
+            "WoolyWonderland"
+        ],
+        "rarities": {
+            "jp": [
+                "C"
+            ],
+            "kr": [
+                "C"
+            ],
+            "dl": [
+                "N+DL"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ],
+        "properties": [
+            "NonEffect"
+        ]
+    },    
+    {
+        "id": 17874,
+        "name": "Ganado de Oleada del País de Maravillas Lanudas",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUISITO]</b> Manda al Cementerio la carta de la parte superior de tu Deck.\n<b>[EFECTO]</b> Ganas 200 LP. Si tienes 3 o más Monstruos Normales de Tipo Bestia con distintos Atributos en tu Cementerio, también puedes Invocar de Modo Especial 1 \"Princesa del Rebaño - Miss Carnero\" desde tu Cementerio boca arriba a tu Campo.",
+        "attribute": "WATER",
+        "level": 3,
+        "atk": 800,
+        "def": 300,
+        "race": "Beast",
+        "releaseDate": {
+            "jp": "2022-07-09",
+            "kr": "2022-10-21",
+            "dl": "2025-07-17"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3,
+            "dl": 3
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "PlayerGainLifePoints"
+            },
+            {
+                "type": "effects",
+                "name": "SpecialSummonsFromGraveyard"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "races": [
+                    "Beast"
+                ],
+                "type": "Normal"
+            }
+        ],
+        "series": [
+            "WoolyWonderland"
+        ],
+        "mentions": [
+            17492
+        ],
+        "rarities": {
+            "jp": [
+                "C"
+            ],
+            "kr": [
+                "C"
+            ],
+            "dl": [
+                "SR+DL"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 17894,
+        "name": "Rayo de Cencerro Radiante",
+        "cardType": "Spell",
+        "type": "Normal",
+        "cardText": "<b>[REQUISITO]</b> Si tienes una \"Princesa del Rebaño - Miss Carnero\" boca arriba en tu Campo, manda al Cementerio 2 Monstruos Normales de Tipo Bestia de tu mano.\n<b>[EFECTO]</b> Destruye todos los monstruos de Nivel 8 o menor boca arriba del Campo de tu adversario. Este turno, solo puedes atacar con monstruos de Tipo Bestia.",
+        "releaseDate": {
+            "jp": "2022-07-09",
+            "kr": "2022-10-21"
+        },
+        "status": {
+            "jp": 3,
+            "kr": 3
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendMonsterFromHandToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentMonsters"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "races": [
+                    "Beast"
+                ],
+                "type": "Normal"
+            }
+        ],
+        "antiSupports": [
+            {
+                "cardType": "Monster",
+                "levels": [
+                    8,
+                    "<="
+                ]
+            }
+        ],
+        "series": [
+            "WoolyWonderland"
+        ],
+        "mentions": [
+            17492
+        ],
+        "rarities": {
+            "jp": [
+                "R"
+            ],
+            "kr": [
+                "R"
             ]
         },
         "images": {
@@ -3384,6 +4073,9 @@
                 "name": "PlayerDrawCards"
             }
         ],
+        "series": [
+            "PrincessCosmos"
+        ],
         "rarities": {
             "jp": [
                 "UR",
@@ -3726,12 +4418,11 @@
         "atk": 0,
         "def": 0,
         "race": "Thunder",
-        "preReleaseDate": "2025-08-03",
         "releaseDate": {
             "jp": "2025-09-04"
         },
         "status": {
-            "jp": "unreleased"
+            "jp": 3
         },
         "actions": [
             {
@@ -4196,6 +4887,1168 @@
         "artworks": [
             {
                 "normal": true
+            }
+        ]
+    },
+    {
+        "id": 160216001,
+        "name": "Soldado del Brillo Negro",
+        "cardType": "Monster",
+        "type": "Ritual",
+        "cardText": "\n",
+        "attribute": "EARTH",
+        "level": 8,
+        "atk": 3000,
+        "def": 2500,
+        "race": "Warrior",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "series": [
+            "BlackLusterSoldier"
+        ],
+        "mentionedBy": [
+            160216038
+        ],
+        "rarities": {
+            "jp": [
+                "UR",
+                "ORR"
+            ]
+        },
+        "images": {
+            "ORR": 0
+        },
+        "artworks": [
+            {
+                "normal": false,
+                "ORR": true
+            }
+        ],
+        "properties": [
+            "NonEffect"
+        ]
+    },
+    {
+        "id": 160216007,
+        "name": "Súper Princesa del Rebaño - Max Carnero [L]",
+        "cardType": "Monster",
+        "type": "Maximum",
+        "subtype": "Effect",
+        "cardText": "El nombre de esta carta se convierte en \"Princesa del Rebaño - Miss Carnero\" mientras esté en el Cementerio.\n<b>[REQUISITO]</b> Manda al Cementerio 2 cartas en tu mano.\n<b>[EFECTO]</b> Este turno, esta carta inflige daño de batalla de penetración. Después, si esta carta está en modo Máximo, este turno, gana 1000 ATK, y no puede ser destruida por efectos de cartas.",
+        "attribute": "LIGHT",
+        "level": 7,
+        "atk": 2500,
+        "def": 0,
+        "race": "Beast",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendFromHandToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "ChangesOwnNameInGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "InflictsPiercingDamage"
+            },
+            {
+                "type": "effects",
+                "name": "ThisCardGainsATK"
+            },
+            {
+                "type": "effects",
+                "name": "ThisCardCannotBeDestroyedByCardEffects"
+            }
+        ],
+        "series": [
+            "WoolyWonderland"
+        ],
+        "mentions": [
+            17492
+        ],
+        "mentionedBy": [
+            160216008
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "ORR"
+            ]
+        },
+        "images": {
+            "ORR": 0
+        },
+        "artworks": [
+            {
+                "normal": false,
+                "ORR": true
+            }
+        ]
+    },
+    {
+        "id": 160216008,
+        "name": "Súper Princesa del Rebaño - Max Carnero",
+        "cardType": "Monster",
+        "type": "Maximum",
+        "subtype": "Effect",
+        "cardText": "Puedes Invocar de Modo Máximo esta carta junto con \"Súper Princesa del Rebaño - Max Carnero [L]\" y \"Súper Princesa del Rebaño - Max Carnero [R]\". El nombre de esta carta se convierte en \"Princesa del Rebaño - Miss Carnero\" mientras esté en el Cementerio.\n<b>[REQUISITO]</b> Manda al Cementerio 1 \"Meet and Greed\" o \"Rayo de Cencerro Radiante\" en tu mano.\n<b>[EFECTO]</b> Destruye 1 carta en el Campo de tu adversario.",
+        "attribute": "LIGHT",
+        "level": 7,
+        "atk": 2500,
+        "def": 0,
+        "maximumAtk": 4000,
+        "race": "Beast",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "SendSpecificCardFromHandToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "ChangesOwnNameInGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentCards"
+            }
+        ],
+        "series": [
+            "WoolyWonderland"
+        ],
+        "mentions": [
+            17492,
+            17530,
+            17894,
+            160216007,
+            160216009
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "ORR"
+            ]
+        },
+        "images": {
+            "ORR": 0
+        },
+        "artworks": [
+            {
+                "normal": false,
+                "ORR": true
+            }
+        ]
+    },
+    {
+        "id": 160216009,
+        "name": "Súper Princesa del Rebaño - Max Carnero [R]",
+        "cardType": "Monster",
+        "type": "Maximum",
+        "subtype": "Effect",
+            "cardText": "El nombre de esta carta se convierte en \"Princesa del Rebaño - Miss Carnero\" mientras esté en el Cementerio.\n<b>[REQUISITO]</b> Ninguno\n<b>[EFECTO]</b> Añade a tu mano 1 Monstruo Normal de Tipo Bestia, \"Meet and Greed\" o \"Rayo de Cencerro Radiante\" en tu Cementerio. Si esta carta está en modo Máximo, puedes añadir a tu mano hasta 3 de esas cartas en su lugar.",
+        "attribute": "LIGHT",
+        "level": 7,
+        "atk": 2500,
+        "def": 0,
+        "race": "Beast",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "ChangesOwnNameInGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "AddsMonsterFromGraveyardToHand"
+            },
+            {
+                "type": "effects",
+                "name": "AddsSpecificCardFromGraveyardToHand"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "races": [
+                    "Beast"
+                ],
+                "type": "Normal"
+            }
+        ],
+        "series": [
+            "WoolyWonderland"
+        ],
+        "mentions": [
+            17492,
+            17530,
+            17894
+        ],
+        "mentionedBy": [
+            160216008
+        ],
+        "rarities": {
+            "jp": [
+                "C",
+                "ORR"
+            ]
+        },
+        "images": {
+            "ORR": 0
+        },
+        "artworks": [
+            {
+                "normal": false,
+                "ORR": true
+            }
+        ]
+    },
+    {
+        "id": 160216038,
+        "name": "Ritual del Brillo Negro",
+        "cardType": "Spell",
+        "type": "Ritual",
+        "cardText": "<b>[REQUISITO]</b> Ninguno\n<b>[EFECTO]</b> Invoca por Ritual un \"Soldado del Brillo Negro\" mandando al Cementerio monstruos en tu mano y/o Campo cuyos Niveles totales sean 8 o más como material (no puedes usar más monstruos de los necesarios como material).",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "PerformsRitualSummon"
+            },
+            {
+                "type": "effects",
+                "name": "SendMonsterFromHandToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "SendMonsterFromFieldToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "CardsInHandAsRitualMaterials"
+            },
+            {
+                "type": "effects",
+                "name": "CardsOnFieldAsRitualMaterials"
+            }
+        ],
+        "series": [
+            "BlackLusterSoldier"
+        ],
+        "mentions": [
+            160216001
+        ],
+        "rarities": {
+            "jp": [
+                "UR",
+                "ORR"
+            ]
+        },
+        "images": {
+            "ORR": 0
+        },
+        "artworks": [
+            {
+                "normal": false,
+                "ORR": true
+            }
+        ]
+    },
+    {
+        "id": 160216043,
+        "name": "Princesa del Cosmos la Bromista Cósmica",
+        "cardType": "Monster",
+        "type": "Fusion",
+        "subtype": "Effect",
+        "cardText": "\"Princesa del Cosmos la Bromista\" + 2 o más monstruos de Tipo Galaxia con 900 ATK\n<b>[REQUISITO]</b> Durante tu Main Phase en la que Invocaste de Modo Especial esta carta.\n<b>[EFECTO]</b> Destruye 1 carta en el Campo de tu adversario. Si esta carta fue Invocada por Fusión usando 9 o más monstruos como material, destruye todas las demás cartas en el Campo en su lugar.",
+        "attribute": "DARK",
+        "level": 11,
+        "atk": 2800,
+        "def": 2600,
+        "race": "Galaxy",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "DestroysOpponentCards"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysPlayerCards"
+            }
+        ],
+        "series": [
+            "PrincessCosmos"
+        ],
+        "fusionMaterials": [
+            {
+                "id": 160216046
+            },
+            {
+                "cardType": "Monster",
+                "atk": [
+                    900,
+                    "="
+                ],
+                "races": [
+                    "Galaxy"
+                ]
+            }
+        ],
+        "rarities": {
+            "jp": [
+                "UR",
+                "ORR"
+            ]
+        },
+        "images": {
+            "ORR": 0
+        },
+        "artworks": [
+            {
+                "ORR": true
+            }
+        ]
+    },
+    {
+        "id": 160216044,
+        "name": "Cosmoestrella la Polariada Agujero Negro",
+        "cardType": "Monster",
+        "type": "Fusion",
+        "subtype": "Effect",
+        "cardText": "2 monstruos de Tipo Galaxia con 900 ATK\n<b>[REQUISITO]</b> Ninguno\n<b>[EFECTO CONTINUO]</b> Esta carta inflige daño de batalla de penetración. Durante tu turno, todos los monstruos boca arriba en el Campo de tu adversario pierden 1000 ATK/DEF.",
+        "attribute": "DARK",
+        "level": 10,
+        "atk": 2000,
+        "def": 1900,
+        "race": "Galaxy",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "InflictsPiercingDamage"
+            },
+            {
+                "type": "effects",
+                "name": "OpponentMonstersLoseATK"
+            },
+            {
+                "type": "effects",
+                "name": "OpponentMonstersLoseDEF"
+            }
+        ],
+        "series": [
+            "PrincessCosmos"
+        ],
+        "fusionMaterials": [
+            {
+                "cardType": "Monster",
+                "atk": [
+                    900,
+                    "="
+                ],
+                "races": [
+                    "Galaxy"
+                ]
+            }
+        ],
+        "rarities": {
+            "jp": [
+                "SR"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ],
+        "properties": [
+            "ContinuousEffect"
+        ]
+    },
+    {
+        "id": 160216045,
+        "name": "Cosmoestrella la Polariada Agujero Blanco",
+        "cardType": "Monster",
+        "type": "Fusion",
+        "subtype": "Effect",
+        "cardText": "3 monstruos de Tipo Galaxia con 900 ATK\n<b>[REQUISITO]</b> Durante tu Main Phase en la que Invocaste por Fusión esta carta.\n<b>[EFECTO]</b> Invoca de Modo Especial 1 monstruo de Tipo Galaxia con 1900 o 2600 DEF desde tu Cementerio boca arriba en tu Campo. Después, puedes añadir a tu mano 1 \"Broma de la Princesa del Cosmos\" en tu Cementerio. Este turno, no puedes activar el efecto de \"Cosmoestrella la Polariada Agujero Blanco\".",
+        "attribute": "FIRE",
+        "level": 10,
+        "atk": 2000,
+        "def": 1900,
+        "race": "Galaxy",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "SpecialSummonsFromGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "AddsSpecificCardFromGraveyardToHand"
+            },
+            {
+                "type": "effects",
+                "name": "OncePerTurn"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "def": [
+                    1900,
+                    "="
+                ],
+                "races": [
+                    "Galaxy"
+                ]
+            },
+            {
+                "cardType": "Monster",
+                "def": [
+                    2600,
+                    "="
+                ],
+                "races": [
+                    "Galaxy"
+                ]
+            }
+        ],
+        "series": [
+            "PrincessCosmos"
+        ],
+        "mentions": [
+            20355
+        ],
+        "fusionMaterials": [
+            {
+                "cardType": "Monster",
+                "atk": [
+                    900,
+                    "="
+                ],
+                "races": [
+                    "Galaxy"
+                ]
+            }
+        ],
+        "rarities": {
+            "jp": [
+                "SR"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 160216046,
+        "name": "Princesa del Cosmos la Bromista",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUISITO]</b> Durante tu Main Phase en la que Invocaste de Modo Normal o Especial esta carta.\n<b>[EFECTO]</b> Destruye hasta 3 monstruos en tu Campo. Después, puedes Invocar por Fusión un monstruo de Tipo Galaxia con 1900 o 2600 DEF barajando al Deck monstruos en tu Cementerio como material. Este turno, no puedes activar el efecto de \"Princesa del Cosmos la Bromista\".",
+        "attribute": "DARK",
+        "level": 9,
+        "atk": 900,
+        "def": 2600,
+        "race": "Galaxy",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "DestroysPlayerMonsters"
+            },
+            {
+                "type": "effects",
+                "name": "PerformsFusionSummon"
+            },
+            {
+                "type": "effects",
+                "name": "ShuffleMonsterFromGraveyardToDeck"
+            },
+            {
+                "type": "effects",
+                "name": "CardsInGraveyardAsFusionMaterials"
+            },
+            {
+                "type": "effects",
+                "name": "ShufflesFusionMaterialsToDeck"
+            },
+            {
+                "type": "effects",
+                "name": "OncePerTurn"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "races": [
+                    "Galaxy"
+                ]
+            },
+            {
+                "cardType": "Monster",
+                "def": [
+                    1900,
+                    "="
+                ],
+                "races": [
+                    "Galaxy"
+                ],
+                "type": "Fusion"
+            },
+            {
+                "cardType": "Monster",
+                "def": [
+                    2600,
+                    "="
+                ],
+                "races": [
+                    "Galaxy"
+                ],
+                "type": "Fusion"
+            }
+        ],
+        "series": [
+            "PrincessCosmos"
+        ],
+        "fusionMaterialFor": [
+            160216043
+        ],
+        "rarities": {
+            "jp": [
+                "UR",
+                "ORR"
+            ]
+        },
+        "images": {
+            "ORR": 0
+        },
+        "artworks": [
+            {
+                "ORR": true
+            }
+        ]
+    },
+    {
+        "id": 160216047,
+        "name": "Uranolycoris el Planetada",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "Puedes Invocar de Modo Especial esta carta desde tu mano boca arriba en tu Campo mostrando 1 \"Princesa del Cosmos la Bromista\" o 1 \"Broma de la Princesa del Cosmos\" en tu mano.\n<b>[REQUISITO]</b> Durante tu Main Phase en la que fue destruida una carta en tu Campo por efecto de una carta.\n<b>[EFECTO]</b> Destruye 1 Carta Mágica/de Trampa en el Campo de tu adversario.",
+        "attribute": "LIGHT",
+        "level": 7,
+        "atk": 900,
+        "def": 1600,
+        "race": "Galaxy",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "RevealsHandForSpecialSummons"
+            },
+            {
+                "type": "effects",
+                "name": "SpecialSummonsItselfFromHand"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentSpells"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentTraps"
+            }
+        ],
+        "series": [
+            "PrincessCosmos"
+        ],
+        "mentions": [
+            20355,
+            160216046
+        ],
+        "rarities": {
+            "jp": [
+                "SR"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 160216048,
+        "name": "Saturnomanzanilla el Planetada",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "Puedes Invocar de Modo Especial esta carta desde tu mano boca arriba en tu Campo mostrando 1 \"Princesa del Cosmos la Bromista\" o 1 \"Broma de la Princesa del Cosmos\" en tu mano.\n<b>[REQUISITO]</b> Durante tu Main Phase en la que Invocaste de Modo Normal o Especial esta carta.\n<b>[EFECTO]</b> Invoca por Fusión un monstruo de Tipo Galaxia con 1900 o 2600 DEF mandando al Cementerio monstruos de Tipo Galaxia boca arriba en tu Campo como material.",
+        "attribute": "DARK",
+        "level": 6,
+        "atk": 900,
+        "def": 1600,
+        "race": "Galaxy",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "RevealsHandForSpecialSummons"
+            },
+            {
+                "type": "effects",
+                "name": "SpecialSummonsItselfFromHand"
+            },
+            {
+                "type": "effects",
+                "name": "PerformsFusionSummon"
+            },
+            {
+                "type": "effects",
+                "name": "SendMonsterFromFieldToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "CardsOnFieldAsFusionMaterials"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "races": [
+                    "Galaxy"
+                ]
+            },
+            {
+                "cardType": "Monster",
+                "def": [
+                    1900,
+                    "="
+                ],
+                "races": [
+                    "Galaxy"
+                ],
+                "type": "Fusion"
+            },
+            {
+                "cardType": "Monster",
+                "def": [
+                    2600,
+                    "="
+                ],
+                "races": [
+                    "Galaxy"
+                ],
+                "type": "Fusion"
+            }
+        ],
+        "series": [
+            "PrincessCosmos"
+        ],
+        "mentions": [
+            20355,
+            160216046
+        ],
+        "rarities": {
+            "jp": [
+                "SR"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 160216049,
+        "name": "Osmanjupiter el Planetada",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUISITO]</b> Durante el turno en el que Invocaste de Modo Normal esta carta.\n<b>[EFECTO]</b> Destruye esta carta en tu Campo. Después, puedes Invocar de Modo Especial 1 monstruo de Tipo Galaxia de Nivel 6 o mayor con 900 ATK desde tu Cementerio en tu Campo en Posición de Defensa boca arriba.",
+        "attribute": "WIND",
+        "level": 5,
+        "atk": 900,
+        "def": 1600,
+        "race": "Galaxy",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "DestroysItself"
+            },
+            {
+                "type": "effects",
+                "name": "SpecialSummonsFromGraveyard"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "levels": [
+                    6,
+                    ">="
+                ],
+                "atk": [
+                    900,
+                    "="
+                ],
+                "races": [
+                    "Galaxy"
+                ]
+            }
+        ],
+        "series": [
+            "PrincessCosmos"
+        ],
+        "rarities": {
+            "jp": [
+                "SR"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 160216050,
+        "name": "Martephlox el Planetada",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUISITO]</b> Durante el turno en el que Invocaste de Modo Normal esta carta.\n<b>[EFECTO]</b> Destruye 1 carta en tu Campo. Después, puedes cambiar la posición de batalla de 1 monstruo en el Campo de tu adversario. No puedes activar los efectos de monstruos que no sean de Tipo Galaxia por el resto de este turno.",
+        "attribute": "FIRE",
+        "level": 4,
+        "atk": 900,
+        "def": 600,
+        "race": "Galaxy",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "DestroysPlayerCards"
+            },
+            {
+                "type": "effects",
+                "name": "ChangesOpponentBattlePositions"
+            },
+            {
+                "type": "effects",
+                "name": "PreventsActivationOfMonsterEffects"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "races": [
+                    "Galaxy"
+                ]
+            }
+        ],
+        "series": [
+            "PrincessCosmos"
+        ],
+        "rarities": {
+            "jp": [
+                "SR"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 160216051,
+        "name": "Tejotierra el Planetada",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUISITO]</b> Tienes 10 o más cartas en tu Deck durante el turno en el que Invocaste de Modo Normal esta carta.\n<b>[EFECTO]</b> Destruye otra carta en tu Campo. Después, puedes robar 1 carta. No puedes activar los efectos de monstruos que no sean de Tipo Galaxia por el resto de este turno.",
+        "attribute": "EARTH",
+        "level": 3,
+        "atk": 900,
+        "def": 600,
+        "race": "Galaxy",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "DestroysPlayerCards"
+            },
+            {
+                "type": "effects",
+                "name": "PlayerDrawCards"
+            },
+            {
+                "type": "effects",
+                "name": "PreventsActivationOfMonsterEffects"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "races": [
+                    "Galaxy"
+                ]
+            }
+        ],
+        "series": [
+            "PrincessCosmos"
+        ],
+        "rarities": {
+            "jp": [
+                "SR"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 160216052,
+        "name": "Dendrovenus el Planetada",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUISITO]</b> Durante el turno en el que Invocaste de Modo Normal esta carta.\n<b>[EFECTO]</b> Manda al Cementerio las 2 cartas de la parte superior de tu Deck. Después, puedes destruir esta carta en tu Campo.",
+        "attribute": "LIGHT",
+        "level": 2,
+        "atk": 900,
+        "def": 600,
+        "race": "Galaxy",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "SendFromTopDeckToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysItself"
+            }
+        ],
+        "series": [
+            "PrincessCosmos"
+        ],
+        "rarities": {
+            "jp": [
+                "SR"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 160216053,
+        "name": "Merciso el Planetada",
+        "cardType": "Monster",
+        "type": "Effect",
+        "cardText": "<b>[REQUISITO]</b> Durante el turno en el que Invocaste de Modo Normal esta carta.\n<b>[EFECTO]</b> Excava las 4 cartas de la parte superior de tu Deck. Puedes añadir a tu mano 1 monstruo de Tipo Galaxia de Nivel 6 o mayor excavado con 900 ATK. Pon las cartas restantes en la parte inferior de tu Deck, en cualquier orden.",
+        "attribute": "LIGHT",
+        "level": 1,
+        "atk": 900,
+        "def": 600,
+        "race": "Galaxy",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "ExcavatesDeck"
+            },
+            {
+                "type": "effects",
+                "name": "AddsExcavatedCardToHand"
+            },
+            {
+                "type": "effects",
+                "name": "PlacesExcavatedCardsOnBottomDeck"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "levels": [
+                    6,
+                    ">="
+                ],
+                "atk": [
+                    900,
+                    "="
+                ],
+                "races": [
+                    "Galaxy"
+                ]
+            }
+        ],
+        "series": [
+            "PrincessCosmos"
+        ],
+        "rarities": {
+            "jp": [
+                "SR"
+            ]
+        },
+        "images": {
+            "default": 0
+        },
+        "artworks": [
+            {
+                "normal": true
+            }
+        ]
+    },
+    {
+        "id": 160216055,
+        "name": "Observación Astronómica de la Princesa del Cosmos",
+        "cardType": "Spell",
+        "type": "Normal",
+        "cardText": "<b>[REQUISITO]</b> Durante un turno en el que no has activado una \"Observación Astronómica de la Princesa del Cosmos\".\n<b>[EFECTO]</b> Añade a tu mano 1 monstruo de Tipo Galaxia de Nivel 5 o menor con 900 ATK en tu Cementerio.",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "effects",
+                "name": "AddsMonsterFromGraveyardToHand"
+            },
+            {
+                "type": "effects",
+                "name": "OncePerTurn"
+            }
+        ],
+        "supports": [
+            {
+                "cardType": "Monster",
+                "levels": [
+                    5,
+                    "<="
+                ],
+                "atk": [
+                    900,
+                    "="
+                ],
+                "races": [
+                    "Galaxy"
+                ]
+            }
+        ],
+        "series": [
+            "PrincessCosmos"
+        ],
+        "rarities": {
+            "jp": [
+                "UR",
+                "ORR"
+            ]
+        },
+        "images": {
+            "ORR": 0
+        },
+        "artworks": [
+            {
+                "ORR": true
+            }
+        ]
+    },
+    {
+        "id": 160216057,
+        "name": "Sueño Reparador de la Princesa del Cosmos",
+        "cardType": "Trap",
+        "type": "Normal",
+        "cardText": "El nombre de esta carta se convierte en \"Broma de la Princesa del Cosmos\" mientras en la mano o el Cementerio.\n<b>[REQUISITO]</b> Cuando un jugador Invoca de Modo Normal un monstruo, manda al Cementerio 1 carta en tu mano.\n<b>[EFECTO]</b> Destruye ese monstruo Invocado de Modo Normal. Después, puedes robar 2 cartas.",
+        "preReleaseDate": "2025-08-30",
+        "releaseDate": {
+            "jp": "2025-10-18"
+        },
+        "status": {
+            "jp": "unreleased"
+        },
+        "actions": [
+            {
+                "type": "requeriments",
+                "name": "PlayerNormalSummoned"
+            },
+            {
+                "type": "requeriments",
+                "name": "OpponentNormalSummoned"
+            },
+            {
+                "type": "requeriments",
+                "name": "SendFromHandToGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "ChangesOwnNameinHand"
+            },
+            {
+                "type": "effects",
+                "name": "ChangesOwnNameInGraveyard"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysPlayerMonsters"
+            },
+            {
+                "type": "effects",
+                "name": "DestroysOpponentMonsters"
+            },
+            {
+                "type": "effects",
+                "name": "PlayerDrawCards"
+            }
+        ],
+        "series": [
+            "PrincessCosmos"
+        ],
+        "mentions": [
+            20355
+        ],
+        "rarities": {
+            "jp": [
+                "UR",
+                "ORR"
+            ]
+        },
+        "images": {
+            "ORR": 0
+        },
+        "artworks": [
+            {
+                "ORR": true
             }
         ]
     }
