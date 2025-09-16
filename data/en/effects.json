@@ -676,6 +676,16 @@
 	},
 	{
 		"type": "actions",
+		"abbreviation": "RevealsOpponentFaceDownMonsters",
+		"name": "Reveals your opponent's face-down monsters"
+	},
+	{
+		"type": "actions",
+		"abbreviation": "RevealsOpponentFaceDownSpellTrapCards",
+		"name": "Reveals your opponent's face-down Spell/Trap Cards"
+	},
+	{
+		"type": "actions",
 		"abbreviation": "PlayerDeclaresCardName",
 		"name": "Declares a card name"
 	},

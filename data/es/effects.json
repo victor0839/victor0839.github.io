@@ -81,7 +81,7 @@
 	},
 	{
 		"type": "activation",
-		"abbreviation": "MonsterDestroyedByOpponentAttack",
+		"abbreviation": "MonsterDestroyedByBattleOpponentAttack",
 		"name": "Cuando tu monstruo es destruido por un ataque del adversario"
 	},
 	{
@@ -673,6 +673,16 @@
 		"type": "actions",
 		"abbreviation": "RevealsOpponentFaceDownCard",
 		"name": "Muestra cartas boca abajo de tu adversario"
+	},
+	{
+		"type": "actions",
+		"abbreviation": "RevealsOpponentFaceDownMonsters",
+		"name": "Muestra monstruos boca abajo de tu adversario"
+	},
+	{
+		"type": "actions",
+		"abbreviation": "RevealsOpponentFaceDownSpellTrapCards",
+		"name": "Muestra Cartas Mágicas/de Trampa boca abajo de tu adversario"
 	},
 	{
 		"type": "actions",

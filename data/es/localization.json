@@ -101,10 +101,12 @@
     },
     "searchCategory": {
         "AntiSupports": "Anti Soporte a",
+        "ContinuousEffects": "Efectos Continuos",
         "Effects": "Efectos",
         "EquipsTo": "Se Equipa a",
         "FusionMaterialFor": "Material de Fusión de",
         "FusionMaterials": "Materiales de Fusión",
+        "MaximumMaterials": "Materiales Máximo",
         "MentionedBy": "Mencionado por",
         "Mentions": "Menciona",
         "Properties": "Misceláneos",

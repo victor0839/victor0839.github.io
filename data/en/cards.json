@@ -258,6 +258,9 @@
                         "ExtraDeck"
                     ]
                 }
+            },
+            {
+                "id": 15150
             }
         ],
         "series": [
@@ -728,7 +731,7 @@
         },
         "actions": [
             {
-                "type": "effects",
+                "type": "continuous-effects",
                 "name": "ThisCardCannotBeDestroyedByTrapCardEffects"
             }
         ],
@@ -738,6 +741,14 @@
         "mentions": [
             15904,
             15906
+        ],
+        "maximumMaterials" : [
+            {
+                "id": 15904
+            },
+            {
+                "id": 15906
+            }
         ],
         "rarities": {
             "jp": [
@@ -938,13 +949,21 @@
         },
         "actions": [
             {
-                "type": "effects",
+                "type": "continuous-effects",
                 "name": "ThisCardCannotBeDestroyedByTrapCardEffects"
             }
         ],
         "mentions": [
             16321,
             16323
+        ],
+        "maximumMaterials": [
+            {
+                "id": 16321
+            },
+            {
+                "id": 16323
+            }
         ],
         "rarities": {
             "jp": [
@@ -1140,6 +1159,10 @@
         "series": [
             "Metarion"
         ],
+        "mentions": [
+            16891,
+            16894
+        ],
         "fusionMaterials": [
             {
                 "id": 16891
@@ -1315,6 +1338,10 @@
             "jp": 3,
             "kr": 3
         },
+        "mentions": [
+            16925,
+            16926
+        ],
         "fusionMaterials": [
             {
                 "id": 16926
@@ -1816,6 +1843,15 @@
                     "Beast"
                 ],
                 "type": "Normal"
+            },
+            {
+                "id": 17530
+            },
+            {
+                "id": 17541
+            },
+            {
+                "id": 17492
             }
         ],
         "series": [
@@ -1949,6 +1985,9 @@
                     "Beast"
                 ],
                 "type": "Normal"
+            },
+            {
+                "id": 17492
             }
         ],
         "antiSupports": [
@@ -2291,6 +2330,9 @@
                     "Beast"
                 ],
                 "type": "Normal"
+            },
+            {
+                "id": 17492
             }
         ],
         "series": [
@@ -2350,6 +2392,9 @@
                     "Beast"
                 ],
                 "type": "Normal"
+            },
+            {
+                "id": 17492
             }
         ],
         "antiSupports": [
@@ -2408,6 +2453,9 @@
                 "name": "PlayerMonstersCannotBeDestroyedByTrapCardEffects"
             }
         ],
+        "mentions": [
+            15150
+        ],
         "equipsTo": [
             {
                 "id": 15150
@@ -2451,6 +2499,10 @@
         },
         "series": [
             "RedEyes"
+        ],
+        "mentions": [
+            15351,
+            18705
         ],
         "fusionMaterials": [
             {
@@ -2785,7 +2837,7 @@
         "actions": [
             {
                 "type": "effects",
-                "name": "RevealsOpponentFaceDownCard"
+                "name": "RevealsOpponentFaceDownSpellTrapCards"
             },
             {
                 "type": "effects",
@@ -2897,7 +2949,7 @@
         },
         "actions": [
             {
-                "type": "effects",
+                "type": "continuous-effects",
                 "name": "NormalSummonThisCardOneTribute"
             },
             {
@@ -2956,7 +3008,7 @@
         },
         "actions": [
             {
-                "type": "effects",
+                "type": "continuous-effects",
                 "name": "NormalSummonThisCardOneTribute"
             },
             {
@@ -3081,7 +3133,7 @@
         },
         "actions": [
             {
-                "type": "effects",
+                "type": "continuous-effects",
                 "name": "PreventsEffectDamage"
             }
         ],
@@ -3103,6 +3155,9 @@
             {
                 "normal": true
             }
+        ],
+        "properties": [
+            "ContinuousEffect"
         ]
     },
     {
@@ -3451,6 +3506,11 @@
                 "name": "TurnLimitedEffect"
             }
         ],
+        "supports": [
+            {
+                "id": 19342
+            }
+        ],
         "mentions": [
             19342
         ],
@@ -3684,10 +3744,16 @@
                 "name": "InflictsPiercingDamage"
             }
         ],
+        "supports": [
+            {
+                "id": 18705
+            }
+        ],
         "series": [
             "RedEyes"
         ],
         "mentions": [
+            15351,
             18705
         ],
         "fusionMaterials": [
@@ -3771,8 +3837,10 @@
                 "races": [
                     "Dragon"
                 ],
-                "subtype": "NonEffect",
-                "type": "Fusion"
+                "type": "Fusion",
+                "exclude": {
+                    "subtype": "Effect"
+                }
             }
         ],
         "series": [
@@ -3812,7 +3880,7 @@
         "actions": [
             {
                 "type": "effects",
-                "name": "RevealsOpponentFaceDownCard"
+                "name": "RevealsOpponentFaceDownSpellTrapCards"
             },
             {
                 "type": "effects",
@@ -4021,6 +4089,14 @@
                 "name": "AddsSpecificCardFromGraveyardToHand"
             }
         ],
+        "supports": [
+            {
+                "id": 18975
+            },
+            {
+                "id": 18985
+            }
+        ],
         "series": [
             "Monarch"
         ],
@@ -4075,6 +4151,12 @@
         ],
         "series": [
             "PrincessCosmos"
+        ],
+        "mentionedBy": [
+            160216045,
+            160216047,
+            160216048,
+            160216057
         ],
         "rarities": {
             "jp": [
@@ -4235,7 +4317,7 @@
         },
         "actions": [
             {
-                "type": "effects",
+                "type": "continuous-effects",
                 "name": "ChangesOwnNameInGraveyard"
             }
         ],
@@ -4247,6 +4329,9 @@
         ],
         "mentionedBy": [
             21597
+        ],
+        "changesNameTo": [
+            15410
         ],
         "rarities": {
             "jp": [
@@ -4362,6 +4447,10 @@
             },
             {
                 "type": "effects",
+                "name": "SpecialSummonsFromExtraDeck"
+            },
+            {
+                "type": "effects",
                 "name": "SendMonsterFromHandToGraveyard"
             },
             {
@@ -4426,7 +4515,7 @@
         },
         "actions": [
             {
-                "type": "effects",
+                "type": "continuous-effects",
                 "name": "ThisCardGainsATK"
             }
         ],
@@ -4444,7 +4533,9 @@
             }
         ],
         "properties": [
-            "LegendCard"
+            "LegendCard",
+            "ContinuousEffect",
+            "ATKEqualsDEF"
         ]
     },
     {
@@ -4539,7 +4630,7 @@
         },
         "actions": [
             {
-                "type": "effects",
+                "type": "continuous-effects",
                 "name": "NormalSummonThisCardOneTribute"
             },
             {
@@ -4549,6 +4640,9 @@
         ],
         "series": [
             "Monarch"
+        ],
+        "mentionedBy": [
+            160324004
         ],
         "rarities": {
             "jp": [
@@ -4606,6 +4700,9 @@
         "series": [
             "Monarch"
         ],
+        "mentionedBy": [
+            160324004
+        ],
         "rarities": {
             "jp": [
                 "C",
@@ -4652,6 +4749,18 @@
                 "type": "effects",
                 "name": "AddsSpecificCardFromGraveyardToHand"
             }
+        ],
+        "supports": [
+            {
+                "id": 160324002
+            },
+            {
+                "id": 160324003
+            }
+        ],
+        "mentions": [
+            160324002,
+            160324003
         ],
         "series": [
             "Monarch"
@@ -4958,7 +5067,7 @@
                 "name": "SendFromHandToGraveyard"
             },
             {
-                "type": "effects",
+                "type": "continuous-effects",
                 "name": "ChangesOwnNameInGraveyard"
             },
             {
@@ -4982,6 +5091,9 @@
         ],
         "mentionedBy": [
             160216008
+        ],
+        "changesNameTo": [
+            17492
         ],
         "rarities": {
             "jp": [
@@ -5025,12 +5137,20 @@
                 "name": "SendSpecificCardFromHandToGraveyard"
             },
             {
-                "type": "effects",
+                "type": "continuous-effects",
                 "name": "ChangesOwnNameInGraveyard"
             },
             {
                 "type": "effects",
                 "name": "DestroysOpponentCards"
+            }
+        ],
+        "supports": [
+            {
+                "id": 17530
+            },
+            {
+                "id": 17894
             }
         ],
         "series": [
@@ -5042,6 +5162,17 @@
             17894,
             160216007,
             160216009
+        ],
+        "changesNameTo": [
+            17492
+        ],
+        "maximumMaterials": [
+            {
+                "id": 160216007
+            },
+            {
+                "id": 160216009
+            }
         ],
         "rarities": {
             "jp": [
@@ -5080,7 +5211,7 @@
         },
         "actions": [
             {
-                "type": "effects",
+                "type": "continuous-effects",
                 "name": "ChangesOwnNameInGraveyard"
             },
             {
@@ -5099,6 +5230,12 @@
                     "Beast"
                 ],
                 "type": "Normal"
+            },
+            {
+                "id": 17530
+            },
+            {
+                "id": 17894
             }
         ],
         "series": [
@@ -5111,6 +5248,9 @@
         ],
         "mentionedBy": [
             160216008
+        ],
+        "changesNameTo": [
+            17492
         ],
         "rarities": {
             "jp": [
@@ -5145,6 +5285,10 @@
             {
                 "type": "effects",
                 "name": "PerformsRitualSummon"
+            },
+            {
+                "type": "effects",
+                "name": "SpecialSummonsFromExtraDeck"
             },
             {
                 "type": "effects",
@@ -5217,6 +5361,9 @@
         "series": [
             "PrincessCosmos"
         ],
+        "mentions": [
+            160216046
+        ],
         "fusionMaterials": [
             {
                 "id": 160216046
@@ -5268,15 +5415,15 @@
         },
         "actions": [
             {
-                "type": "effects",
+                "type": "continuous-effects",
                 "name": "InflictsPiercingDamage"
             },
             {
-                "type": "effects",
+                "type": "continuous-effects",
                 "name": "OpponentMonstersLoseATK"
             },
             {
-                "type": "effects",
+                "type": "continuous-effects",
                 "name": "OpponentMonstersLoseDEF"
             }
         ],
@@ -5365,6 +5512,9 @@
                 "races": [
                     "Galaxy"
                 ]
+            },
+            {
+                "id": 20355
             }
         ],
         "series": [
@@ -5425,6 +5575,10 @@
             {
                 "type": "effects",
                 "name": "PerformsFusionSummon"
+            },
+            {
+                "type": "effects",
+                "name": "SpecialSummonsFromExtraDeck"
             },
             {
                 "type": "effects",
@@ -5514,11 +5668,11 @@
         },
         "actions": [
             {
-                "type": "effects",
+                "type": "continuous-effects",
                 "name": "RevealsHandForSpecialSummons"
             },
             {
-                "type": "effects",
+                "type": "continuous-effects",
                 "name": "SpecialSummonsItselfFromHand"
             },
             {
@@ -5528,6 +5682,14 @@
             {
                 "type": "effects",
                 "name": "DestroysOpponentTraps"
+            }
+        ],
+        "supports": [
+            {
+                "id":160216046
+            },
+            {
+                "id":20355
             }
         ],
         "series": [
@@ -5571,16 +5733,20 @@
         },
         "actions": [
             {
-                "type": "effects",
+                "type": "continuous-effects",
                 "name": "RevealsHandForSpecialSummons"
             },
             {
-                "type": "effects",
+                "type": "continuous-effects",
                 "name": "SpecialSummonsItselfFromHand"
             },
             {
                 "type": "effects",
                 "name": "PerformsFusionSummon"
+            },
+            {
+                "type": "effects",
+                "name": "SpecialSummonsFromExtraDeck"
             },
             {
                 "type": "effects",
@@ -5592,6 +5758,12 @@
             }
         ],
         "supports": [
+            {
+                "id":160216046
+            },
+            {
+                "id":20355
+            },
             {
                 "cardType": "Monster",
                 "races": [
@@ -6011,11 +6183,11 @@
                 "name": "SendFromHandToGraveyard"
             },
             {
-                "type": "effects",
+                "type": "continuous-effects",
                 "name": "ChangesOwnNameinHand"
             },
             {
-                "type": "effects",
+                "type": "continuous-effects",
                 "name": "ChangesOwnNameInGraveyard"
             },
             {
@@ -6035,6 +6207,9 @@
             "PrincessCosmos"
         ],
         "mentions": [
+            20355
+        ],
+        "changesNameTo": [
             20355
         ],
         "rarities": {

@@ -11,58 +11,81 @@ const htmlList = {
     home: getCacheResource('./html/home.html'),
 }
 
-const relatedCategories = [{
-    'short': 'fusion-materials',
-    'name': 'FusionMaterials',
-    'type': 1,
-    'sort': false,
-}, {
-    'short': 'equips-to',
-    'name': 'EquipsTo',
-    'type': 1,
-    'sort': false,
-}, {
+const relatedCategories = [
+{
     'short': 'mentions',
     'name': 'Mentions',
     'type': 0,
     'sort': true,
-}, {
+},
+{
     'short': 'mentioned-by',
     'name': 'MentionedBy',
     'type': 0,
     'sort': true,
-}, {
+},
+{
     'short': 'fusion-material-for',
     'name': 'FusionMaterialFor',
     'type': 0,
     'sort': true,
 }];
-const searchCategories = [{
+const searchCategories = [
+{
+    'short': 'maximum-materials',
+    'name': 'MaximumMaterials',
+    'type': 1,
+    'sort': false,
+},
+{
+    'short': 'fusion-materials',
+    'name': 'FusionMaterials',
+    'type': 1,
+    'sort': false,
+},
+{
+    'short': 'equips-to',
+    'name': 'EquipsTo',
+    'type': 1,
+    'sort': false,
+},
+{
     'short': 'supports',
     'name': 'Supports',
     'type': 1,
     'sort': false,
-}, {
+},
+{
     'short': 'antisupports',
     'name': 'AntiSupports',
     'type': 1,
     'sort': false,
-}, {
+},
+{
     'short': 'series',
     'name': 'Series',
     'type': 3,
     'sort': true,
-}, {
+},
+{
     'short': 'requeriments',
     'name': 'Requeriments',
     'type': 2,
     'sort': false,
-}, {
+},
+{
+    'short': 'continuous-effects',
+    'name': 'ContinuousEffects',
+    'type': 2,
+    'sort': false,
+},
+{
     'short': 'effects',
     'name': 'Effects',
     'type': 2,
     'sort': false,
-}, {
+},
+{
     'short': 'properties',
     'name': 'Properties',
     'type': 3,
@@ -1498,8 +1521,20 @@ function checkFilters(card, filterList, buttonFilterList, textFilterList, select
 
     var matchedText = false;
 
-    if (textFilterList.search == "" || card.name.toLowerCase().includes(textFilterList.search.toLowerCase()) || card.cardText.toLowerCase().includes(textFilterList.search.toLowerCase())) {
+    if (textFilterList.search == "") {
         matchedText = true;
+    } else {
+        if (textFilterList.search.includes('ID:')) {
+            var searchedID = parseInt(textFilterList.search.split('ID:')[1]);
+
+            if (!isNaN(searchedID)) {
+                if (card.id == searchedID || ('changesNameTo' in card && card.changesNameTo.includes(searchedID))) {
+                    matchedText = true;
+                }
+            }
+        } else if (card.name.toLowerCase().includes(textFilterList.search.toLowerCase()) || card.cardText.toLowerCase().includes(textFilterList.search.toLowerCase())) {
+            matchedText = true;
+        }
     }
 
     return matchedText;
@@ -2705,7 +2740,7 @@ function createStringFromFilter(filter) {
         var filterCard = findCardIsReleased(filter.id);
 
         if (filterCard) {
-            keywords[4] = filterCard.name;
+            keywords[3] = `"${filterCard.name}"`;
         }
     }
 
@@ -2772,12 +2807,7 @@ function loadCardFilter(property, index) {
         var filterCard = findCardIsReleased(filter.id);
 
         if (filterCard) {
-            if ('cardType' in filter) {
-                searchOptions['filterText']['search'].text = filterCard.name;
-            } else {
-                loadCard(filter.id);
-                return;
-            }
+            searchOptions['filterText']['search'].text = `ID:${filterCard.id}`;
         }
     }
 
