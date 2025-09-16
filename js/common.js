@@ -269,6 +269,10 @@ function toCamelCase(str) {
   });
 }
 
+function capitalizeFirstLetter(string) {
+    return String(string).charAt(0).toUpperCase() + String(string).slice(1);
+}
+
 function getLocalizedCardString(group, index) {
     if (data.cardInfo.hasOwnProperty(group) && data.cardInfo[group].hasOwnProperty(index)) {
         return data.cardInfo[group][index];
@@ -295,6 +299,17 @@ function getLocalizedString(group, index) {
     } else {
         console.log(`Localization not found for "${group}, ${index}"`);
         return `${group}_${index}`;
+    }
+}
+
+function getLocalizedRarity(name) {
+    var rarity = data.rarities.find((c) => c.abbreviation == name);
+
+    if (rarity !== undefined) {
+        return rarity.name;
+    } else {
+        console.log(`Rarity "${name}" not found`);
+        return name;
     }
 }
 
@@ -464,8 +479,7 @@ function generateCardSearchFilters(resetFilters = true) {
                         if (rarityInfo) {
                             raritiesList.push({
                                 order: rarityInfo.order,
-                                abbreviation: rarityInfo.abbreviation,
-                                name: rarityInfo.name,
+                                abbreviation: rarityInfo.abbreviation
                             });
                         }
                     }
@@ -483,8 +497,7 @@ function generateCardSearchFilters(resetFilters = true) {
                     if (rarityInfo) {
                         raritiesList.push({
                             order: rarityInfo.order,
-                            abbreviation: rarityInfo.abbreviation,
-                            name: rarityInfo.name,
+                            abbreviation: rarityInfo.abbreviation
                         });
                     }
                 }
@@ -492,8 +505,15 @@ function generateCardSearchFilters(resetFilters = true) {
         }
     });
 
-    levelsList.sort((a, b) => a - b);
-    raritiesList.sort((a, b) => a.order - b.order);
+    sortedCardSearchFilters();
+}
+
+function sortedCardSearchFilters(sortedAll = true) {
+    if (sortedAll) {
+        levelsList.sort((a, b) => a - b);
+        raritiesList.sort((a, b) => a.order - b.order);
+    }
+
     racesList.sort(function(a, b) {
         var textA = getLocalizedString('race', a).toUpperCase();
         var textB = getLocalizedString('race', b).toUpperCase();
@@ -581,7 +601,7 @@ function loadModule(moduleName, id = null) {
 
             //add filters
             raritiesList.forEach(rarity => {
-                var listItem = `<li><button class="dropdown-item" data-filter-select-option="rarities" data-filter-select-value="${rarity.abbreviation}"><span>${rarity.name}</span></button></li>`;
+                var listItem = `<li><button class="dropdown-item" data-filter-select-option="rarities" data-filter-select-value="${rarity.abbreviation}"><span>${getLocalizedRarity(rarity.abbreviation)}</span></button></li>`;
 
                 $('#search-filter-select-rarities-list').append(listItem);
             });
@@ -983,7 +1003,9 @@ function searchResetFilter(search = true) {
         Object.entries(filter[1]).forEach(val => {
             searchOptions['filterButton'][filter[0]][val[0]] = 0;
 
+            $(`#search-filter-button-${filter[0].toLowerCase()}-${String(val[0]).toLowerCase()}`).addClass('btn-outline-secondary');
             $(`#search-filter-button-${filter[0].toLowerCase()}-${String(val[0]).toLowerCase()}`).removeClass('active');
+            $(`#search-filter-button-${filter[0].toLowerCase()}-${String(val[0]).toLowerCase()}`).removeClass('btn-outline-danger');
         });
 
         $(`#search-filter-button-${filter[0].toLowerCase()}`).removeClass('active');
@@ -2573,39 +2595,9 @@ function createStringFromFilter(filter) {
         }
 
         if ('races' in filter && filter.races) {
-            keywords[2] = '';
-
-            if (filter.races.length == 1) {
-                keywords[2] += getFormatString('race', filter.races[0]);
-            } else {
-                var totalRaces = filter.races.length;
-
-                if (userLang == 'Es') {
-                    $.each(filter.races, function(key, race) {
-                        if (key == 0) {
-                            keywords[2] += getFormatString('race', race);
-                        } else if (key < (totalRaces - 1)) {
-                            keywords[2] += ', ';
-                            keywords[2] += getLocalizedString('race', race);
-                        } else {
-                            keywords[2] += ' o ';
-                            keywords[2] += getLocalizedString('race', race);
-                        }
-                    });
-                } else {
-                    $.each(filter.races, function(key, race) {
-                        if (key == (totalRaces - 1)) {
-                            keywords[2] += ' or ';
-                            keywords[2] += getFormatString('race', race);
-                        } else {
-                            if (keywords[2] != '') {
-                                keywords[2] += ', ';
-                            }
-                            keywords[2] += getLocalizedString('race', race);
-                        }
-                    });
-                }
-            }
+            keywords[2] = parseRaceString(filter.races);
+        } else if ('exclude' in filter && 'races' in filter.exclude) {
+            keywords[2] = `${getLocalizedString('effectConjuction', 'non')}${parseRaceString(filter.exclude.races)}`;
         }
 
         //monster type
@@ -2614,20 +2606,28 @@ function createStringFromFilter(filter) {
         if (userLang == 'Es') {
             if ('type' in filter && filter.type) {
                 keywords[3] += `${getLocalizedString('cardTypeShort', 'Monster')} ${getLocalizedString('effectString', toCamelCase(filter.type))}`;
+            } else if ('exclude' in filter && 'type' in filter.exclude && filter.exclude.type) {
+                keywords[3] += `${getLocalizedString('cardTypeShort', 'Monster')} ${getLocalizedString('effectConjuction', 'non')}${getLocalizedString('effectString', toCamelCase(filter.type))}`;
             } else {
                 keywords[3] = getLocalizedString('cardTypeShort', 'Monster');
             }
 
             if ('subtype' in filter && filter.subtype) {
                 keywords[3] += ` ${getLocalizedString('effectString', toCamelCase(filter.subtype))}`;
+            } else if ('exclude' in filter && 'subtype' in filter.exclude && filter.exclude.subtype) {
+                keywords[3] += ` ${getLocalizedString('effectConjuction', 'non')}${getLocalizedString('effectString', toCamelCase(filter.exclude.subtype))}`;
             }
         } else {
             if ('subtype' in filter && filter.subtype) {
                 keywords[3] = `${getLocalizedString('type', filter.subtype)} `;
+            } else if ('exclude' in filter && 'subtype' in filter.exclude && filter.exclude.subtype) {
+                keywords[3] += ` ${getLocalizedString('effectConjuction', 'non')}${getLocalizedString('type', filter.exclude.subtype)} `;
             }
 
             if ('type' in filter && filter.type) {
                 keywords[3] += `${getLocalizedString('type', filter.type)} ${getLocalizedString('cardTypeShort', 'Monster')}`;
+            } else if ('exclude' in filter && 'type' in filter.exclude && filter.exclude.type) {
+                keywords[3] += `${getLocalizedString('effectConjuction', 'non')}${getLocalizedString('type', filter.exclude.type)} ${getLocalizedString('cardTypeShort', 'Monster')}`;
             } else {
                 if (keywords[0] != null || keywords[1] != null || keywords[2] != null) {
                     keywords[3] = getLocalizedString('cardTypeShort', 'Monster').toLowerCase();
@@ -2662,7 +2662,7 @@ function createStringFromFilter(filter) {
                     break;
 
                 case '!=':
-                    keywords.splice(5, 1);
+                    keywords[5] = null;
                     keywords[7] = `${getLocalizedString('effectConjuction', 'exceptMonsters')} ${filter.atk[0]} ATK`;
                     break;
 
@@ -2705,16 +2705,16 @@ function createStringFromFilter(filter) {
                     break;
 
                 case '!=':
-                    keywords.splice(6, 1);
+                    keywords[6] = null;
                     keywords[8] = '';
 
                     if (keywords[7]) {
-                        keywords[8] += `${getLocalizedString('effectConjuction', 'exceptMonsters')}`;
-                    } else {
                         keywords[8] += `${getLocalizedString('effectConjuction', 'and')}`;
+                    } else {
+                        keywords[8] += `${getLocalizedString('effectConjuction', 'exceptMonsters')}`;
                     }
 
-                    keywords[8] = ` ${filter.def[0]}`;
+                    keywords[8] += ` ${filter.def[0]} DEF`;
                     break;
 
                 default:
@@ -2742,6 +2742,8 @@ function createStringFromFilter(filter) {
         if (filterCard) {
             keywords[3] = `"${filterCard.name}"`;
         }
+    } else if ('specialId' in filter && filter.specialId) {
+        keywords[3] = `"${getLocalizedString('specialId', filter.specialId)}"`;
     }
 
     if (userLang == 'Es') {
@@ -2782,7 +2784,43 @@ function createStringFromFilter(filter) {
         });
     }
 
-    return string;
+    return capitalizeFirstLetter(string);
+}
+
+function parseRaceString(races) {
+    var raceString = '';
+
+    var totalRaces = races.length;
+
+    if (userLang == 'Es') {
+        $.each(races, function(key, race) {
+            if (key == 0) {
+                raceString += getFormatString('race', race);
+            } else if (key < (totalRaces - 1)) {
+                raceString += ', ';
+                raceString += getLocalizedString('race', race);
+            } else {
+                raceString += ' o ';
+                raceString += getLocalizedString('race', race);
+            }
+        });
+    } else {
+        $.each(races, function(key, race) {
+            if (key == 0 && key == (totalRaces - 1)) {
+                raceString += getFormatString('race', race);
+            } else if (key == 0 && key == (totalRaces - 1)) {
+                raceString += ' or ';
+                raceString += getFormatString('race', race);
+            } else {
+                if (raceString != '') {
+                    raceString += ', ';
+                }
+                raceString += getLocalizedString('race', race);
+            }
+        });
+    }
+
+    return raceString;
 }
 
 function loadCardFilter(property, index) {
@@ -2809,6 +2847,8 @@ function loadCardFilter(property, index) {
         if (filterCard) {
             searchOptions['filterText']['search'].text = `ID:${filterCard.id}`;
         }
+    } else if ('specialId' in filter && filter.specialId) {
+        searchOptions['filterText']['search'].text = `ID:${filter.specialId}`;
     }
 
     if ('cardType' in filter) {
@@ -2863,25 +2903,23 @@ function loadCardFilter(property, index) {
     }
 
     if ('subtype' in filter && filter.subtype) {
-        if (filter.subtype == 'NonEffect') {
-            searchOptions['filterButton']['type'].Effect = 2;
-        } else {
-            searchOptions['filterButton']['type'][filter.subtype] = 1;
-        }
+        searchOptions['filterButton']['type'][filter.subtype] = 1;
     }
 
     if ('type' in filter && filter.type) {
-        if (filter.type == 'NonEffect') {
-            searchOptions['filterButton']['type'].Effect = 2;
-        } else {
-            searchOptions['filterButton']['type'][filter.type] = 1;
-        }
+        searchOptions['filterButton']['type'][filter.type] = 1;
     }
 
     if ('exclude' in filter && filter.exclude) {
         if ('attributes' in filter.exclude) {
             filter.exclude.attributes.forEach(attribute => {
                 searchOptions['filterButton']['attribute'][attribute] = 2;
+            });
+        }
+
+        if ('races' in filter.exclude) {
+            filter.exclude.races.forEach(race => {
+                searchOptions['filterButton']['race'][race] = 2;
             });
         }
 
@@ -2898,6 +2936,14 @@ function loadCardFilter(property, index) {
             filter.exclude.types.forEach(type => {
                 searchOptions['filterButton']['type'][type] = 2;
             });
+        }
+
+        if ('type' in filter.exclude) {
+            searchOptions['filterButton']['type'][filter.exclude.type] = 2;
+        }
+
+        if ('subtype' in filter.exclude) {
+            searchOptions['filterButton']['type'][filter.exclude.subtype] = 2;
         }
     }
 
@@ -3108,6 +3154,7 @@ function changeLanguage(lang) {
             data = Object.assign(data, result);
         }).then(function(val) {
             generateSortedMainCardsList();
+            sortedCardSearchFilters(false);
 
             $(`#navbar-language-selector-${userLang.toLowerCase()}`).removeClass('active');
 
